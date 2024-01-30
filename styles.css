@@ -1,16 +1,31 @@
 :root {
-    /* Define grayscale color variables */
-    --clr-primary: black;         /* Primary color set to black */
-    --clr-secondary: darkgrey;    /* Secondary color set to dark grey */
-    --clr-accent: darkgrey;       /* Accent color set to dark grey */
-    --clr-light: #f3f3f3;         /* Light color set to a very light grey */
-    --clr-white: white;           /* White color set to white */
+  /* Define grayscale color variables */
+  --clr-primary: black; /* Primary color set to black */
+  --clr-secondary: darkgrey; /* Secondary color set to dark grey */
+  --clr-accent: darkgrey; /* Accent color set to dark grey */
+  --clr-light: #f3f3f3; /* Light color set to a very light grey */
+  --clr-white: white; /* White color set to white */
 }
 
 /*CSS Reset*/
 
 /*Add Border box fix*/
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* Reset margins for body, all headings, p, figure, and picture */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
