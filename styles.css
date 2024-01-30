@@ -1,0 +1,8 @@
+:root {
+    /* Define grayscale color variables */
+    --clr-primary: black;         /* Primary color set to black */
+    --clr-secondary: darkgrey;    /* Secondary color set to dark grey */
+    --clr-accent: darkgrey;       /* Accent color set to dark grey */
+    --clr-light: #f3f3f3;         /* Light color set to a very light grey */
+    --clr-white: white;           /* White color set to white */
+}
