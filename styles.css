@@ -29,3 +29,8 @@ figure,
 picture {
   margin: 0;
 }
+/* Remove padding from lists */
+ul,
+ol {
+  padding: 0;
+}
