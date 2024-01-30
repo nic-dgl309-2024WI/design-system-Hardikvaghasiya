@@ -6,3 +6,11 @@
     --clr-light: #f3f3f3;         /* Light color set to a very light grey */
     --clr-white: white;           /* White color set to white */
 }
+
+/*CSS Reset*/
+
+/*Add Border box fix*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
