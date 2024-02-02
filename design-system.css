@@ -4,6 +4,9 @@
     list-style: none;
     box-sizing: border-box;
   }
+  body::-webkit-scrollbar {
+    display: none;
+}
 
   nav{
     background: var(--clr-secondary);
@@ -88,3 +91,27 @@
       left: 0;
     }
   }
+
+  #sidebar {
+    
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    scrollbar-width: none;
+    
+}
+
+
+#sidebar h2, #sidebar ul li {
+    color: #333; /* Adjust your text color here */
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+
