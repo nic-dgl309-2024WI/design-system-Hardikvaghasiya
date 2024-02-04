@@ -51,9 +51,16 @@ nav ul li a {
 
 /* Adds a hover and active state style for anchor elements for visual feedback. */
 a.active,
-a:hover {
-  background: var(--clr-subheading); /* Secondary color variable */
+a:hover {/* Secondary color variable */
   transition: 0.5s;
+  border-bottom: 1px solid var(--clr-accent);
+}
+
+
+links.active,
+links:hover{background: transparent; /* Secondary color variable */
+  transition: 0.5s;
+
 }
 
 /* Styles the hamburger icon button, setting font size, color, positioning, and display properties. */
@@ -149,12 +156,28 @@ a:hover {
 h4{
     color: var(--clr-primary-background-color);
 }
+li{
+    color: var(--clr-primary-text);
+}
+colours-link{
+    color: var(--clr-subheading);
+}
 
 /* Styles for headings and list items in the sidebar. */
 #side-bar h2,
-#side-bar ul li {
-  color: var(); /* Text color for sidebar items */
-}
+
 #side-bar ul {
   list-style: none; /* Removes default list styling */
 }
+/*colours*/
+/* Hover effect for the "Colours" link */
+#colours-link a.active {
+    color: red; /* Adjust the color to match your design */
+    background-color: transparent; /* Optional: set a background color if desired */
+}
+#colours-link a:hover {
+    color: red;
+    background-color: transparent; /* Change to the color you want on hover */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
