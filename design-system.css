@@ -1,62 +1,57 @@
-/* Global Styles */
 *{
+
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-}
-body::-webkit-scrollbar {
+  }
+  body::-webkit-scrollbar {
     display: none;
 }
 
-/* Navbar Styles */
-nav{
-    background: var(--clr-secondary);
+  nav{
     height: 80px;
     width: 100%;
-}
-label.logo{
-    color: var(--clr-white);
+  }
+  label.logo{
+    color: var(--clr-primary);
     font-size: 20px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-}
-nav ul{
+  }
+  nav ul{
     float: right;
     margin-right: 20px;
     margin-top: 0;
-}
-nav ul li{
+  }
+  nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-}
-nav ul li a{
-    color: var(--clr-white);
+  }
+  nav ul li a{
+    color: var(--clr-primary);
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-}
-a.active,a:hover{
-    background: var(--clr-primary);
+  }
+  a.active,a:hover{
+    background: var(--clr-secondary);
     transition: .5s;
-}
-
-/* Responsive Design for Navbar */
-.checkbtn{
+  }
+  .checkbtn{
     font-size: 30px;
-    color: var(--clr-white);
+    color: var(--clr-primary);
     float: right;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
-}
-#check{
+  }
+  #check{
     display: none;
-}
-
-@media (max-width: 952px){
+  }
+  @media (max-width: 952px){
     label.logo{
       font-size: 30px;
       padding-left: 50px;
@@ -64,9 +59,8 @@ a.active,a:hover{
     nav ul li a{
       font-size: 16px;
     }
-}
-
-@media (max-width: 858px){
+  }
+  @media (max-width: 858px){
     .checkbtn{
       display: block;
     }
@@ -74,7 +68,7 @@ a.active,a:hover{
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: var(--clr-secondary);
+      background: var(--clr-white);
       top: 80px;
       left: -100%;
       text-align: center;
@@ -95,10 +89,9 @@ a.active,a:hover{
     #check:checked ~ ul{
       left: 0;
     }
-}
+  }
 
-/* Sidebar Styles */
-#sidebar {
+  #sidebar {
     width: 300px;
     position: relative;
     top: 0;
@@ -106,10 +99,11 @@ a.active,a:hover{
     height: 100vh;
     overflow-y: auto;
     padding: 20px;
-    scrollbar-width: none;   
+    scrollbar-width: none;
+    
 }
 
-/* Sidebar Text Color */
+
 #sidebar h2, #sidebar ul li {
     color: var(--clr-primary); /* Adjust your text color here */
 }
