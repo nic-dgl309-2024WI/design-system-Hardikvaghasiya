@@ -12,7 +12,7 @@
     height: 80px;
     width: 100%;
   }
-  label.logo{
+  label.page-logo{
     color: var(--clr-primary);
     font-size: 20px;
     line-height: 80px;
@@ -39,7 +39,7 @@
     background: var(--clr-secondary);
     transition: .5s;
   }
-  .checkbtn{
+  .icon-button{
     font-size: 30px;
     color: var(--clr-primary);
     float: right;
@@ -52,7 +52,7 @@
     display: none;
   }
   @media (max-width: 952px){
-    label.logo{
+    label.page-logo{
       font-size: 30px;
       padding-left: 50px;
     }
@@ -61,7 +61,7 @@
     }
   }
   @media (max-width: 858px){
-    .checkbtn{
+    .icon-button{
       display: block;
     }
     ul{
@@ -91,7 +91,7 @@
     }
   }
 
-  #sidebar {
+  #side-bar {
     width: 300px;
     position: relative;
     top: 0;
@@ -102,11 +102,26 @@
     scrollbar-width: none;
     
 }
+/* Mobile view: side-bar hidden */
+@media (max-width: 858px) {
+    #side-bar {
+        display: none; /* Hide side-bar */
+    }
+    /* Show side-bar when active */
+    .side-bar--active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 100; /* Ensure it's above other content */
+    }
+}
 
-
-#sidebar h2, #sidebar ul li {
+#side-bar h2, #side-bar ul li {
     color: var(--clr-primary); /* Adjust your text color here */
 }
-#sidebar ul {
+#side-bar ul {
     list-style: none;
 }
