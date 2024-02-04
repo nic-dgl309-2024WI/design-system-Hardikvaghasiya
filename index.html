@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper mobile scaling and rendering for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardik Vaghasiya</title>
+    <!-- Main stylesheet for the page -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Link to the design-system.css file, which will override styles.css where necessary -->
+    <!-- Additional stylesheet to override some styles from styles.css if necessary -->
     <link rel="stylesheet" type="text/css" href="design-system.css">
-    <!--Font-->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <!-- Hamburger Menu Button -->
-   
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="icon-button">
-          <i class="fa fa-bars"></i>
-        </label>
-        <label class="page-logo">Logo</label>
-        <ul>
-          <li><a href="about-me.html" target="_blank">About Me</a></li>
-          <li><a href="#">Demo Site</a></li>
 
+<body>
+    <!-- Navigation bar containing the logo, menu icon, and navigation links -->
+    <nav>
+        <!-- Hidden checkbox used to toggle the mobile menu on/off -->
+        <input type="checkbox" id="check">
+        <!-- Hamburger menu icon that toggles the sidebar or navigation menu in mobile view -->
+        <label for="check" class="icon-button">
+            <i class="fa fa-bars"></i>
+        </label>
+        <!-- Site logo or title -->
+        <label class="page-logo">Logo</label>
+        <!-- List of navigation links -->
+        <ul>
+            <li><a href="about-me.html" target="_blank">About Me</a></li>
+            <li><a href="#">Demo Site</a></li>
         </ul>
-      </nav>
-      <div id="side-bar">
+    </nav>
+    <!-- Sidebar containing additional navigation or content links -->
+    <div id="side-bar">
+        <!-- Each section in the sidebar categorizes different types of content or links -->
         <h4>Branding</h4>
         <ul>
             <li>01 Colours</li>
             <li>02 Typography</li>
             <li>03 Logo</li>
         </ul>
+        <!-- Repeated sections for different categories like Utilities, Navigation, etc. -->
         <h4>Utilities</h4>
         <ul>
             <li>04 Spacing</li>
@@ -40,6 +49,7 @@
             <li>07 Interactive</li>
             <li>08 Feedback</li>
         </ul>
+        <!-- Continued categorization for comprehensive site navigation or content structure -->
         <h4>Navigation</h4>
         <ul>
             <li>09 Navbars</li>
@@ -53,16 +63,16 @@
             <li>14 Slats</li>
             <li>15 Footer</li>
         </ul>
-        <h4>Components</h2>
+        <h4>Components</h4>
         <ul>
             <li>16 Cards</li>
             <li>17 Forms</li>
             <li>18 Accordion</li>
             <li>19 Lists</li>
         </ul>
-    </div>   
-    <!--JavaScript-->
+    </div>
+    <!-- External JavaScript file for additional functionality -->
     <script src="design-system.js"></script>
-    
 </body>
+
 </html>

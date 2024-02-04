@@ -1,127 +1,154 @@
-*{
-
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body::-webkit-scrollbar {
-    display: none;
+/* Resets all elements to remove default styling, such as text decorations, list styles, and box sizing to ensure a consistent look across different browsers. */
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-  nav{
-    height: 80px;
-    width: 100%;
-  }
-  label.page-logo{
-    color: var(--clr-primary);
-    font-size: 20px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-    margin-top: 0;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: var(--clr-primary);
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-  }
-  a.active,a:hover{
-    background: var(--clr-secondary);
-    transition: .5s;
-  }
-  .icon-button{
+/* Hides the browser's default scrollbar for the body element to create a cleaner look. */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles the navigation bar, setting its height and full width. */
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+/* Styles the page logo within the navbar, setting color, font size, line height, padding, and weight. */
+label.page-logo {
+  color: var(--clr-primary); /* Assumes a CSS variable for primary color */
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+/* Aligns the navigation links to the right of the navbar and sets their margin. */
+nav ul {
+  float: right;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+/* Styles each navigation link, setting inline display, line height, and margin. */
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+/* Styles anchor elements within navigation list items, setting color, font size, padding, and border radius. */
+nav ul li a {
+  color: var(--clr-primary); /* Primary color variable */
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+/* Adds a hover and active state style for anchor elements for visual feedback. */
+a.active,
+a:hover {
+  background: var(--clr-secondary); /* Secondary color variable */
+  transition: 0.5s;
+}
+
+/* Styles the hamburger icon button, setting font size, color, positioning, and display properties. */
+.icon-button {
+  font-size: 30px;
+  color: var(--clr-primary); /* Primary color variable */
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; /* Initially hidden, shown in mobile view */
+}
+
+/* Hides the checkbox used for toggling mobile navigation menu. */
+#check {
+  display: none;
+}
+
+/* Adjusts logo font size and padding for screens wider than 952px. */
+@media (max-width: 952px) {
+  label.page-logo {
     font-size: 30px;
-    color: var(--clr-primary);
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    padding-left: 50px;
   }
-  #check{
-    display: none;
+  nav ul li a {
+    font-size: 16px;
   }
-  @media (max-width: 952px){
-    label.page-logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .icon-button{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: var(--clr-white);
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: var(--clr-primary);
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
-
-  #side-bar {
-    width: 300px;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 20px;
-    scrollbar-width: none;
-    
 }
-/* Mobile view: side-bar hidden */
+
+/* Defines styles for mobile view, including showing the hamburger button, styling the navigation menu, and adjusting link styles. */
 @media (max-width: 858px) {
-    #side-bar {
-        display: none; /* Hide side-bar */
-    }
-    /* Show side-bar when active */
-    .side-bar--active {
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        z-index: 100; /* Ensure it's above other content */
-    }
+  .icon-button {
+    display: block; /* Show the hamburger menu icon */
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--clr-white); /* Background color for the mobile menu */
+    top: 80px;
+    left: -100%; /* Initially positioned off-screen */
+    text-align: center;
+    transition: all 0.5s; /* Smooth transition for opening/closing menu */
+  }
+  nav ul li {
+    display: block; /* Stack links vertically in mobile view */
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: var(
+      --clr-primary
+    ); /* Changes color instead of background on hover/active */
+  }
+  #check:checked ~ ul {
+    left: 0; /* Moves the menu on-screen when the checkbox is checked */
+  }
 }
 
-#side-bar h2, #side-bar ul li {
-    color: var(--clr-primary); /* Adjust your text color here */
+/* Styles the sidebar, including width, position, height, overflow behavior, padding, and scrollbar appearance. */
+#side-bar {
+  width: 300px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 20px;
+  scrollbar-width: none; /* Hides scrollbar */
+}
+
+/* Hides the sidebar in mobile view by default and styles it when active. */
+@media (max-width: 858px) {
+  #side-bar {
+    display: none; /* Hide sidebar in mobile view */
+  }
+  .side-bar--active {
+    display: block; /* Show sidebar when active */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100; /* Ensures sidebar is above other content */
+  }
+}
+
+/* Styles for headings and list items in the sidebar. */
+#side-bar h2,
+#side-bar ul li {
+  color: var(--clr-primary); /* Text color for sidebar items */
 }
 #side-bar ul {
-    list-style: none;
+  list-style: none; /* Removes default list styling */
 }

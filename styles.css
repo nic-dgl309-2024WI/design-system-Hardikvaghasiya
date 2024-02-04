@@ -2,18 +2,15 @@
   /* Define grayscale color variables */
   --clr-primary: black; /* Primary color set to black */
   --clr-secondary: darkgrey; /* Secondary color set to dark grey */
-  --clr-accent: darkgrey; /* Accent color set to dark grey */
-  --clr-light: #f3f3f3; /* Light color set to a very light grey */
-  --clr-white: white; /* White color set to white */
-}a                                                                      
-
-/*CSS Reset*/
-
-/*Add Border box fix*/
+  --clr-accent: darkgrey; /* Accent color also set to dark grey, can be used for highlighting elements */
+  --clr-light: #f3f3f3; /* Light color set to a very light grey, useful for backgrounds or light themes */
+  --clr-white: white; /* White color set to white, for contrasting text or elements against darker backgrounds */
+}
+/* Add Border box fix */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures that padding and border sizes are included within the total width and height of elements, preventing layout issues */
 }
 
 /* Reset margins for body, all headings, p, figure, and picture */
@@ -27,10 +24,11 @@ h6,
 p,
 figure,
 picture {
-  margin: 0;
+  margin: 0; /* Removes default margins from these elements to provide a consistent starting point for styling */
 }
+
 /* Remove padding from lists */
 ul,
 ol {
-  padding: 0;
+  padding: 0; /* Eliminates default padding from unordered and ordered lists, allowing for custom list styling */
 }
