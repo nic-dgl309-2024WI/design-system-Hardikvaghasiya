@@ -1,10 +1,9 @@
 :root {
   /* Define grayscale color variables */
-  --clr-primary: black; /* Primary color set to black */
-  --clr-secondary: darkgrey; /* Secondary color set to dark grey */
-  --clr-accent: darkgrey; /* Accent color also set to dark grey, can be used for highlighting elements */
-  --clr-light: #f3f3f3; /* Light color set to a very light grey, useful for backgrounds or light themes */
-  --clr-white: white; /* White color set to white, for contrasting text or elements against darker backgrounds */
+  --clr-primary-text: #4f709c; /*Primary text color*/
+  --clr-primary-background-color: #213555 /*Dark background color is set*/;
+  --clr-accent: #f0f0f0; /*light accent color*/
+  --clr-secondary-text: #e5d283; /*Secondary text color*/
 }
 /* Add Border box fix */
 *,
