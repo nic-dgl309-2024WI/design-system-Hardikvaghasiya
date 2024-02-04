@@ -20,7 +20,7 @@
         <!-- Hidden checkbox used to toggle the mobile menu on/off -->
         <input type="checkbox" id="check">
         <!-- Hamburger menu icon that toggles the sidebar or navigation menu in mobile view -->
-        <label for="check" class="icon-button">
+        <label for="check" class="icon-button" onclick="toggleSidebar">
             <i class="fa fa-bars"></i>
         </label>
         <!-- Site logo or title -->
@@ -36,7 +36,7 @@
         <!-- Each section in the sidebar categorizes different types of content or links -->
         <h4>Branding</h4>
         <ul>
-            <li id="colours-link"><a href="colours.html" class="active">01 Colours</li>
+            <li><a href="colours.html" class="active">01 Colours</li>
             <li>02 Typography</li>
             <li>03 Logo</li>
         </ul>
@@ -71,8 +71,20 @@
             <li>19 Lists</li>
         </ul>
     </div>
+
     <!-- External JavaScript file for additional functionality -->
     <script src="design-system.js"></script>
+    <script>
+        function toggleSidebar() {
+          var sidebar = document.getElementById('side-bar');
+          sidebar.classList.toggle('active');
+        }
+      
+        document.addEventListener('DOMContentLoaded', function() {
+          var iconButton = document.querySelector('.icon-button');
+          iconButton.addEventListener('click', toggleSidebar);
+        });
+      </script>
 </body>
 
 </html>
