@@ -3,6 +3,7 @@
   --clr-primary-text: #4f709c; /*Primary text color*/
   --clr-primary-background-color: #213555 /*Dark background color is set*/;
   --clr-accent: #f0f0f0; /*light accent color*/
+  --clr-subheading: #81689D; /*subheading colours*/
   --clr-secondary-text: #e5d283; /*Secondary text color*/
 }
 /* Add Border box fix */
