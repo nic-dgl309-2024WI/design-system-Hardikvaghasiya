@@ -70,27 +70,72 @@
             <li>18 Accordion</li>
             <li>19 Lists</li>
         </ul>
-    </div>
-    <div class="main-colours" id="color-swatches">
-            <h2>Color Swatches</h2>
-            <!-- Example for Primary Colors -->
-            <div class="color-category">
-                <h3>Primary Colors</h3>
-                <div class="swatch-container" style="display: flex; flex-wrap: wrap;">
-                    <!-- Swatch 1 -->
-                    <div style="width: 100px; height: 100px; background-color: #007bff; color: white; margin: 10px; padding: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                        <span>.bg-primary</span>
-                        <span>#007bff</span>
-                        <span>Headings, Links</span>
-                        <!-- ... -->
-                    </div>
-                    <!-- Add more swatches as needed, with appropriate hex values and classes -->
-                </div>
-            </div>
-            <!-- Repeat for other color categories like Accent Colors, etc. -->
-        </section>
         
     </div>
+    <section>
+        <div class="swatch">
+        <div  style="background-color: var(--clr-primary-text);">
+            <p>Primary Text Colours</p>
+            <p>Class: bg-primary-text</p>
+            <p>Hex: #4f709c</p>
+            <p>Uses: Headings, Links</p>
+            <div class="color-info">
+                <p>Contrast with text-primary: Pass</p>
+                <!-- Contrast check -->
+            </div>
+            </div>
+        
+        
+        <div  style="background-color: var(--clr-primary-background-color);">
+            <p>Primary Background Colours</p>
+            <p>Class: bg-primary-background-color</p>
+            <p>Hex: #213555</p>
+            <p>Uses: Background</p>
+            <div class="color-info">
+                <p>Contrast with text-primary: Pass</p>
+                <!-- Contrast check -->
+            </div>
+            </div>
+       
+
+        
+        <div style="background-color: var(--clr-accent); color: var(--clr-primary-text);">
+            <p>Accent Colours</p>
+            <p>Class: bg-accent</p>
+            <p>Hex: #f0f0f0</p>
+            <p>Uses: Cards, Dialogs</p>
+            <div class="color-info">
+                <p>Contrast with text-primary: Pass</p>
+                <!-- Contrast check -->
+            </div>
+   
+
+        
+        <div  style="background-color: var(--clr-subheading); color: var(--clr-accent);">
+            <p>Secondary Colours</p>
+            <p>Class: bg-subheading</p>
+            <p>Hex: #81689D</p>
+            <p>Uses: Subheadings</p>
+            <div class="color-info">
+                <p>Contrast with text-primary: Pass</p>
+                <!-- Contrast check -->
+            </div>
+   </div>
+        
+        <div  style="background-color: var(--clr-secondary-text);">
+            <p>Secondary Text Colours</p>
+            <p>Class: bg-secondary-text</p>
+            <p>Hex: #e5d283</p>
+            <p>Uses: Secondary Text</p>
+            <div class="color-info">
+                <p>Contrast with text-primary: Pass</p>
+                <!-- Contrast check -->
+            </div>
+            <div class="clearfix"></div></div>
+        </div>
+        </div>
+    </section>
+
 
     <!-- External JavaScript file for additional functionality -->
     <script src="design-system.js"></script>
