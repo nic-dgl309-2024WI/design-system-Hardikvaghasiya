@@ -54,7 +54,7 @@ nav ul li a {
 /* Adds a hover and active state style for anchor elements for visual feedback. */
 a.active,
 a:hover {
-  
+  font-weight: 500;
   /* Secondary color variable */
   transition: 0.5s;
   border-bottom: 1px solid var(--clr-accent);
