@@ -197,7 +197,7 @@ colours-link {
 }
 
 /*swatches */
-.swatch {
+.swatch__color {
   padding: 10px;
   color: white;
   margin-left: 0px;
@@ -243,7 +243,7 @@ colours-link {
 }
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
-  .swatch {
+  .swatch__color {
     width: calc(
       50% - 20px
     ); /* Adjust width for 2 swatches per row on smaller screens */
@@ -251,7 +251,7 @@ colours-link {
 }
 
 @media (max-width: 400px) {
-  .swatch {
+  .swatch__color {
     width: 100%; /* Full width for 1 swatch per row on very small screens */
     margin: 10px 0; /* Adjust margin for vertical stacking */
   }
