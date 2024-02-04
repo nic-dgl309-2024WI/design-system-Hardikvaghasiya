@@ -54,6 +54,7 @@ nav ul li a {
 /* Adds a hover and active state style for anchor elements for visual feedback. */
 a.active,
 a:hover {
+  
   /* Secondary color variable */
   transition: 0.5s;
   border-bottom: 1px solid var(--clr-accent);
@@ -184,10 +185,12 @@ colours-link {
 /*colours*/
 /* Hover effect for the "Colours" link */
 #colours-link a.active {
+  font-weight: bold;
   color: red; /* Adjust the color to match your design */
   background-color: transparent; /* Optional: set a background color if desired */
 }
 #colours-link a:hover {
+  font-weight: bold;
   color: red;
   background-color: transparent; /* Change to the color you want on hover */
   transition: color 0.3s ease; /* Smooth transition for color change */
@@ -204,6 +207,7 @@ colours-link {
   position: absolute;
   width: 30%;
   margin: 10px;
+  flex-flow: row;
   margin-left: 15%;
   padding: 10px;
   box-sizing: border-box;
