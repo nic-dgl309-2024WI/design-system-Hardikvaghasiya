@@ -296,10 +296,8 @@ header p {
 }
 /*Font uses*/
 table {
-  margin-top: 20%;
-  position:static;
-  margin-left: 5%;
-  width:70%;
+  margin-top: 1%;
+  width: 100%;
   border-collapse: collapse;
 }
 th, td {
@@ -319,12 +317,6 @@ th {
   color: var(--clr-primary-background-color);
 }
 .body-text{
-  float: right;
-  top: 25%;
-  left: 30%;
-  position:absolute;
-}
-.use-table{
   float: right;
   top: 25%;
   left: 20%;
