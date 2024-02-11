@@ -3,7 +3,6 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
 }
 
 /* Hides the browser's default scrollbar for the body element to create a cleaner look. */
@@ -64,6 +63,12 @@ links.active,
 links:hover {
   background: transparent; /* Secondary color variable */
   transition: 0.5s;
+}
+body {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 /* Styles the hamburger icon button, setting font size, color, positioning, and display properties. */
@@ -133,6 +138,7 @@ links:hover {
   background-color: var(--clr-accent);
   width: 300px;
   position: relative;
+  font-family: "Quicksand", sans-serif;
   left: 0;
   height: 100vh;
   overflow-y: hidden;
@@ -255,4 +261,36 @@ colours-link {
     width: 100%; /* Full width for 1 swatch per row on very small screens */
     margin: 10px 0; /* Adjust margin for vertical stacking */
   }
+}
+
+
+header h1,
+header p {
+  text-align: center;
+  
+}
+
+.font-display {
+  position: absolute;
+  flex-flow: row;
+  text-align: center;
+  
+
+
+}
+
+.ff-Montserrat {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+}
+
+.ff-quicksand {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.character-grid div {
+  margin: 10px 0;
+  font-size: 25px;
 }
