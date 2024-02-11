@@ -32,3 +32,11 @@ ul,
 ol {
   padding: 0; /* Eliminates default padding from unordered and ordered lists, allowing for custom list styling */
 }
+
+/* CSS Variables */
+:root{
+  /*font families*/
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Quicksand', sans-serif;
+  
+}
