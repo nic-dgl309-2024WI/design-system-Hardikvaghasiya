@@ -296,8 +296,10 @@ header p {
 }
 /*Font uses*/
 table {
-  margin-top: 1%;
-  width: 100%;
+  margin-top: 20%;
+  position:static;
+  margin-left: 5%;
+  width:70%;
   border-collapse: collapse;
 }
 th, td {
@@ -315,4 +317,16 @@ th {
 .quicksand {
   font-family: 'Quicksand', sans-serif;
   color: var(--clr-primary-background-color);
+}
+.body-text{
+  float: right;
+  top: 25%;
+  left: 30%;
+  position:absolute;
+}
+.use-table{
+  float: right;
+  top: 25%;
+  left: 20%;
+  position:absolute;
 }
