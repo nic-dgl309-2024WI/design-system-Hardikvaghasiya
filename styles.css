@@ -43,4 +43,9 @@ ol {
   --font-size-small: 0.8rem; /* Example: 12px if base is 16px */
   --font-size-base: 1rem; /* Example: 16px */
   --font-size-large: 1.5rem; /* Example: 24px */
+
+  /* Font weights */
+  --font-weight-light: 300; /* Light weight for Quicksand */
+  --font-weight-normal: 400; /* Normal weight */
+  --font-weight-bold: 700; /* Bold weight */
 }
