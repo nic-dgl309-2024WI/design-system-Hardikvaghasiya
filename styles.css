@@ -49,3 +49,37 @@ ol {
   --font-weight-normal: 400; /* Normal weight */
   --font-weight-bold: 700; /* Bold weight */
 }
+/* Utility Classes for Font Family */
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-quicksand {
+  font-family: var(--font-quicksand);
+}
+
+/* Utility Classes for Font Size */
+.font-size-small {
+  font-size: var(--font-size-small);
+}
+
+.font-size-base {
+  font-size: var(--font-size-base);
+}
+
+.font-size-large {
+  font-size: var(--font-size-large);
+}
+
+/* Utility Classes for Font Weight */
+.font-weight-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-weight-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
