@@ -263,7 +263,7 @@ colours-link {
   }
 }
 
-
+/*Font families */
 header h1,
 header p {
   text-align: center;
@@ -293,4 +293,26 @@ header p {
 .character-grid div {
   margin: 10px 0;
   font-size: 25px;
+}
+/*Font uses*/
+table {
+  margin-top: 1%;
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid var(--clr-accent);
+  text-align: left;
+  padding: 8px;
+}
+th {
+  background-color: var(--clr-accent);
+}
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--clr-primary-background-color);
+}
+.quicksand {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--clr-primary-background-color);
 }
