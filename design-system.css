@@ -267,22 +267,17 @@ colours-link {
 header h1,
 header p {
   text-align: center;
-  
 }
 
 .font-display {
   position: absolute;
   flex-flow: row;
   text-align: center;
-  
-
-
 }
 
 .ff-Montserrat {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-
 }
 
 .ff-quicksand {
@@ -300,7 +295,8 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-th, td {
+th,
+td {
   border: 1px solid var(--clr-accent);
   text-align: left;
   padding: 8px;
@@ -309,16 +305,16 @@ th {
   background-color: var(--clr-accent);
 }
 .montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--clr-primary-background-color);
 }
 .quicksand {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: var(--clr-primary-background-color);
 }
-.body-text{
+.body-text {
   float: right;
   top: 25%;
   left: 20%;
-  position:absolute;
+  position: absolute;
 }
