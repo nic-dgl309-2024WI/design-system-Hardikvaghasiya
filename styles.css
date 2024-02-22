@@ -7,6 +7,8 @@
   --clr-accent: #f0f0f0; /*light accent color*/
   --clr-subheading: #81689d; /*subheading colours*/
   --clr-secondary-text: #e5d283; /*Secondary text color*/
+  --clr-hover: #009688; /* Teal color for hover */
+  --clr-active: #ff5722; /* Deep orange color for active */
 }
 /* Add Border box fix */
 *,

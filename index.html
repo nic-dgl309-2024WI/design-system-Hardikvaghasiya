@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <!-- Ensures proper mobile scaling and rendering for responsive design -->
@@ -18,15 +17,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
 </head>
-
 <body>
     <!-- Navigation bar containing the logo, menu icon, and navigation links -->
     <nav>
-
         <!-- Hidden checkbox used to toggle the mobile menu on/off -->
         <input type="checkbox" id="check">
         <!-- Hamburger menu icon that toggles the sidebar or navigation menu in mobile view -->
@@ -37,15 +31,15 @@
         <label class="page-logo">Logo</label>
         <!-- List of navigation links -->
         <ul>
-            <li><a href="about-me.html" target="_blank">About Me</a></li>
+            <li><a href="about-me.html" target="_blank" class="active">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
         </ul>
-
+        <!-- Sidebar for additional navigation -->
         <div id="side-bar">
             <h4>Branding</h4>
-            <li><a href="colours.html">01 Colours</li>
-            <li><a href="typography.html">02 Typography</li>
-            <li><a href="index.html">03 Logo</li>
+            <li><a href="colours.html" >01 Colours</a></li>
+            <li><a href="typography.html">02 Typography</a></li>
+            <li><a href="index.html">03 Logo</a></li>
             <h4>Utilities</h4>
             <li>04 Spacing</li>
             <li>05 Containers</li>
@@ -66,15 +60,9 @@
             <li>17 Forms</li>
             <li>18 Accordion</li>
             <li>19 Lists</li>
-            <ul>
         </div>
-
-
     </nav>
     <!-- External JavaScript file for additional functionality -->
     <script src="design-system.js"></script>
 </body>
-
-</body>
-
 </html>
