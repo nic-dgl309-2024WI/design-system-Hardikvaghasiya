@@ -3,7 +3,11 @@
 :root {
   /* Define grayscale color variables */
   --clr-primary-text: #4f709c; /*Primary text color*/
-  --clr-primary-background-color: #213555 /*Dark background color is set*/;
+  --clr-primary-background-color: #213555; /*Dark background color is set*/
+  --clr-background-color: #faeee7; /*background color*/
+  --clr-text-highlight: #ff8ba7; /*text highlight*/
+  --clr-button-color: #ff8ba7; /*button color*/
+  --clr-button-text-color: #33272a; /*button text color*/
   --clr-accent: #f0f0f0; /*light accent color*/
   --clr-subheading: #81689d; /*subheading colours*/
   --clr-secondary-text: #e5d283; /*Secondary text color*/

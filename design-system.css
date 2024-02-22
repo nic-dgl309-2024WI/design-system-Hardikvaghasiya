@@ -151,31 +151,39 @@ body {
   color: red; /* This sets the text color of the active link to red */
   font-weight: bold; /* Optionally make the active link bold */
 }
+/* Initially hide the "About Me" and "Demo Site" links in the sidebar */
+#side-bar .mobile-only {
+  display: none;
+}
+@media (max-width: 858px) {
+  #side-bar .mobile-only {
+    display: block; /* Show the links in mobile view */
+  }
+}
 
 
 /* Ensure the sidebar is off-screen initially */
 @media (max-width: 858px) {
   #side-bar {
     position: relative;
-    left: -300px; /* sidebar width */
     width: 300px;
     top: 0;
     height: 100vh;
     overflow-y: auto;
     transition: left 0.3s;
-    z-index: 2; /* Adjust if necessary to ensure it's above other content */
+    left: -300px; /* Ensure this is set to hide the sidebar initially */
+    z-index: 2;
   }
-
-  /* When active, bring the sidebar on-screen */
-  #side-bar li a.active {
-    left: 0;
+  
+  #check:checked ~ #side-bar {
+    left: 0; /* This should bring the sidebar into view */
   }
 
   .icon-button {
-    display: block;
-    cursor: pointer;
+    display: block; /* Ensure the hamburger icon is visible in mobile view */
   }
 }
+
 
 /* ... (rest of your CSS) ... */
 
@@ -225,23 +233,32 @@ colours-link {
   box-sizing: border-box;
   background-color: var(--clr-accent);
   margin-bottom: 15%;
+  
 }
+
 
 .clearfix::after {
   content: "";
   align-items: center;
+  margin-top: 10px;
   display: flexbox;
   clear: both;
 }
 
+.bg-primary-text{
+  background-color: var(--clr-primary-text);
+}
 .bg-primary {
   background-color: var(--clr-primary-background-color);
 }
 .bg-accent {
-  background-color: var(--clr-accent);
+  background-color: var(--clr-accent); color: var(--clr-primary-text);
 }
 .bg-subheading {
-  background-color: var(--clr-subheading);
+  background-color: var(--clr-subheading); color: var(--clr-accent);
+}
+.bg-secondary-text{
+  background-color: var(--clr-secondary-text);
 }
 .text-primary {
   color: var(--clr-primary-text);
@@ -249,9 +266,15 @@ colours-link {
 .text-secondary {
   color: var(--clr-secondary-text);
 }
+.button-colors{
+  background-color: var(--clr-button-color); color: var(--clr-button-text-color);
+}
+.text-highlight{
+  background-color: var(--clr-background-color); color: var(--clr-text-highlight);
+}
 
 .color-info {
-  margin-top: 10px;
+  background-color: var(--clr-primary-background-color);
 }
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {

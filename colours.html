@@ -41,6 +41,10 @@
         </ul>
 
         <div id="side-bar">
+            <div class="mobile-only">
+                <li><a href="about-me.html" target="_blank">About Me</a></li>
+                <li><a href="#">Demo Site</a></li>
+            </div>
             <h4>Branding</h4>
             <li><a href="colours.html" class="active">01 Colours</li>
             <li><a href="typography.html">02 Typography</li>
@@ -72,19 +76,19 @@
     </nav>
     <section>
         <div class="swatch__color">
-            <div style="background-color: var(--clr-primary-text);">
+            <div class="bg-primary-text"">
                 <p>Primary Text Colours</p>
                 <p>Class: bg-primary-text</p>
                 <p>Hex: #4f709c</p>
                 <p>Uses: Headings, Links</p>
-                <div class="color-info">
+                <div class="bg-primary-text">
                     <p>Contrast with text-primary: Pass</p>
                     <!-- Contrast check -->
                 </div>
             </div>
 
 
-            <div style="background-color: var(--clr-primary-background-color);">
+            <div class="color-info">
                 <p>Primary Background Colours</p>
                 <p>Class: bg-primary-background-color</p>
                 <p>Hex: #213555</p>
@@ -97,35 +101,55 @@
 
 
 
-            <div style="background-color: var(--clr-accent); color: var(--clr-primary-text);">
+            <div class="bg-accent">
                 <p>Accent Colours</p>
                 <p>Class: bg-accent</p>
                 <p>Hex: #f0f0f0</p>
                 <p>Uses: Cards, Dialogs</p>
-                <div class="color-info">
+                <div class="bg-accent">
                     <p>Contrast with text-primary: Pass</p>
                     <!-- Contrast check -->
                 </div>
 
 
 
-                <div style="background-color: var(--clr-subheading); color: var(--clr-accent);">
-                    <p>Secondary Colours</p>
+                <div class="bg-subheading">
+                    <p>Subheading Colours</p>
                     <p>Class: bg-subheading</p>
                     <p>Hex: #81689D</p>
                     <p>Uses: Subheadings</p>
-                    <div class="color-info">
+                    <div class=".bg-subheading">
+                        <p>Contrast with text-primary: Pass</p>
+                        <!-- Contrast check -->
+                    </div>
+                </div>
+                <div class="button-colors">
+                    <p>Button Colours</p>
+                    <p>Class: button-colors</p>
+                    <p>Hex: #81689D</p>
+                    <p>Uses: Button</p>
+                    <div class="button-colors">
+                        <p>Contrast with text-primary: Pass</p>
+                        <!-- Contrast check -->
+                    </div>
+                </div>
+                <div class="text-highlight">
+                    <p>Secondary Colours</p>
+                    <p>Class: text-highlight</p>
+                    <p>Hex: #81689D</p>
+                    <p>Uses: Highlight Text</p>
+                    <div class="text-highlight">
                         <p>Contrast with text-primary: Pass</p>
                         <!-- Contrast check -->
                     </div>
                 </div>
 
-                <div style="background-color: var(--clr-secondary-text);">
+                <div class="bg-secondary-text">
                     <p>Secondary Text Colours</p>
                     <p>Class: bg-secondary-text</p>
                     <p>Hex: #e5d283</p>
                     <p>Uses: Secondary Text</p>
-                    <div class="color-info">
+                    <div class="bg-secondary-text">
                         <p>Contrast with text-primary: Pass</p>
                         <!-- Contrast check -->
                     </div>
