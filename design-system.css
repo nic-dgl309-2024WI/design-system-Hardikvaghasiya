@@ -349,3 +349,20 @@ th {
   left: 20%;
   position: absolute;
 }
+/* Visual Examples */
+.c-visual-examples h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.c-visual-examples p {
+  font-family: 'Playfair Display', serif;
+}
+
+.c-visual-examples h3.quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.c-visual-examples p.quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
