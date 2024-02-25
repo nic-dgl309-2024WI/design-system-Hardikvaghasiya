@@ -58,44 +58,19 @@ ol {
   --font-weight-normal: 400; /* Normal weight */
   --font-weight-bold: 700; /* Bold weight */
 }
+
 /* Utility Classes for Font Family */
 .ff-Playfair Display {
-  font-family: var(--font-heading);
+  font-family: var(--font-primary);
 }
 
 .ff-quicksand {
-  font-family: var(--font-body);
+  font-family: var(--font-secondary);
 }
 
-/* Utility Classes for Font Size */
-.font-size-small {
-  font-size: var(--font-size-small);
-}
 
-.font-size-base {
-  font-size: var(--font-size-base);
-}
-
-.font-size-large {
-  font-size: var(--font-size-large);
-}
-
-/* Utility Classes for Font Weight */
-.font-weight-light {
-  font-weight: var(--font-weight-light);
-}
-
-.font-weight-normal {
-  font-weight: var(--font-weight-normal);
-}
-
-.font-weight-bold {
-  font-weight: var(--font-weight-bold);
-}
-
-/*font families utility class*/
 /* Playfair Display Font Family */
-.u-ff-Playfair Display { font-family: 'Playfair Display', sans-serif; }
+.u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
 
 /* Quicksand Font Family */
 .u-ff-quicksand { font-family: 'quicksand', sans-serif; }
@@ -111,7 +86,15 @@ ol {
 .u-fw-800 { font-weight: 800; }
 .u-fw-900 { font-weight: 900; } /* Black */
 
-
+/* Utility Classes for Font Size */
+/* Font Size */
+.u-fs-12 { font-size: 12px; }
+.u-fs-14 { font-size: 14px; }
+.u-fs-16 { font-size: 16px; } /* Base size for body text */
+.u-fs-18 { font-size: 18px; }
+.u-fs-20 { font-size: 20px; }
+.u-fs-24 { font-size: 24px; } /* Commonly used for headings */
+.u-fs-32 { font-size: 32px; }
 
 /* Letter Spacing Utilities */
 .u-ls-1 { letter-spacing: 1px; }
@@ -128,12 +111,9 @@ ol {
 .u-fs-italic { font-style: italic; }
 
 /* Font Family Utilities */
-.u-ff-Playfair Display { font-family: 'Playfair Display', sans-serif; }
+.u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
 .u-ff-quicksand { font-family: 'quicksand', sans-serif; }
 
-/* Font Weight Utilities */
-.u-fw-400 { font-weight: 400; }
-.u-fw-700 { font-weight: 700; }
 
 /* Font Size Utilities */
 .u-fs-large { font-size: 2.5rem; } /* For H1 */

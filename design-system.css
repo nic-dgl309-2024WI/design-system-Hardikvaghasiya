@@ -15,7 +15,7 @@ nav {
   background-color: var(--clr-primary-background-color);
   height: 80px;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 /* Styles the page logo within the navbar, setting color, font size, line height, padding, and weight. */
@@ -305,8 +305,8 @@ header p {
   text-align: center;
 }
 
-.ff-Montserrat {
-  font-family: "Montserrat", sans-serif;
+.ff-Playfair Display {
+  font-family: "Playfair Display", sans-serif;
   text-align: center;
 }
 
@@ -334,8 +334,8 @@ td {
 th {
   background-color: var(--clr-accent);
 }
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.Playfair Display {
+  font-family: "Playfair Display", sans-serif;
   color: var(--clr-primary-background-color);
 }
 .quicksand {
