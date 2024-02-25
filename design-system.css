@@ -65,7 +65,7 @@ links:hover {
   transition: 0.5s;
 }
 body {
-  color: #333;
+  color: var(--clr-primary-text);
   text-transform: none;
   text-decoration: none;
   text-anchor: none;
@@ -148,7 +148,7 @@ body {
   scrollbar-width: none; /* Hides scrollbar */
 }
 #side-bar li a.active {
-  color: red; /* This sets the text color of the active link to red */
+  color: var(--clr-active); /* This sets the text color of the active link to red */
   font-weight: bold; /* Optionally make the active link bold */
 }
 /* Initially hide the "About Me" and "Demo Site" links in the sidebar */
@@ -206,12 +206,12 @@ colours-link {
 /* Hover effect for the "Colours" link */
 #colours-link a.active {
   font-weight: bold;
-  color: red; /* Adjust the color to match your design */
+  color:  var(--clr-active); /* Adjust the color to match your design */
   background-color: transparent; /* Optional: set a background color if desired */
 }
 #colours-link a:hover {
   font-weight: bold;
-  color: red;
+  color: var(--clr-active);
   background-color: transparent; /* Change to the color you want on hover */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
@@ -219,7 +219,7 @@ colours-link {
 /*swatches */
 .swatch__color {
   padding: 10px;
-  color: white;
+  color: var(--clr-accent);
   margin-left: 0px;
   top: 15%;
   left: 25%;
