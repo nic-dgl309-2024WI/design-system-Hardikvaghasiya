@@ -19,7 +19,7 @@ nav {
 }
 
 /* Styles the page logo within the navbar, setting color, font size, line height, padding, and weight. */
-label.c-page-logo {
+label.c-navigation__logo {
   color: var(--clr-accent); /* Assumes a CSS variable for primary color */
   font-size: 20px;
   line-height: 80px;
@@ -75,7 +75,7 @@ body {
 }
 
 /* Styles the hamburger icon button, setting font size, color, positioning, and display properties. */
-.c-icon-button {
+.c-c-navigation__icon-button {
   font-size: 30px;
   color: var(--clr-accent); /* Primary color variable */
   float: right;
@@ -103,7 +103,7 @@ body {
 
 /* Defines styles for mobile view, including showing the hamburger button, styling the navigation menu, and adjusting link styles. */
 @media (max-width: 858px) {
-  .icon-button {
+  .c-navigation__icon-button {
     display: block; /* Show the hamburger menu icon */
   }
   ul {
@@ -135,7 +135,7 @@ body {
 }
 
 /* Styles the sidebar, including width, position, height, overflow behavior, padding, and scrollbar appearance. */
-#c-side-bar{
+#c-side__sidebar{
   background-color: var(--clr-accent);
   width: 300px;
   position: relative;
@@ -147,16 +147,16 @@ body {
   padding: 20px;
   scrollbar-width: none; /* Hides scrollbar */
 }
-#c-side-bar li a.c-active {
+#c-side__sidebar li a.c-active {
   color: var(--clr-c-active); /* This sets the text color of the c-active link to red */
   font-weight: bold; /* Optionally make the c-active link bold */
 }
 /* Initially hide the "About Me" and "Demo Site" links in the sidebar */
-#c-side-bar .c-mobile-only {
+#c-side__sidebar .c-mobile__only {
   display: none;
 }
 @media (max-width: 858px) {
-  #c-side-bar .c-mobile-only {
+  #c-side__sidebar .c-mobile__only {
     display: block; /* Show the links in mobile view */
   }
 }
@@ -164,7 +164,7 @@ body {
 
 /* Ensure the sidebar is off-screen initially */
 @media (max-width: 858px) {
-  #c-side-bar.active {
+  #c-side__sidebar.active {
     transform: translateX(0);
     position: relative;
     width: 300px;
@@ -176,11 +176,11 @@ body {
     z-index: 2;
   }
   
-  #check:checked ~ #c-side-bar {
+  #check:checked ~ #c-side__sidebar {
     left: 0; /* This should bring the sidebar into view */
   }
 
-  .c-icon-button {
+  .c-c-navigation__icon-button {
     display: block; /* Ensure the hamburger icon is visible in mobile view */
   }
 }
@@ -199,8 +199,8 @@ colours-link {
 }
 
 /* Styles for headings and list items in the sidebar. */
-#c-side-bar h2,
-#c-side-bar ul {
+#c-side__sidebar h2,
+#c-side__sidebar ul {
   list-style: none; /* Removes default list styling */
 }
 /*colours*/
@@ -246,19 +246,19 @@ colours-link {
   clear: both;
 }
 
-.c-bg-primary-text{
+.c-bg_primary__text{
   background-color: var(--clr-primary-text);
 }
 .bg-primary {
   background-color: var(--clr-primary-background-color);
 }
-.c-bg-accent {
+.c-bg__accent {
   background-color: var(--clr-accent); color: var(--clr-primary-text);
 }
-.c-bg-subheading {
+.c-bg__subheading {
   background-color: var(--clr-subheading); color: var(--clr-accent);
 }
-.bg-secondary-text{
+.c-bg-secondary__text{
   background-color: var(--clr-secondary-text);
 }
 .text-primary {
@@ -267,14 +267,14 @@ colours-link {
 .text-secondary {
   color: var(--clr-secondary-text);
 }
-.c-button-colors{
+.c-button__colors{
   background-color: var(--clr-button-color); color: var(--clr-button-text-color);
 }
-.c-text-highlight{
+.c-text__highlight{
   background-color: var(--clr-background-color); color: var(--clr-text-highlight);
 }
 
-.c-color-info {
+.c-color__info {
   background-color: var(--clr-primary-background-color);
 }
 /* Responsive adjustments for smaller screens */
@@ -343,7 +343,7 @@ th {
   font-family: "Quicksand", sans-serif;
   color: var(--clr-primary-background-color);
 }
-.c-body-text {
+.c-body__text {
   float: right;
   top: 25%;
   left: 20%;
