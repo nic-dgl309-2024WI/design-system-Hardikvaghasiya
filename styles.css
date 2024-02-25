@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quicksand:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;700&family=Quicksand:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
   /* Define grayscale color variables */
   --clr-primary-text: #4f709c; /*Primary text color*/
@@ -44,7 +45,7 @@ ol {
 /* CSS Variables */
 :root {
   /*font families*/
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "Playfair Display", sans-serif;
   --font-secondary: "Quicksand", sans-serif;
 
   /* Font sizes */
@@ -58,7 +59,7 @@ ol {
   --font-weight-bold: 700; /* Bold weight */
 }
 /* Utility Classes for Font Family */
-.ff-montserrat {
+.ff-Playfair Display {
   font-family: var(--font-heading);
 }
 
@@ -93,8 +94,8 @@ ol {
 }
 
 /*font families utility class*/
-/* Montserrat Font Family */
-.u-ff-montserrat { font-family: 'montserrat', sans-serif; }
+/* Playfair Display Font Family */
+.u-ff-Playfair Display { font-family: 'Playfair Display', sans-serif; }
 
 /* Quicksand Font Family */
 .u-ff-quicksand { font-family: 'quicksand', sans-serif; }
@@ -127,7 +128,7 @@ ol {
 .u-fs-italic { font-style: italic; }
 
 /* Font Family Utilities */
-.u-ff-montserrat { font-family: 'montserrat', sans-serif; }
+.u-ff-Playfair Display { font-family: 'Playfair Display', sans-serif; }
 .u-ff-quicksand { font-family: 'quicksand', sans-serif; }
 
 /* Font Weight Utilities */
