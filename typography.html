@@ -1,222 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <!-- Ensures proper mobile scaling and rendering for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hardik Vaghasiya</title>
-    <!-- Main stylesheet for the page -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <!-- Additional stylesheet to override some styles from styles.css if necessary -->
     <link rel="stylesheet" type="text/css" href="design-system.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Navigation bar containing the logo, menu icon, and navigation links -->
     <nav>
-
-        <!-- Hidden checkbox used to toggle the mobile menu on/off -->
         <input type="checkbox" id="check">
-        <!-- Hamburger menu icon that toggles the sidebar or navigation menu in mobile view -->
-        <label for="check" class="icon-button">
-            <i class="fa fa-bars"></i>
-        </label>
-        <!-- Site logo or title -->
-        <label class="page-logo">Logo</label>
-        <!-- List of navigation links -->
+        <label for="check" class="c-icon-button"><i class="fa fa-bars"></i></label>
+        <label class="c-page-logo">Logo</label>
         <ul>
             <li><a href="about-me.html" target="_blank">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
         </ul>
     </nav>
-    <!-- Sidebar containing additional navigation or content links -->
-    <div id="side-bar">
-        <div class="mobile-only">
+    <div id="c-side-bar">
+        <div class="c-mobile-only">
             <li><a href="about-me.html" target="_blank">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
         </div>
-        <!-- Each section in the sidebar categorizes different types of content or links -->
         <h4>Branding</h4>
-        <ul>
-
-            <li><a href="colours.html">01 Colours</li>
-            <li><a href="typography.html" class="active">02 Typography</li>
-            <li>03 Logo</li>
-        </ul>
-        <!-- Repeated sections for different categories like Utilities, Navigation, etc. -->
+        <li><a href="colours.html" >01 Colours</a></li>
+        <li><a href="typography.html" class="c-active0">02 Typography</a></li>
+        <li><a href="index.html">03 Logo</a></li>
         <h4>Utilities</h4>
-        <ul>
-
-            <li>04 Spacing</li>
-            <li>05 Containers</li>
-            <li>06 Images</li>
-            <li>07 Interactive</li>
-            <li>08 Feedback</li>
-        </ul>
-        <!-- Continued categorization for comprehensive site navigation or content structure -->
+        <li>04 Spacing</li>
+        <li>05 Containers</li>
+        <li>06 Images</li>
+        <li>07 Interactive</li>
+        <li>08 Feedback</li>
         <h4>Navigation</h4>
-        <ul>
-
-            <li>09 Navbars</li>
-            <li>10 Breadcrumbs</li>
-            <li>11 Pagination</li>
-        </ul>
+        <li>09 Navbars</li>
+        <li>10 Breadcrumbs</li>
+        <li>11 Pagination</li>
         <h4>Blocks</h4>
-        <ul>
-
-            <li>12 Hero</li>
-            <li>13 Carousel</li>
-            <li>14 Slats</li>
-            <li>15 Footer</li>
-        </ul>
+        <li>12 Hero</li>
+        <li>13 Carousel</li>
+        <li>14 Slats</li>
+        <li>15 Footer</li>
         <h4>Components</h4>
-        <ul>
-
-            <li>16 Cards</li>
-            <li>17 Forms</li>
-            <li>18 Accordion</li>
-            <li>19 Lists</li>
+        <li>16 Cards</li>
+        <li>17 Forms</li>
+        <li>18 Accordion</li>
+        <li>19 Lists</li>
         </ul>
     </div>
     <main>
-
-
-
-        <div class="body-text">
+        <div class="c-body-text">
             <section>
                 <header>
-                    <h1 class="ff-quicksand">Typography Showcase</h1>
+                    <h1 class="c-u-ff-quicksand">Typography Showcase</h1>
                 </header>
-
-                <h1 class="u-ff-Playfair-Display u-fw-700 u-fs-large u-ls-2 u-lh-1-5">Playfair Display Font Family</h1>
-                <div class="ff-Playfair Display">
-                    <!-- Uppercase Letters -->
-                    <p class="u-ff-Playfair-Display u-fw-400 u-fs-medium u-ls-1 u-lh-1-5">A-Z: A B C D E F G H I J K L M N O P
-                        Q R S T U V W X Y Z</p>
-                    <!-- Lowercase Letters -->
+                <h1 class="c-u-ff-Playfair-Display c-fw-700 c-fs-large c-ls-2 c-lh-1-5">Playfair Display Font Family</h1>
+                <div>
+                    <p class="c-u-ff-Playfair-Display c-fw-400 c-fs-medium c-ls-1 c-lh-1-5">A-Z: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
                     <div>a-z: a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-                    <!-- Numbers -->
                     <div>0-9: 0 1 2 3 4 5 6 7 8 9</div>
-
                 </div>
             </section>
             <section>
-                <h1 class="u-ff-quicksand u-fw-700 u-fs-large u-ls-2 u-lh-1-5">Quicksand Font Family</h1>
-                <div class="ff-quicksand">
-                    <!-- Uppercase Letters -->
+                <h1 class="c-ff-quicksand c-fw-700 c-fs-large c-ls-2 c-lh-1-5">Quicksand Font Family</h1>
+                <div class="c-u-ff-quicksand">
                     <div>A-Z: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
-                    <!-- Lowercase Letters -->
                     <div>a-z: a b c d e f g h i j k l m n o p q r s t u v w x y z</div>
-                    <!-- Numbers -->
                     <div>0-9: 0 1 2 3 4 5 6 7 8 9</div>
                 </div>
             </section>
 
         </div>
         <section>
-            <table class="use-table">
+            <table class="c-use-table">
                 <thead>
-                    <tr>
-                        <th>Element</th>
-                        <th>Font Family</th>
-                        <th>Font Weight</th>
-                        <th>Font Size</th>
-                        <th>Line Height</th>
-                        <th>Font Style</th>
-                        <th>Example</th>
-                    </tr>
+                  <tr>
+                    <th>Element</th>
+                    <th>Font Family</th>
+                    <th>Font Weight</th>
+                    <th>Font Size</th>
+                    <th>Line Height</th>
+                    <th>Font Style</th>
+                    <th>Example</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <!-- Playfair Display for Headings -->
-                    <tr class="u-ff-Playfair-Display u-fw-700 u-fs-small u-ls-2 u-lh-1-5">
-                        <td>H1 (Main Heading)</td>
-                        <td>Playfair Display</td>
-                        <td>700</td>
-                        <td>2.5rem</td>
-                        <td>Normal</td>
-                        <td>Normal</td>
-                        <td>Hey there</td>
-                    </tr>
-                    <!-- ... other heading levels ... -->
-
-                    <!-- Quicksand for Body Text -->
-                    <tr class="u-ff-quicksand u-fw-400 u-fs-small u-ls-2 u-lh-1-5">
-                        <td>Body Text (Paragraph)</td>
-                        <td>Quicksand</td>
-                        <td>400</td>
-                        <td>1rem</td>
-                        <td>1.6</td>
-                        <td>Normal</td>
-                        <td>Hey there</td>
-                    </tr>
-                    <!-- ... other text elements like captions or small text ... -->
+                  <!-- Playfair Display for Headings -->
+                  <tr class="c-u-ff-Playfair-Display c-u-fw-700 c-fs-small c-u-ls-2 c-u-lh-1-5">
+                    <td>H1 (Main Heading)</td>
+                    <td>Playfair Display</td>
+                    <td>700</td>
+                    <td>2.5rem</td>
+                    <td>Normal</td>
+                    <td>Normal</td>
+                    <td>Hey there</td>
+                  </tr>
+                  <!-- Quicksand for Body Text -->
+                  <tr class="c-u-ff-quicksand c-u-fw-400 c-fs-small c-u-ls-2 c-u-lh-1-5">
+                    <td>Body Text (Paragraph)</td>
+                    <td>Quicksand</td>
+                    <td>400</td>
+                    <td>1rem</td>
+                    <td>1.6</td>
+                    <td>Normal</td>
+                    <td>Hey there</td>
+                  </tr>
+                  <!-- ... other text elements like captions or small text ... -->
                 </tbody>
         </section>
         </div>
         </table>
-        <!--Refrence from chatgpt-->
-        <!-- Utility Classes Specification Table -->
-        <div class="utility-classes-specification">
-            <h2>Typography Utility Classes Uses</h2>
-            <table border="1" style="width: 100%; border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th>Utility Class</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Font Family Playfair Display -->
-                    <tr>
-                        <td>.u-ff-Playfair Display</td>
-                        <td>Applies the Playfair Display font family.</td>
-                        <td><span class="u-ff-Playfair-Display">Playfair Display Text</span></td>
-                    </tr>
-                    <!-- Font Family Quicksand -->
-                    <tr>
-                        <td>.u-ff-quicksand</td>
-                        <td>Applies the Quicksand font family.</td>
-                        <td><span class="u-ff-quicksand">Quicksand Text</span></td>
-                    </tr>
-                    <!-- Font Weight 700 -->
-                    <tr>
-                        <td>.u-fw-700</td>
-                        <td>Applies a font weight of 700 (bold).</td>
-                        <td><span class="u-ff-Playfair-Display u-fw-700">Bold Text</span></td>
-                    </tr>
-                    <!-- Font Weight 400 -->
-                    <tr>
-                        <td>.u-fw-400</td>
-                        <td>Applies a font weight of 400 (normal).</td>
-                        <td><span class="u-ff-quicksand u-fw-400">Normal Weight Text</span></td>
-                    </tr>
-                    <!-- Font Size Large -->
-                    <tr>
-                        <td>.u-fs-large</td>
-                        <td>Applies a large font size (2.5rem).</td>
-                        <td><span class="u-ff-Playfair-Display u-fs-large">Large Size Text</span></td>
-                    </tr>
-                    <!-- Font Size Medium -->
-                    <tr>
-                        <td>.u-fs-medium</td>
-                        <td>Applies a medium font size (1rem).</td>
-                        <td><span class="u-ff-quicksand u-fs-medium">Medium Size Text</span></td>
-                    </tr>
-                    <!-- ... other utility classes ... -->
-                </tbody>
-            </table>
-        </div>
+    <!-- Reference from chatGPT -->
+    <!-- Utility Classes Specification Table -->
+    <div class="c-utility-classes-specification">
+        <h2>Typography Utility Classes Uses</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Utility Class</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Font Family Playfair Display -->
+                <tr>
+                    <td>.c-u-ff-Playfair-Display</td>
+                    <td>Applies the Playfair Display font family.</td>
+                    <td><span class="c-u-ff-Playfair-Display">Playfair Display Text</span></td>
+                </tr>
+                <!-- Font Family Quicksand -->
+                <tr>
+                    <td>.c-u-ff-quicksand</td>
+                    <td>Applies the Quicksand font family.</td>
+                    <td><span class="c-u-ff-quicksand">Quicksand Text</span></td>
+                </tr>
+                <!-- Font Weight 700 -->
+                <tr>
+                    <td>.c-fw-700</td>
+                    <td>Applies a font weight of 700 (bold).</td>
+                    <td><span class="c-u-ff-PlayfairDisplay c-fw-700">Bold Text</span></td>
+                </tr>
+                <!-- Font Weight 400 -->
+                <tr>
+                    <td>.c-fw-400</td>
+                    <td>Applies a font weight of 400 (normal).</td>
+                    <td><span class="c-u-ff-quicksand c-fw-400">Normal Weight Text</span></td>
+                </tr>
+                <!-- Font Size Large -->
+                <tr>
+                    <td>.c-fs-large</td>
+                    <td>Applies a large font size (2.5rem).</td>
+                    <td><span class="c-u-ff-PlayfairDisplay c-fs-large">Large Size Text</span></td>
+                </tr>
+                <!-- Font Size Medium -->
+                <tr>
+                    <td>.c-fs-medium</td>
+                    <td>Applies a medium font size (1rem).</td>
+                    <td><span class="c-u-ff-quicksand c-fs-medium">Medium Size Text</span></td>
+                </tr>
+                <!-- Additional utility classes can be added here with the 'c-' prefix -->
+            </tbody>
+        </table>
+    </div>
+    
 
 
         </div>

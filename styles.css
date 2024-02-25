@@ -60,61 +60,47 @@ ol {
 }
 
 /* Utility Classes for Font Family */
-.ff-Playfair Display {
-  font-family: var(--font-primary);
-}
+.c-u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
+.c-u-ff-quicksand { font-family: 'Quicksand', sans-serif; }
 
-.ff-quicksand {
-  font-family: var(--font-secondary);
-}
-
-
-/* Playfair Display Font Family */
-.u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
-
-/* Quicksand Font Family */
-.u-ff-quicksand { font-family: 'quicksand', sans-serif; }
-
-/* Utility Classes for Font Weights */
-.u-fw-100 { font-weight: 100; }
-.u-fw-200 { font-weight: 200; }
-.u-fw-300 { font-weight: 300; }
-.u-fw-400 { font-weight: 400; } /* Regular */
-.u-fw-500 { font-weight: 500; }
-.u-fw-600 { font-weight: 600; }
-.u-fw-700 { font-weight: 700; } /* Bold */
-.u-fw-800 { font-weight: 800; }
-.u-fw-900 { font-weight: 900; } /* Black */
+/* Utility Classes for Font Weight */
+.c-fw-100 { font-weight: 100; }
+.c-fw-200 { font-weight: 200; }
+.c-fw-300 { font-weight: 300; }
+.c-fw-400 { font-weight: 400; }
+.c-fw-500 { font-weight: 500; }
+.c-fw-600 { font-weight: 600; }
+.c-fw-700 { font-weight: 700; }
+.c-fw-800 { font-weight: 800; }
+.c-fw-900 { font-weight: 900; }
 
 /* Utility Classes for Font Size */
-/* Font Size */
-.u-fs-12 { font-size: 12px; }
-.u-fs-14 { font-size: 14px; }
-.u-fs-16 { font-size: 16px; } /* Base size for body text */
-.u-fs-18 { font-size: 18px; }
-.u-fs-20 { font-size: 20px; }
-.u-fs-24 { font-size: 24px; } /* Commonly used for headings */
-.u-fs-32 { font-size: 32px; }
+.c-fs-12 { font-size: 12px; }
+.c-fs-14 { font-size: 14px; }
+.c-fs-16 { font-size: 16px; }
+.c-fs-18 { font-size: 18px; }
+.c-fs-20 { font-size: 20px; }
+.c-fs-24 { font-size: 24px; }
+.c-fs-32 { font-size: 32px; }
 
 /* Letter Spacing Utilities */
-.u-ls-1 { letter-spacing: 1px; }
-.u-ls-2 { letter-spacing: 2px; }
-.u-ls-3 { letter-spacing: 3px; }
+.c-ls-1 { letter-spacing: 1px; }
+.c-ls-2 { letter-spacing: 2px; }
+.c-ls-3 { letter-spacing: 3px; }
 
 /* Line Height Utilities */
-.u-lh-1 { line-height: 1; }
-.u-lh-1-5 { line-height: 1.5; }
-.u-lh-2 { line-height: 2; }
+.c-lh-1 { line-height: 1; }
+.c-lh-1-5 { line-height: 1.5; }
+.c-lh-2 { line-height: 2; }
 
 /* Font Style Utilities */
-.u-fs-normal { font-style: normal; }
-.u-fs-italic { font-style: italic; }
-
+.c-fs-normal { font-style: normal; }
+.c-fs-italic { font-style: italic; }
 /* Font Family Utilities */
-.u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
-.u-ff-quicksand { font-family: 'quicksand', sans-serif; }
-
+.c-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
+.c-ff-quicksand { font-family: 'Quicksand', sans-serif; }
 
 /* Font Size Utilities */
-.u-fs-large { font-size: 2.5rem; } /* For H1 */
-.u-fs-medium { font-size: 1rem; } /* For paragraph text */
+.c-fs-large { font-size: 2.5rem; } /* For H1 */
+.c-fs-medium { font-size: 1rem; } /* For paragraph text */
+
