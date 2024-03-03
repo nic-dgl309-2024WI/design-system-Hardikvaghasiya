@@ -6,9 +6,12 @@
 }
 
 /* Hides the browser's default scrollbar for the body element to create a cleaner look. */
-body::-webkit-scrollbar {
-  display: none;
+/* For Webkit browsers */
+#c-side__sidebar::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* make scrollbar transparent */
 }
+
 
 /* Ensure html and body take full height */
 html, body {
@@ -153,6 +156,7 @@ body {
   height: calc(100% - 80px); /* Adjust the height based on the nav bar */
   overflow-y: auto; /* Scroll for overflow content */
   padding: 20px;
+  overflow: hidden;
   background-color: var(--clr-accent);
   z-index: 99; /* Make sure it's above other elements */
 }
