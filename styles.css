@@ -171,6 +171,25 @@ ol {
 .l-align-content-space-around { align-content: space-around; }
 .l-align-content-stretch { align-content: stretch; }
 
+/* Grid Container */
+.l-grid { display: grid; }
+.l-inline-grid { display: inline-grid; }
+
+/* Grid Template Columns & Rows - Define as needed */
+.l-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.l-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+
+.l-grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
+.l-grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
+
+
+/* Gap - Control spacing between grid items */
+.l-gap-0 { gap: 0rem; } /* 0px */
+.l-gap-1 { gap: 1rem; } /* 16px */
+.l-gap-2 { gap: 2rem; } /* 32px */
+
+
 
 
 
