@@ -132,5 +132,46 @@ ol {
 .l-px-0_25 { padding-right: 0.25rem; padding-left: 0.25rem; } /* Horizontal padding */
 .l-py-0_25 { padding-top: 0.25rem; padding-bottom: 0.25rem; } /* Vertical padding */
 
+/*refrence from chat gpt*/
+/* Flex container */
+.l-flex { display: flex; }
+.l-flex-inline { display: inline-flex; }
+
+/* Flex direction */
+.l-flex-row { flex-direction: row; }
+.l-flex-row-reverse { flex-direction: row-reverse; }
+.l-flex-column { flex-direction: column; }
+.l-flex-column-reverse { flex-direction: column-reverse; }
+
+/* Flex wrap */
+.l-flex-wrap { flex-wrap: wrap; }
+.l-flex-nowrap { flex-wrap: nowrap; }
+.l-flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+/* Justify Content - Alignment along the main axis */
+.l-justify-start { justify-content: flex-start; }
+.l-justify-end { justify-content: flex-end; }
+.l-justify-center { justify-content: center; }
+.l-justify-between { justify-content: space-between; }
+.l-justify-around { justify-content: space-around; }
+.l-justify-evenly { justify-content: space-evenly; }
+
+/* Align Items - Alignment along the cross axis */
+.l-align-items-start { align-items: flex-start; }
+.l-align-items-end { align-items: flex-end; }
+.l-align-items-center { align-items: center; }
+.l-align-items-baseline { align-items: baseline; }
+.l-align-items-stretch { align-items: stretch; }
+
+/* Align Content - Handling extra space in multi-line flex containers */
+.l-align-content-start { align-content: flex-start; }
+.l-align-content-end { align-content: flex-end; }
+.l-align-content-center { align-content: center; }
+.l-align-content-space-between { align-content: space-between; }
+.l-align-content-space-around { align-content: space-around; }
+.l-align-content-stretch { align-content: stretch; }
+
+
+
 
 
