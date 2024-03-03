@@ -114,3 +114,23 @@ ol {
 .l-margin-t-1_25 { margin-top: 1.25rem; } /* 20px */
 .l-margin-t-1_5 { margin-top: 1.5rem; } /* 24px */
 
+/* Apply padding to all four sides */
+.l-p-0 { padding: 0rem; } /* 0px */
+.l-p-0_25 { padding: 0.25rem; } /* 4px */
+.l-p-0_5 { padding: 0.5rem; } /* 8px */
+.l-p-0_75 { padding: 0.75rem; } /* 12px */
+.l-p-1 { padding: 1rem; } /* 16px */
+
+/* Apply padding to top, bottom, right, left */
+.l-pt-0_25 { padding-top: 0.25rem; } /* 4px */
+.l-pb-0_25 { padding-bottom: 0.25rem; } /* 4px */
+.l-pr-0_25 { padding-right: 0.25rem; } /* 4px */
+.l-pl-0_25 { padding-left: 0.25rem; } /* 4px */
+
+
+/* Apply padding horizontally and vertically */
+.l-px-0_25 { padding-right: 0.25rem; padding-left: 0.25rem; } /* Horizontal padding */
+.l-py-0_25 { padding-top: 0.25rem; padding-bottom: 0.25rem; } /* Vertical padding */
+
+
+
