@@ -328,6 +328,12 @@ header p {
   flex-flow: row;
   text-align: center;
 }
+.c-u-ff-quicksand{
+  color: var(--clr-primary-text);
+}
+.c-ff-Playfair-Display{
+ color: var(--clr-subheading);
+}
 
 .c-ff-PlayfairDisplay {
   font-family: "Playfair Display", sans-serif;
@@ -337,6 +343,7 @@ header p {
 .c-ff-quicksand {
   font-family: "Quicksand", sans-serif;
   text-align: start;
+  color: var(--clr-subheading);
 }
 
 .character-grid div {
