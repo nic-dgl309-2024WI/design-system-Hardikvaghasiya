@@ -179,18 +179,48 @@ ol {
 .l-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
 .l-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
 
-
 .l-grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
 .l-grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
-
 
 /* Gap - Control spacing between grid items */
 .l-gap-0 { gap: 0rem; } /* 0px */
 .l-gap-1 { gap: 1rem; } /* 16px */
 .l-gap-2 { gap: 2rem; } /* 32px */
 
+/* Container classes start */
+/* Mobile-first container: max-width for mobile devices */
+.container-mobile {
+  max-width: 100%; /* Full width on mobile */
+  padding: 16px; /* Adequate padding around the content */
+}
 
+/* Full-width utility class */
+.full-width {
+  width: 100%;
+}
 
+/* Media query for desktop devices */
+@media (min-width: 1024x) {
+  .container-desktop {
+    max-width: 1200px; /* Constrained max-width for desktop */
+    margin: 0 auto; /* Centering the container */
+    padding: 0 32px; /* Adjusted padding for desktop */
+  }
+}
+
+/* Additional classes for spacing, can be adjusted as needed */
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.padding-horizontal {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 
 
