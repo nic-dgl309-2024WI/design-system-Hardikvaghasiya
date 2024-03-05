@@ -222,33 +222,30 @@ ol {
   padding-right: 20px;
 }
 
-
-
-
 .example {
-  border: 2px solid #4f709c; /* Using your primary text color for the border */
-  margin: 16px;
-  padding: 16px;
-  transition: max-width 0.5s ease; /* Smooth transition for demonstration */
-}
+            border: 2px solid #4f709c; /* Using your primary text color for the border */
+            margin: 16px;
+            padding: 16px;
+            transition: max-width 0.5s ease; /* Smooth transition for demonstration */
+        }
 
-.max-width-example {
-  background-color: #faeee7; /* Using your background color variable */
-  padding: 16px;
-  margin-bottom: 16px; /* Space between the elements */
-}
+        .max-width-example {
+            background-color: #faeee7; /* Using your background color variable */
+            padding: 16px;
+            margin-bottom: 16px; /* Space between the elements */
+        }
 
-.full-width-example {
-  background-color: #ff8ba7; /* Using your button color variable */
-  padding: 16px;
-  width: 100%;
-}
+        .full-width-example {
+            background-color: #ff8ba7; /* Using your button color variable */
+            padding: 16px;
+            width: 100%;
+        }
 
-@media (min-width: 1024px) {
-  .container-desktop {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 32px;
-      background-color: #e5d283; /* Using your secondary text color variable for background */
-  }
-}
+        @media (min-width: 1024px) {
+            .container-desktop {
+                max-width: 1200px;
+                margin: auto;
+                padding: 0 32px;
+                background-color: #e5d283; /* Using your secondary text color variable for background */
+            }
+        }
