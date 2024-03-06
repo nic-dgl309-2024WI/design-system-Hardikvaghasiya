@@ -108,7 +108,7 @@ ol {
 /* Margin Utilities */
 .l-margin-t-0 { margin-top: 0rem; } /* 0px */
 .l-margin-t-0_25 { margin-top: 0.25rem; } /* 4px */
-.l-margin-t-0_5 { margin-top: 0.5rem; } /* 8px */
+.l-margin-t-0_5 { margin-top: 0.5rem;  } /* 8px */
 .l-margin-t-0_75 { margin-top: 0.75rem; } /* 12px */
 .l-margin-t-1 { margin-top: 1rem; } /* 16px */
 .l-margin-t-1_25 { margin-top: 1.25rem; } /* 20px */
@@ -203,8 +203,9 @@ ol {
 @media (min-width: 1024x) {
   .container-desktop {
     max-width: 1200px; /* Constrained max-width for desktop */
-    margin: 0 auto; /* Centering the container */
-    padding: 0 32px; /* Adjusted padding for desktop */
+    margin: 20px auto; /* Centering the container */
+    padding: 0 32px;
+     /* Adjusted padding for desktop */
   }
 }
 
@@ -246,6 +247,6 @@ ol {
                 max-width: 1200px;
                 margin: auto;
                 padding: 0 32px;
-                background-color: #e5d283; /* Using your secondary text color variable for background */
+                background-color: transparent; /* Using your secondary text color variable for background */
             }
         }

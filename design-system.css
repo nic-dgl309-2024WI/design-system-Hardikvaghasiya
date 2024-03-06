@@ -17,7 +17,8 @@
 /* Ensure html and body take full height */
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 60px;
+  overflow: auto;
 }
 
 /* Styles the navigation bar, setting its height and full width. */
@@ -458,6 +459,13 @@ code {
 
 /* Additional responsive image class */
 .profile-img {
-  max-width: 100%;
-  height: auto;
+  width: 500px;
+
+  height: 500px;
+  display: block;
+  margin: 20px auto;
+
+}
+.some-class {
+  background-color: #FAC; /* This is just an example color */
 }
