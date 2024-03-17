@@ -129,7 +129,12 @@ body {
 
 /* Initially Hidden Mobile-only Links in Sidebar */
 #c-side__sidebar .c-mobile__only {
-  display: none;
+  display:none;
+}
+@media (max-width: 858px) {
+  #c-side__sidebar .c-mobile__only {
+    display: block;
+  }
 }
 
 /* Main Content Margin Adjustments */
