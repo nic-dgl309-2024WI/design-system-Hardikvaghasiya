@@ -75,9 +75,9 @@ nav ul li a {
 }
 
 /* Navigation Links States Styling */
-a.c-active,
+a.c-active__state,
 a:hover,
-links.c-active,
+links.c-active__state,
 links:hover {
   font-weight: 500;
   transition: 0.5s;
@@ -158,7 +158,7 @@ colours-link {
 }
 
 /* Hover effect for the "Colours" link */
-#colours-link a.c-active {
+#colours-link a.c-active__state {
   font-weight: bold;
   color: var(--color-active);
   /* Adjust the color to match your design */
