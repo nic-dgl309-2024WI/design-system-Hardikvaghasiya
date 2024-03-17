@@ -197,23 +197,12 @@ body {
 
 /* Make sure the main content is not under the sidebar or navbar */
 main {
-  display: flex; /* Use flex display */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
-  justify-content: flex-start; /* Align children to the start of the main axis (top) */
-  margin-top: 80px; /* Ensure top margin is equal to the nav height */
-  margin-left: 300px; /* Offset for the sidebar width */
-  margin-right: 300px; /* Add this if you want the same offset on the right side for symmetry */
+  margin-top: 80PX;
+  margin-left: 300px; /* Same as the width of the sidebar */
   padding: 20px;
   overflow-y: auto; /* Scroll for overflow content */
+  position: relative;
   height: calc(100vh - 80px); /* Full height minus the nav bar */
-}
-@media (max-width: 858px) {
-  main {
-    margin-left: 0; /* No offset for the sidebar on smaller screens */
-    margin-right: 0; /* Reset right margin on smaller screens */
-    justify-content: center; /* Center content vertically on smaller screens */
-  }
 }
 /* Adjustments for smaller screens */
 @media (max-width: 858px) {
@@ -390,9 +379,7 @@ header p {
 }
 /*Font uses*/
 .table-container {
-  width: 100%;
-  overflow-x: auto; /* Allows scrolling on small screens */
-  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll; /* Allows scrolling on small screens */
 }
 
 table {
@@ -406,12 +393,7 @@ td {
   text-align: center;
   padding: 8px;
 }
-table.full-width {
-  width: 100%; /* Full width to fill container */
-  max-width: 768px; /* Max width, adjust as needed */
-  margin: auto; /* Center within the .table-container */
-  border-collapse: collapse;
-}
+
 /* Ensure table is responsive */
 @media (max-width: 768px) {
   .table-container {
@@ -459,6 +441,7 @@ th {
 /*Containers*/
 
 .utility-main {
+  text-align: center;
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   max-width: 1200px;
@@ -468,12 +451,14 @@ th {
 
 .utility-section {
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .utility-title {
   font-size: 1.75rem;
   color: var(--clr-primary-text);
   margin-bottom: 1rem;
+  font-family: var(--clr-subheading);
 }
 
 .utility-description {
@@ -520,6 +505,44 @@ code {
   margin: 20px auto;
 
 }
-.some-class {
-  background-color: #FAC; /* This is just an example color */
+/*full width and max width example0*/
+.max-width-example {
+  max-width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--clr-primary-background-color);
+color:var(--clr-accent);
+  transition: max-width 0.5s ease;
+}
+
+.full-width-example {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--clr-accent);
+  background-color: var(--clr-primary-background-color);
+  border: 1px solid var(--clr-accent);
+}
+
+.container-desktop-example {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid var(--clr-primary-text);
+}
+
+/* Add your media queries to change the max-width for different screen sizes */
+@media (min-width: 768px) {
+  .max-width-example {
+      max-width: 720px; /* Example max-width for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-desktop-example {
+      padding: 0 1rem; /* Add padding on larger screens */
+      background-color: var(--clr-primary-background-color); /* Just for visual distinction */
+      /* No change in max-width as it's already set to 1200px */
+  }
 }

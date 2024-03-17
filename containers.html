@@ -78,90 +78,135 @@
         <li>19 Lists</li>
     </div>
     </nav>
-    <main>
-        <div class="utility-main">
-            <section class="utility-section">
-                <h2 class="utility-title">Flexbox Utilities</h2>
-                <p class="utility-description">Use these utility classes to apply flexbox layout properties to elements.</p>
-                
-                <!-- Flex Container -->
-                <div class="utility-block">
-                    <h3 class="utility-subtitle">Flex Container</h3>
-                    <div class="utility-code"><code>.l-flex</code> - Displays an element as a flex container.</div>
-                    <div class="utility-code"><code>.l-flex-inline</code> - Displays an element as an inline-flex container.</div>
-                </div>
-        
-                <!-- Flex Direction -->
-                <div class="utility-block">
-                    <h3 class="utility-subtitle">Flex Direction</h3>
-                    <div class="utility-code"><code>.l-flex-row</code> - Sets the flex direction to row.</div>
-                    <div class="utility-code"><code>.l-flex-row-reverse</code> - Sets the flex direction to row reverse.</div>
-                    <div class="utility-code"><code>.l-flex-column</code> - Sets the flex direction to column.</div>
-                    <div class="utility-code"><code>.l-flex-column-reverse</code> - Sets the flex direction to column reverse.</div>
-                </div>
-            </section>
-        
-            <section class="utility-section">
-                <h2 class="utility-title">Grid Layout Utilities</h2>
-                <p class="utility-description">Use these utility classes to apply grid layout properties to elements.</p>
-                
-                <!-- Grid Container -->
-                <div class="utility-block">
-                    <h3 class="utility-subtitle">Grid Container</h3>
-                    <div class="utility-code"><code>.l-grid</code> - Displays an element as a grid container.</div>
-                    <div class="utility-code"><code>.l-inline-grid</code> - Displays an element as an inline-grid container.</div>
-                </div>
-        
-                <!-- Grid Template Columns & Rows -->
-                <div class="utility-block">
-                    <h3 class="utility-subtitle">Grid Template Columns & Rows</h3>
-                    <div class="utility-code"><code>.l-grid-cols-2</code> - Sets the grid to have two columns.</div>
-                    <div class="utility-code"><code>.l-grid-cols-3</code> - Sets the grid to have three columns.</div>
-                    <div class="utility-code"><code>.l-grid-rows-2</code> - Sets the grid to have two rows.</div>
-                    <div class="utility-code"><code>.l-grid-rows-3</code> - Sets the grid to have three rows.</div>
-                </div>
-            </section>
-        
-    <!-- Max-Width Utility Section -->
-    <section class="utility-section">
-        <h2 class="utility-title">Max-Width Utility</h2>
-        <p class="utility-description">
-            Use <code>.container-mobile</code> to set a max-width of 100% for mobile views, 
-            with padding for a responsive design. For larger screens, such as desktops, 
-            <code>.container-desktop</code> applies a max-width of 1200px and centers the content.
-        </p>
-        <div class="utility-block">
-            <h3 class="utility-subtitle">Class Name and Value</h3>
-            <div class="utility-code"><code>.container-mobile { max-width: 100%; padding: 16px; }</code></div>
-            <div class="utility-code"><code>.container-desktop { max-width: 1200px; margin: auto; padding: 0 32px; }</code></div>
+<main>
+        <!-- Flex Containers Section -->
+<section class="utility-section">
+    <h2 class="utility-title">Flex Containers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Class Name</th>
+                <th>Uses</th>
+                <th>CSS Property</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.l-flex</td>
+                <td>Displays an element as a block-level flex container</td>
+                <td>display: flex;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-inline</td>
+                <td>Displays an element as an inline-level flex container</td>
+                <td>display: inline-flex;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-row</td>
+                <td>Sets the flex direction of flex items in the container to row</td>
+                <td>flex-direction: row;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-column</td>
+                <td>Sets the flex direction of flex items in the container to column</td>
+                <td>flex-direction: column;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-row-reverse</td>
+                <td>Sets the flex direction of flex items in the container to row reverse</td>
+                <td>flex-direction: row-reverse;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-column-reverse</td>
+                <td>Sets the flex direction of flex items in the container to column reverse</td>
+                <td>flex-direction: column-reverse;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-wrap</td>
+                <td>Allows flex items to wrap onto multiple lines</td>
+                <td>flex-wrap: wrap;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-nowrap</td>
+                <td>Prevents flex items from wrapping onto multiple lines</td>
+                <td>flex-wrap: nowrap;</td>
+            </tr>
+            <tr>
+                <td>.l-flex-wrap-reverse</td>
+                <td>Allows flex items to wrap onto multiple lines in reverse order</td>
+                <td>flex-wrap: wrap-reverse;</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <h2 class="utility-title">Grid Containers</h2>
+        <thead>
+            <tr>
+                <th>Class Name</th>
+                <th>Description</th>
+                <th>CSS Property</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>.l-grid</td>
+                <td>Displays an element as a block-level grid container</td>
+                <td>display: grid;</td>
+            </tr>
+            <tr>
+                <td>.l-inline-grid</td>
+                <td>Displays an element as an inline-level grid container</td>
+                <td>display: inline-grid;</td>
+            </tr>
+            <!-- Add rows for column and row classes -->
+            <tr>
+                <td>.l-grid-cols-2</td>
+                <td>Defines a grid with two columns of equal width</td>
+                <td>grid-template-columns: repeat(2, 1fr);</td>
+            </tr>
+            <tr>
+                <td>.l-grid-cols-3</td>
+                <td>Defines a grid with three columns of equal width</td>
+                <td>grid-template-columns: repeat(3, 1fr);</td>
+            </tr>
+            <tr>
+                <td>.l-grid-rows-2</td>
+                <td>Defines a grid with two rows of equal height</td>
+                <td>grid-template-rows: repeat(2, 1fr);</td>
+            </tr>
+            <tr>
+                <td>.l-grid-rows-3</td>
+                <td>Defines a grid with three rows of equal height</td>
+                <td>grid-template-rows: repeat(3, 1fr);</td>
+            </tr>
+            <!-- Add rows for gap classes -->
+            <tr>
+                <td>.l-gap-0</td>
+                <td>Defines a grid with no gap between the rows and columns</td>
+                <td>gap: 0;</td>
+            </tr>
+            <tr>
+                <td>.l-gap-1</td>
+                <td>Defines a grid with a small gap between the rows and columns</td>
+                <td>gap: 1rem;</td>
+            </tr>
+            <tr>
+                <td>.l-gap-2</td>
+                <td>Defines a grid with a medium gap between the rows and columns</td>
+                <td>gap: 2rem;</td>
+            </tr>
+            <!-- Continue adding rows as necessary for additional classes -->
+        </tbody>
+    </table>
+    <h2 class="utility-title">Full-width Container Example</h2>
+        <div class="utility-block full-width-example">
+            <p>Full-width container adapts to the width of the viewport.</p>
         </div>
-    </section>
-
-    <!-- Full-Width Utility Section -->
-    <section class="utility-section">
-        <h2 class="utility-title">Full-Width Utility</h2>
-        <p class="utility-description">
-            Apply <code>.full-width</code> to make an element span the full width of its container, 
-            which can be particularly useful for buttons, headers, or sections that need to stretch across the screen.
-        </p>
-        <div class="utility-block">
-            <h3 class="utility-subtitle">Class Name and Value</h3>
-            <div class="utility-code"><code>.full-width { width: 100%; }</code></div>
+        <div class="utility-block max-width-example">
+            <p>Max-width container restricts its width on larger screens.</p>
         </div>
-    </section>
-    <h2>Visual example at different screen sizes</h2>
-    <div class="example container-mobile max-width-example">
-        This div is a mobile-first container with a max-width of 100% on mobile devices.
-    </div>
-
-    <div class="example container-desktop full-width-example">
-        This div is a full-width container that becomes a max-width container of 1200px on desktop devices.
-    </div>
+</section>
 </main>
-
-
-        </div>
-    </main>
     <!-- Scripts -->
     <!-- External JavaScript file for additional functionality -->
     <script src="design-system.js"></script>
