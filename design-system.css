@@ -181,7 +181,7 @@ body {
 
 
 #c-side__sidebar li a.c-active {
-  color: var(--clr-c-active); /* This sets the text color of the c-active link to red */
+  color: var(--clr-active); /* This sets the text color of the c-active link to red */
   font-weight: bold; /* Optionally make the c-active link bold */
 }
 /* Initially hide the "About Me" and "Demo Site" links in the sidebar */
