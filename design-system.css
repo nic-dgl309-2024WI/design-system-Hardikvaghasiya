@@ -195,7 +195,7 @@ colours-link {
 }
 
 /* Main Content Adjustments */
-.main-content {
+.c-main__content {
   padding: 0;
   /* Reset padding */
   /* No changes to the margin-top as it's to accommodate the fixed navbar */
@@ -473,7 +473,7 @@ code {
   }
 
   /* Adjust content section on mobile */
-  .main-content {
+  .c-main__content {
     margin-top: 80px;
     /* Adjust if necessary */
     margin-left: 0;
