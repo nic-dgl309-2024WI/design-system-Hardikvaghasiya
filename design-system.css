@@ -10,7 +10,7 @@
 /* For Webkit browsers */
 #c-side__sidebar::-webkit-scrollbar {
   width: 0;
-  background: transparent; /* make scrollbar transparent */
+  /* make scrollbar transparent */
 }
 
 
@@ -162,6 +162,7 @@ body {
   background-color: var(--clr-accent);
   z-index: 99; /* Make sure it's above other elements */
 }
+
 #c-side__sidebar li a.c-active {
   color: var(--clr-c-active); /* This sets the text color of the c-active link to red */
   font-weight: bold; /* Optionally make the c-active link bold */
@@ -197,7 +198,10 @@ main {
     margin-top: 80PX;
     margin-left: 0; /* Sidebar is not fixed on mobile */
   }
-
+/* Assuming you have an 'active' class that toggles the sidebar visibility */
+#c-side__sidebar.active {
+  transform: translateX(0); /* Adjust as necessary to bring the sidebar into view */
+}
   /* Translate the sidebar off-screen by default */
   #c-side__sidebar {
     transform: translateX(-100%);
@@ -232,7 +236,6 @@ colours-link {
 #c-side__sidebar ul {
   list-style: none; /* Removes default list styling */
 }
-/*colours*/
 /* Hover effect for the "Colours" link */
 #colours-link a.c-active {
   font-weight: bold;

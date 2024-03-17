@@ -187,6 +187,12 @@ ol {
 .l-gap-1 { gap: 1rem; } /* 16px */
 .l-gap-2 { gap: 2rem; } /* 32px */
 
+/* Spacing for paragraphs */
+p {
+  margin-top: 0.5rem; /* Optional: adds space above paragraphs if needed */
+  margin-bottom: 1rem; /* Adds space below paragraphs */
+}
+
 /* Container classes start */
 /* Mobile-first container: max-width for mobile devices */
 .container-mobile {
