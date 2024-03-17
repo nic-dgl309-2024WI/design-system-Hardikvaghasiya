@@ -105,7 +105,7 @@ body {
 }
 
 /* Hide Checkbox for Mobile Menu */
-#check {
+#c-nav__check {
   display: none;
 }
 
@@ -525,7 +525,7 @@ code {
   }
 
   /* When the checkbox is checked, slide in the sidebar */
-  #check:checked ~ #c-side__sidebar {
+  #c-nav__check:checked ~ #c-side__sidebar {
     transform: translateX(0);
   }
 
