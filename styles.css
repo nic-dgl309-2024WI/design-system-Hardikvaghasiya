@@ -3,17 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 :root {
   /* Define grayscale color variables */
-  --clr-primary-text: #4f709c; /*Primary text color*/
-  --clr-primary-background-color: #213555; /*Dark background color is set*/
-  --clr-background-color: #faeee7; /*background color*/
-  --clr-text-highlight: #ff8ba7; /*text highlight*/
-  --clr-button-color: #ff8ba7; /*button color*/
-  --clr-button-text-color: #33272a; /*button text color*/
-  --clr-accent: #f0f0f0; /*light accent color*/
-  --clr-subheading: #81689d; /*subheading colours*/
-  --clr-secondary-text: #e5d283; /*Secondary text color*/
-  --clr-hover: #009688; /* Teal color for hover */
-  --clr-active: #ff5722; /* Deep orange color for active */
+  --color-primary-text: #4f709c; /*Primary text color*/
+  --color-primary-background: #213555; /*Dark background color is set*/
+  --color-background: #faeee7; /*background color*/
+  --color-text-highlight: #ff8ba7; /*text highlight*/
+  --color-button: #ff8ba7; /*button color*/
+  --color-button-text: #33272a; /*button text color*/
+  --color-accent: #f0f0f0; /*light accent color*/
+  --color-subheading: #81689d; /*subheading colours*/
+  --color-secondary-text: #e5d283; /*Secondary text color*/
+  --color-hover: #009688; /* Teal color for hover */
+  --color-active: #ff5722; /* Deep orange color for active */
 }
 /* Add Border box fix */
 *,

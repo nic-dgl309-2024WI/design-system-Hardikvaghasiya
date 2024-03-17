@@ -1,4 +1,4 @@
-/* Resets all elements to remove default styling, such as text decorations, list styles, and box sizing to ensure a consistent look across different browsers. */
+/* Base Element Resets */
 * {
   text-decoration: none;
   list-style: none;
@@ -6,110 +6,90 @@
   overflow: hidden;
 }
 
-/* Hides the browser's default scrollbar for the body element to create a cleaner look. */
-/* For Webkit browsers */
+/* Sidebar Scrollbar Styling for Webkit Browsers */
 #c-side__sidebar::-webkit-scrollbar {
   width: 0;
-  background: transparent;
-  /* make scrollbar transparent */
+  background: transparent; /* make scrollbar transparent */
 }
 
-
-/* Ensure html and body take full height */
+/* Full Height Layout for HTML and Body */
 html, body {
   height: 100%;
   margin: 60px;
   overflow: auto;
 }
 
-/* Styles the navigation bar, setting its height and full width. */
+/* Navigation Bar Styling */
 nav {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100; /* Ensure it stays on top */
-  background-color: var(--clr-primary-background-color);
+  z-index: 100;
+  background-color: var(--color-primary-background);
   height: 80px;
   width: 100%;
   font-family: "Playfair Display", sans-serif;
 }
+/* ... Additional base styles ... */
 
-/* Styles the page logo within the navbar, setting color, font size, line height, padding, and weight. */
-label.c-navigation__logo {
-  color: var(--clr-accent); /* Assumes a CSS variable for primary color */
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-/*Add active state to navbar logo text*/
+/* Navigation Bar Logo Styling */
+label.c-navigation__logo,
 a.c-navigation__logo {
-  text-decoration: none;
-  color: var(--clr-accent); /* Set the color you want for the logo text */
-  display: inline-block;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
-  font-size: 20px;
+    color: var(  --color-accent);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
 }
+
 a.c-navigation__logo:hover {
-  text-decoration: underline; /* or any other hover effect you desire */
-  color: var(--clr-hover-color); /* Change the color on hover */
+  text-decoration: underline;
+  color: var(--color-hover-color);
 }
 
-
-/* Aligns the navigation links to the right of the navbar and sets their margin. */
+/* Navigation Links Styling */
 nav ul {
   float: right;
   margin-right: 20px;
   margin-top: 0;
 }
 
-/* Styles each navigation link, setting inline display, line height, and margin. */
 nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-  color: var(--clr-accent);
 }
 
-/* Styles anchor elements within navigation list items, setting color, font size, padding, and border radius. */
 nav ul li a {
-  color: var(--clr-accent); /* Primary color variable */
+  color: var(  --color-accent);
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
 }
 
-/* Adds a hover and c-active state style for anchor elements for visual feedback. */
+/* Navigation Links States Styling */
 a.c-active,
-a:hover {
-  font-weight: 500;
-  /* Secondary color variable */
-  transition: 0.5s;
-  border-bottom: 1px solid var(--clr-accent);
-}
-
+a:hover,
 links.c-active,
 links:hover {
-  background: transparent; /* Secondary color variable */
-  transition: 0.5s;
+    font-weight: 500;
+    transition: 0.5s;
+    border-bottom: 1px solid var(  --color-accent);
 }
+
+/* Body Text Styling */
 body {
-  color: var(--clr-primary-text);
-  text-transform: none;
-  text-decoration: none;
-  text-anchor: none;
+  color: var(--color-primary-text);
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
-/* Styles the hamburger icon button, setting font size, color, positioning, and display properties. */
+/* Hamburger Icon Button Styling */
 .c-c-navigation__icon-button {
   font-size: 30px;
-  color: var(--clr-accent); /* Primary color variable */
+  color: var(  --color-accent);
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -117,7 +97,7 @@ body {
   display: none; /* Initially hidden, shown in mobile view */
 }
 
-/* Hides the checkbox used for toggling mobile navigation menu. */
+/* Hide Checkbox for Mobile Menu */
 #check {
   display: none;
 }
@@ -133,77 +113,34 @@ body {
   }
 }
 
-/* Defines styles for mobile view, including showing the hamburger button, styling the navigation menu, and adjusting link styles. */
-@media (max-width: 858px) {
-  .c-navigation__icon-button {
-    display: block; /* Show the hamburger menu icon */
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: var(--clr-white); /* Background color for the mobile menu */
-    top: 80px;
-    left: -100%; /* Initially positioned off-screen */
-    text-align: center;
-    transition: all 0.5s; /* Smooth transition for opening/closing menu */
-  }
-  nav ul li {
-    display: block; /* Stack links vertically in mobile view */
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  a:hover,
-  a.c-active {
-    background: var(--clr-hover-color);
-    color: var(
-      --clr-primary
-    ); /* Changes color instead of background on hover/c-active */
-  }
-  #check:checked ~ ul {
-    left: 0; /* Moves the menu on-screen when the checkbox is checked */
-  }
-}
-
-/* Styles the sidebar, including width, position, height, overflow behavior, padding, and scrollbar appearance. */
+/* Sidebar Styling */
 #c-side__sidebar {
   position: fixed;
-  top: 80px; /* Same as the height of the nav bar */
+  top: 80px;
   left: 0;
-  width: 300px; /* Adjust the width as needed */
-  height: calc(100% - 80px); /* Adjust the height based on the nav bar */
-  overflow-y: auto; /* Scroll for overflow content */
+  width: 300px;
+  height: calc(100% - 80px);
+  overflow-y: auto;
   padding: 20px;
-  overflow: hidden;
-  background-color: var(--clr-accent);
-  z-index: 99; /* Make sure it's above other elements */
+  background-color: var(  --color-accent);
+  z-index: 99;
 }
 
 
-#c-side__sidebar li a.c-active {
-  color: var(--clr-active); /* This sets the text color of the c-active link to red */
-  font-weight: bold; /* Optionally make the c-active link bold */
-}
-/* Initially hide the "About Me" and "Demo Site" links in the sidebar */
+/* Initially Hidden Mobile-only Links in Sidebar */
 #c-side__sidebar .c-mobile__only {
   display: none;
 }
-@media (max-width: 858px) {
-  #c-side__sidebar .c-mobile__only {
-    display: block; /* Show the links in mobile view */
-  }
+
+/* Main Content Margin Adjustments */
+main {
+  margin-top: 80px;
+  margin-left: 300px;
+  padding: 20px;
+  overflow-y: auto;
+  height: calc(100vh - 80px);
 }
 
-/* Make sure the main content is not under the sidebar or navbar */
-main {
-  margin-top: 80PX;
-  margin-left: 300px; /* Same as the width of the sidebar */
-  padding: 20px;
-  overflow-y: auto; /* Scroll for overflow content */
-  position: relative;
-  height: calc(100vh - 80px); /* Full height minus the nav bar */
-}
 /* Adjustments for smaller screens */
 @media (max-width: 858px) {
   #c-side__sidebar,
@@ -240,13 +177,13 @@ main {
 /* ... (rest of your CSS) ... */
 
 h4 {
-  color: var(--clr-primary-background-color);
+  color: var(--color-primary-background);
 }
 li {
-  color: var(--clr-primary-text);
+  color: var(--color-primary-text);
 }
 colours-link {
-  color: var(--clr-subheading);
+  color: var(--color-subheading);
 }
 
 /* Styles for headings and list items in the sidebar. */
@@ -257,12 +194,12 @@ colours-link {
 /* Hover effect for the "Colours" link */
 #colours-link a.c-active {
   font-weight: bold;
-  color:  var(--clr-c-active); /* Adjust the color to match your design */
+  color:  var(--color-c-active); /* Adjust the color to match your design */
   background-color: transparent; /* Optional: set a background color if desired */
 }
 #colours-link a:hover {
   font-weight: bold;
-  color: var(--clr-c-active);
+  color: var(--color-c-active);
   background-color: transparent; /* Change to the color you want on hover */
   transition: color 0.3s ease; /* Smooth transition for color change */
 }
@@ -270,7 +207,7 @@ colours-link {
 /*swatches */
 .c-swatch__color {
   padding: 10px;
-  color: var(--clr-accent);
+  color: var(  --color-accent);
   margin-left: 0px;
   top: 15%;
   left: 25%;
@@ -282,7 +219,7 @@ colours-link {
   margin-left: 15%;
   padding: 10px;
   box-sizing: border-box;
-  background-color: var(--clr-accent);
+  background-color: var(  --color-accent);
   margin-bottom: 15%;
   
 }
@@ -297,35 +234,35 @@ colours-link {
 }
 
 .c-bg_primary__text{
-  background-color: var(--clr-primary-text);
+  background-color: var(--color-primary-text);
 }
 .bg-primary {
-  background-color: var(--clr-primary-background-color);
+  background-color: var(--color-primary-background);
 }
 .c-bg__accent {
-  background-color: var(--clr-accent); color: var(--clr-primary-text);
+  background-color: var(  --color-accent); color: var(--color-primary-text);
 }
 .c-bg__subheading {
-  background-color: var(--clr-subheading); color: var(--clr-accent);
+  background-color: var(--color-subheading); color: var(  --color-accent);
 }
 .c-bg-secondary__text{
-  background-color: var(--clr-secondary-text);
+  background-color: var(--color-secondary-text);
 }
 .text-primary {
-  color: var(--clr-primary-text);
+  color: var(--color-primary-text);
 }
 .text-secondary {
-  color: var(--clr-secondary-text);
+  color: var(--color-secondary-text);
 }
 .c-button__colors{
-  background-color: var(--clr-button-color); color: var(--clr-button-text-color);
+  background-color: var( --color-button); color: var(--color-button-text-color);
 }
 .c-text__highlight{
-  background-color: var(--clr-background-color); color: var(--clr-text-highlight);
+  background-color: var(--color-background); color: var( --color-text-highlight);
 }
 
 .c-color__info {
-  background-color: var(--clr-primary-background-color);
+  background-color: var(--color-primary-background);
 }
 /* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
@@ -356,10 +293,10 @@ header p {
   text-align: center;
 }
 .c-u-ff-quicksand{
-  color: var(--clr-primary-text);
+  color: var(--color-primary-text);
 }
 .c-ff-Playfair-Display{
- color: var(--clr-subheading);
+ color: var(--color-subheading);
 }
 
 .c-ff-PlayfairDisplay {
@@ -370,7 +307,7 @@ header p {
 .c-ff-quicksand {
   font-family: "Quicksand", sans-serif;
   text-align: start;
-  color: var(--clr-subheading);
+  color: var(--color-subheading);
 }
 
 .character-grid div {
@@ -389,7 +326,7 @@ table {
 }
 th,
 td {
-  border: 1px solid var(--clr-accent);
+  border: 1px solid var(  --color-accent);
   text-align: center;
   padding: 8px;
 }
@@ -405,15 +342,15 @@ td {
   }
 }
 th {
-  background-color: var(--clr-accent);
+  background-color: var(  --color-accent);
 }
 .Playfair Display {
   font-family: "Playfair Display", sans-serif;
-  color: var(--clr-primary-background-color);
+  color: var(--color-primary-background);
 }
 .quicksand {
   font-family: "Quicksand", sans-serif;
-  color: var(--clr-primary-background-color);
+  color: var(--color-primary-background);
 }
 .c-body__text {
   float: initial;
@@ -456,19 +393,19 @@ th {
 
 .utility-title {
   font-size: 1.75rem;
-  color: var(--clr-primary-text);
+  color: var(--color-primary-text);
   margin-bottom: 1rem;
-  font-family: var(--clr-subheading);
+  font-family: var(--color-subheading);
 }
 
 .utility-description {
   font-size: 1rem;
-  color: var(--clr-secondary-text);
+  color: var(--color-secondary-text);
   margin-bottom: 1.5rem;
 }
 
 .utility-block {
-  background-color: var(--clr-accent);
+  background-color: var(  --color-accent);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -476,13 +413,13 @@ th {
 
 .utility-subtitle {
   font-size: 1.5rem;
-  color: var(--clr-primary-text);
+  color: var(--color-primary-text);
   margin-bottom: 0.5rem;
 }
 
 .utility-code {
-  background-color: var(--clr-background-color);
-  color: var(--clr-primary-text);
+  background-color: var(--color-background-color);
+  color: var(--color-primary-text);
   padding: 0.5rem;
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
@@ -510,8 +447,8 @@ code {
   max-width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: var(--clr-primary-background-color);
-color:var(--clr-accent);
+  background-color: var(--color-primary-background);
+color:var(  --color-accent);
   transition: max-width 0.5s ease;
 }
 
@@ -519,9 +456,9 @@ color:var(--clr-accent);
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  color: var(--clr-accent);
-  background-color: var(--clr-primary-background-color);
-  border: 1px solid var(--clr-accent);
+  color: var(  --color-accent);
+  background-color: var(--color-primary-background);
+  border: 1px solid var(  --color-accent);
 }
 
 .container-desktop-example {
@@ -529,7 +466,7 @@ color:var(--clr-accent);
   margin: auto;
   padding: 1rem;
   background-color: transparent;
-  border: 1px solid var(--clr-primary-text);
+  border: 1px solid var(--color-primary-text);
 }
 
 /* Add your media queries to change the max-width for different screen sizes */
@@ -542,7 +479,7 @@ color:var(--clr-accent);
 @media (min-width: 1024px) {
   .container-desktop-example {
       padding: 0 1rem; /* Add padding on larger screens */
-      background-color: var(--clr-primary-background-color); /* Just for visual distinction */
+      background-color: var(--color-primary-background); /* Just for visual distinction */
       /* No change in max-width as it's already set to 1200px */
   }
 }
