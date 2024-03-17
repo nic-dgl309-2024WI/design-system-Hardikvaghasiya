@@ -10,6 +10,7 @@
 /* For Webkit browsers */
 #c-side__sidebar::-webkit-scrollbar {
   width: 0;
+  background: transparent;
   /* make scrollbar transparent */
 }
 
@@ -196,12 +197,23 @@ body {
 
 /* Make sure the main content is not under the sidebar or navbar */
 main {
-  margin-top: 80PX;
-  margin-left: 300px; /* Same as the width of the sidebar */
+  display: flex; /* Use flex display */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the start of the main axis (top) */
+  margin-top: 80px; /* Ensure top margin is equal to the nav height */
+  margin-left: 300px; /* Offset for the sidebar width */
+  margin-right: 300px; /* Add this if you want the same offset on the right side for symmetry */
   padding: 20px;
   overflow-y: auto; /* Scroll for overflow content */
-  position: relative;
   height: calc(100vh - 80px); /* Full height minus the nav bar */
+}
+@media (max-width: 858px) {
+  main {
+    margin-left: 0; /* No offset for the sidebar on smaller screens */
+    margin-right: 0; /* Reset right margin on smaller screens */
+    justify-content: center; /* Center content vertically on smaller screens */
+  }
 }
 /* Adjustments for smaller screens */
 @media (max-width: 858px) {
@@ -377,6 +389,12 @@ header p {
   font-size: 25px;
 }
 /*Font uses*/
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Allows scrolling on small screens */
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
   margin-top: 1%;
   width: 70%;
@@ -385,8 +403,24 @@ table {
 th,
 td {
   border: 1px solid var(--clr-accent);
-  text-align: left;
+  text-align: center;
   padding: 8px;
+}
+table.full-width {
+  width: 100%; /* Full width to fill container */
+  max-width: 768px; /* Max width, adjust as needed */
+  margin: auto; /* Center within the .table-container */
+  border-collapse: collapse;
+}
+/* Ensure table is responsive */
+@media (max-width: 768px) {
+  .table-container {
+    margin: 0 -1rem; /* Allowing table to be scrollable on the x-axis on small screens */
+  }
+  
+  table {
+    width: auto; /* Allows table to be wider than screen and scrollable */
+  }
 }
 th {
   background-color: var(--clr-accent);
