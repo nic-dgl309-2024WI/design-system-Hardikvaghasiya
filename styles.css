@@ -204,6 +204,35 @@ p {
 .full-width {
   width: 100%;
 }
+/* Vertical Spacing for Headings and Paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 1rem; /* Adds vertical space below each heading and paragraph */
+}
+
+/* Adjust vertical spacing based on element-specific needs */
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+/* Additional utility classes for vertical spacing */
+.vertical-spacing-small {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.vertical-spacing-medium {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.vertical-spacing-large {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 
 /* Media query for desktop devices */
 @media (min-width: 1024x) {

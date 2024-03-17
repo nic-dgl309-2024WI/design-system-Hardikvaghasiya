@@ -15,73 +15,79 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="l-p-1">
     <!-- Navigation Bar -->
-    <nav>
+    <nav class="l-py-1">
         <input type="checkbox" id="check">
         <label for="check" class="c-c-navigation__icon-button"><i class="fa fa-bars"></i></label>
         <a href="index.html" class="c-navigation__logo">Logo</a>
-        <ul>
+        <ul class="l-py-1">
             <li><a href="about-me.html" target="_blank">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
         </ul>
     </nav>
 
     <!-- Sidebar for additional navigation -->
-    <div id="c-side__sidebar">
+    <div id="c-side__sidebar" class="l-p-1">
         <!-- Mobile-only links -->
-        <div class="c-mobile__only">
+        <div class="c-mobile__only l-py-1">
             <li><a href="about-me.html" target="_blank">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
         </div>
 
         <!-- Branding Section -->
         <h4>Branding</h4>
-        <li><a href="colours.html">01 Colours</a></li>
-        <li><a href="typography.html">02 Typography</a></li>
-        <li><a href="index.html">03 Logo</a></li>
+        <ul class="l-py-1">
+            <li><a href="colours.html">01 Colours</a></li>
+            <li><a href="typography.html">02 Typography</a></li>
+            <li><a href="index.html">03 Logo</a></li>
+        </ul>
 
         <!-- Utilities Section -->
         <h4>Utilities</h4>
-        <li><a href="spacing.html"class="c-active">04 Spacing</a></li>
-        <li><a href="containers.html" >05 Containers</a></li>
-        <li>06 Images</li>
-        <li>07 Interactive</li>
-        <li>08 Feedback</li>
+        <ul class="l-py-1">
+            <li><a href="spacing.html"class="c-active">04 Spacing</a></li>
+            <li><a href="containers.html" >05 Containers</a></li>
+            <li>06 Images</li>
+            <li>07 Interactive</li>
+            <li>08 Feedback</li>
+        </ul>
 
         <!-- Navigation Enhancements -->
         <h4>Navigation</h4>
-        <li>09 Navbars</li>
-        <li>10 Breadcrumbs</li>
-        <li>11 Pagination</li>
+        <ul class="l-py-1">
+            <li>09 Navbars</li>
+            <li>10 Breadcrumbs</li>
+            <li>11 Pagination</li>
+        </ul>
 
         <!-- Content Blocks -->
         <h4>Blocks</h4>
-        <li>12 Hero</li>
-        <li>13 Carousel</li>
-        <li>14 Slats</li>
-        <li>15 Footer</li>
+        <ul class="l-py-1">
+            <li>12 Hero</li>
+            <li>13 Carousel</li>
+            <li>14 Slats</li>
+            <li>15 Footer</li>
+        </ul>
 
         <!-- Reusable Components -->
         <h4>Components</h4>
-        <li>16 Cards</li>
-        <li>17 Forms</li>
-        <li>18 Accordion</li>
-        <li>19 Lists</li>
+        <ul class="l-py-1">
+            <li>16 Cards</li>
+            <li>17 Forms</li>
+            <li>18 Accordion</li>
+            <li>19 Lists</li>
+        </ul>
     </div>
 
-    </nav>
 
     <main>
-        <table>
+        <div class="table-container">
+        <table class="full-width">
             <thead>
                 <tr>
                     <th>Category</th>
@@ -141,6 +147,8 @@
                 <tr><td>.l-margin-y-1</td><td>1rem (16px)</td></tr>
             </tbody>
         </table>
+        </div>
+        </main>
         
 
         
