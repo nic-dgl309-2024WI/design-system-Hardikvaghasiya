@@ -293,7 +293,7 @@ header p {
 
 /*Font uses*/
 .table-container {
-  overflow-x: scroll;
+  overflow: hidden;
   /* Allows scrolling on small screens */
 }
 

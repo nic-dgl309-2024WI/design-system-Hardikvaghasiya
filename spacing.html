@@ -15,16 +15,21 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="l-p-1">
+<body>
     <!-- Navigation Bar -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="c-c-navigation__icon-button"><i class="fa fa-bars"></i></label>
         <a href="index.html" class="c-navigation__logo">Logo</a>
+
         <ul>
             <li><a href="about-me.html" target="_blank">About Me</a></li>
             <li><a href="#">Demo Site</a></li>
@@ -42,12 +47,12 @@
         <!-- Branding Section -->
         <h4>Branding</h4>
         <li><a href="colours.html">01 Colours</a></li>
-        <li><a href="typography.html">02 Typography</a></li>
+        <li><a href="typography.html"  class="c-active">02 Typography</a></li>
         <li><a href="index.html">03 Logo</a></li>
 
         <!-- Utilities Section -->
         <h4>Utilities</h4>
-        <li><a href="spacing.html" class="c-active">04 Spacing</a></li>
+        <li><a href="spacing.html">04 Spacing</a></li>
         <li><a href="containers.html">05 Containers</a></li>
         <li>06 Images</li>
         <li>07 Interactive</li>
@@ -74,72 +79,72 @@
         <li>19 Lists</li>
     </div>
 
-    </nav>
-
-
     <main>
-        <div class="table-container">
-        <table class="full-width">
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Class</th>
-                    <th>Margin Size</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Top Margin -->
-                <tr><td rowspan="7">Top Margin</td><td>.l-margin-t-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-t-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-t-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-t-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-t-1</td><td>1rem (16px)</td></tr>
-                <tr><td>.l-margin-t-1_25</td><td>1.25rem (20px)</td></tr>
-                <tr><td>.l-margin-t-1_5</td><td>1.5rem (24px)</td></tr>
+       <div class="table-container">
+        <section>
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Class</th>
+                            <th>Margin Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Top Margin -->
+                        <tr><td rowspan="7">Top Margin</td><td>.l-margin-t-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-t-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-t-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-t-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-t-1</td><td>1rem (16px)</td></tr>
+                        <tr><td>.l-margin-t-1_25</td><td>1.25rem (20px)</td></tr>
+                        <tr><td>.l-margin-t-1_5</td><td>1.5rem (24px)</td></tr>
+                        
+                        <!-- Right Margin -->
+                        <tr><td rowspan="7">Right Margin</td><td>.l-margin-r-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-r-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-r-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-r-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-r-1</td><td>1rem (16px)</td></tr>
+                        <tr><td>.l-margin-r-1_25</td><td>1.25rem (20px)</td></tr>
+                        <tr><td>.l-margin-r-1_5</td><td>1.5rem (24px)</td></tr>
                 
-                <!-- Right Margin -->
-                <tr><td rowspan="7">Right Margin</td><td>.l-margin-r-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-r-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-r-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-r-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-r-1</td><td>1rem (16px)</td></tr>
-                <tr><td>.l-margin-r-1_25</td><td>1.25rem (20px)</td></tr>
-                <tr><td>.l-margin-r-1_5</td><td>1.5rem (24px)</td></tr>
-        
-                <!-- Bottom Margin -->
-                <tr><td rowspan="7">Bottom Margin</td><td>.l-margin-b-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-b-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-b-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-b-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-b-1</td><td>1rem (16px)</td></tr>
-                <tr><td>.l-margin-b-1_25</td><td>1.25rem (20px)</td></tr>
-                <tr><td>.l-margin-b-1_5</td><td>1.5rem (24px)</td></tr>
-        
-                <!-- Left Margin -->
-                <tr><td rowspan="7">Left Margin</td><td>.l-margin-l-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-l-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-l-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-l-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-l-1</td><td>1rem (16px)</td></tr>
-                <tr><td>.l-margin-l-1_25</td><td>1.25rem (20px)</td></tr>
-                <tr><td>.l-margin-l-1_5</td><td>1.5rem (24px)</td></tr>
-        
-                <!-- Horizontal Margin -->
-                <tr><td rowspan="5">Horizontal Margin</td><td>.l-margin-x-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-x-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-x-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-x-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-x-1</td><td>1rem (16px)</td></tr>
-        
-                <!-- Vertical Margin -->
-                <tr><td rowspan="5">Vertical Margin</td><td>.l-margin-y-0</td><td>0rem (0px)</td></tr>
-                <tr><td>.l-margin-y-0_25</td><td>0.25rem (4px)</td></tr>
-                <tr><td>.l-margin-y-0_5</td><td>0.5rem (8px)</td></tr>
-                <tr><td>.l-margin-y-0_75</td><td>0.75rem (12px)</td></tr>
-                <tr><td>.l-margin-y-1</td><td>1rem (16px)</td></tr>
-            </tbody>
-        </table>
-        </div>
+                        <!-- Bottom Margin -->
+                        <tr><td rowspan="7">Bottom Margin</td><td>.l-margin-b-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-b-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-b-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-b-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-b-1</td><td>1rem (16px)</td></tr>
+                        <tr><td>.l-margin-b-1_25</td><td>1.25rem (20px)</td></tr>
+                        <tr><td>.l-margin-b-1_5</td><td>1.5rem (24px)</td></tr>
+                
+                        <!-- Left Margin -->
+                        <tr><td rowspan="7">Left Margin</td><td>.l-margin-l-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-l-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-l-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-l-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-l-1</td><td>1rem (16px)</td></tr>
+                        <tr><td>.l-margin-l-1_25</td><td>1.25rem (20px)</td></tr>
+                        <tr><td>.l-margin-l-1_5</td><td>1.5rem (24px)</td></tr>
+                
+                        <!-- Horizontal Margin -->
+                        <tr><td rowspan="5">Horizontal Margin</td><td>.l-margin-x-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-x-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-x-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-x-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-x-1</td><td>1rem (16px)</td></tr>
+                
+                        <!-- Vertical Margin -->
+                        <tr><td rowspan="5">Vertical Margin</td><td>.l-margin-y-0</td><td>0rem (0px)</td></tr>
+                        <tr><td>.l-margin-y-0_25</td><td>0.25rem (4px)</td></tr>
+                        <tr><td>.l-margin-y-0_5</td><td>0.5rem (8px)</td></tr>
+                        <tr><td>.l-margin-y-0_75</td><td>0.75rem (12px)</td></tr>
+                        <tr><td>.l-margin-y-1</td><td>1rem (16px)</td></tr>
+                    </tbody>
+                </table>
+                </div>
+        </section>
+       </div>
 
         
 
