@@ -36,11 +36,27 @@ nav {
 /* Styles the page logo within the navbar, setting color, font size, line height, padding, and weight. */
 label.c-navigation__logo {
   color: var(--clr-accent); /* Assumes a CSS variable for primary color */
+  text-decoration: none;
   font-size: 20px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
+/*Add active state to navbar logo text*/
+a.c-navigation__logo {
+  text-decoration: none;
+  color: var(--clr-accent); /* Set the color you want for the logo text */
+  display: inline-block;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-size: 20px;
+}
+a.c-navigation__logo:hover {
+  text-decoration: underline; /* or any other hover effect you desire */
+  color: var(--clr-hover-color); /* Change the color on hover */
+}
+
 
 /* Aligns the navigation links to the right of the navbar and sets their margin. */
 nav ul {
@@ -162,6 +178,7 @@ body {
   background-color: var(--clr-accent);
   z-index: 99; /* Make sure it's above other elements */
 }
+
 
 #c-side__sidebar li a.c-active {
   color: var(--clr-c-active); /* This sets the text color of the c-active link to red */
