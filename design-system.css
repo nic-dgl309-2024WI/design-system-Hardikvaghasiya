@@ -437,7 +437,7 @@ code {
   border: 1px solid var(--color-accent);
 }
 
-.container-desktop-example {
+.c-container__desktop-example {
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
@@ -572,7 +572,7 @@ code {
 }
 
 @media (min-width: 1024px) {
-  .container-desktop-example {
+  .c-container__desktop-example {
     padding: 0 1rem;
     /* Add padding on larger screens */
     background-color: var(--color-primary-background);
