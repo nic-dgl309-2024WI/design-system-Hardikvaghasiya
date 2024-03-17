@@ -358,12 +358,12 @@ th {
   padding: 2rem;
 }
 
-.utility-section {
+.c-utility__section {
   margin-bottom: 2rem;
   padding: 1rem;
 }
 
-.utility-title {
+.c-utility__title {
   font-size: 1.75rem;
   color: var(--color-primary-text);
   margin-bottom: 1rem;
@@ -376,8 +376,8 @@ th {
   margin-bottom: 1.5rem;
 }
 
-.utility-block {
-  background-color: var(--color-accent);
+.c-utility__block {
+  background-color: var(--color-background-color);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -419,7 +419,7 @@ code {
 }
 
 /*full width and max width example0*/
-.max-width-example {
+.c-max-width__example {
   max-width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -542,10 +542,10 @@ code {
     /* Allows table to be wider than screen and scrollable */
   }
   /* Add your media queries to change the max-width for different screen sizes */
-.max-width-example{
+.c-max-width__example{
   max-width: 720px;
 }
-.max-width-example{
+.c-max-width__example{
   max-width: 720px;
 }
 }
@@ -565,7 +565,7 @@ code {
 
 /*** Add your media queries to change the max-width for different screen sizes */
 @media (min-width: 768px) {
-  .max-width-example {
+  .c-max-width__example {
     max-width: 720px;
     /* Example max-width for tablets */
   }
