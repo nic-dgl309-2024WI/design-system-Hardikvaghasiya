@@ -44,7 +44,7 @@ a.c-navigation__logo {
 }
 
 a.c-navigation__logo:hover {
-  text-decoration: underline;
+  text-decoration:dotted;
   color: var(--color-hover-color);
 }
 
