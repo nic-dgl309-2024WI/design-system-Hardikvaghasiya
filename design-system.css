@@ -9,14 +9,19 @@
 /* Sidebar Scrollbar Styling for Webkit Browsers */
 #c-side__sidebar::-webkit-scrollbar {
   width: 0;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 /* Full Height Layout for HTML and Body */
-html, body {
+html,
+body {
   height: 100%;
-  margin: 60px;
-  overflow: auto;
+  margin: 0;
+  /* Changed from 60px to remove excess space */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar if not needed */
+  overflow-y: auto;
 }
 
 /* Navigation Bar Styling */
@@ -30,21 +35,22 @@ nav {
   width: 100%;
   font-family: "Playfair Display", sans-serif;
 }
+
 /* ... Additional base styles ... */
 
 /* Navigation Bar Logo Styling */
 label.c-navigation__logo,
 a.c-navigation__logo {
-    color: var(  --color-accent);
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
 
 a.c-navigation__logo:hover {
-  text-decoration:dotted;
+  text-decoration: dotted;
   color: var(--color-hover-color);
 }
 
@@ -62,7 +68,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(  --color-accent);
+  color: var(--color-accent);
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -73,9 +79,9 @@ a.c-active,
 a:hover,
 links.c-active,
 links:hover {
-    font-weight: 500;
-    transition: 0.5s;
-    border-bottom: 1px solid var(--color-active);
+  font-weight: 500;
+  transition: 0.5s;
+  border-bottom: 1px solid var(--color-active);
 }
 
 /* Body Text Styling */
@@ -89,28 +95,18 @@ body {
 /* Hamburger Icon Button Styling */
 .c-c-navigation__icon-button {
   font-size: 30px;
-  color: var(  --color-accent);
+  color: var(--color-accent);
   float: right;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
-  display: none; /* Initially hidden, shown in mobile view */
+  display: none;
+  /* Initially hidden, shown in mobile view */
 }
 
 /* Hide Checkbox for Mobile Menu */
 #check {
   display: none;
-}
-
-/* Adjusts logo font size and padding for screens wider than 952px. */
-@media (max-width: 952px) {
-  label.page-logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
 }
 
 /* Sidebar Styling */
@@ -122,19 +118,13 @@ body {
   height: calc(100% - 80px);
   overflow-y: auto;
   padding: 20px;
-  background-color: var(  --color-accent);
+  background-color: var(--color-accent);
   z-index: 99;
 }
 
-
 /* Initially Hidden Mobile-only Links in Sidebar */
 #c-side__sidebar .c-mobile__only {
-  display:none;
-}
-@media (max-width: 858px) {
-  #c-side__sidebar .c-mobile__only {
-    display: block;
-  }
+  display: none;
 }
 
 /* Main Content Margin Adjustments */
@@ -146,47 +136,16 @@ main {
   height: calc(100vh - 80px);
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 858px) {
-  #c-side__sidebar,
-  nav {
-    position: fixed;
-    width: 100%;
-  }
-
-  main {
-    margin-top: 80PX;
-    margin-left: 0; /* Sidebar is not fixed on mobile */
-  }
-/* Assuming you have an 'active' class that toggles the sidebar visibility */
-#c-side__sidebar.active {
-  transform: translateX(0); /* Adjust as necessary to bring the sidebar into view */
-}
-  /* Translate the sidebar off-screen by default */
-  #c-side__sidebar {
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  /* When the checkbox is checked, slide in the sidebar */
-  #check:checked ~ #c-side__sidebar {
-    transform: translateX(0);
-  }
-
-  /* Show the hamburger icon */
-  .c-c-navigation__icon-button {
-    display: block;
-  }
-}
-
 /* ... (rest of your CSS) ... */
 
 h4 {
   color: var(--color-primary-background);
 }
+
 li {
   color: var(--color-primary-text);
 }
+
 colours-link {
   color: var(--color-subheading);
 }
@@ -194,25 +153,32 @@ colours-link {
 /* Styles for headings and list items in the sidebar. */
 #c-side__sidebar h2,
 #c-side__sidebar ul {
-  list-style: none; /* Removes default list styling */
+  list-style: none;
+  /* Removes default list styling */
 }
+
 /* Hover effect for the "Colours" link */
 #colours-link a.c-active {
   font-weight: bold;
-  color:  var( --color-active); /* Adjust the color to match your design */
-  background-color: transparent; /* Optional: set a background color if desired */
+  color: var(--color-active);
+  /* Adjust the color to match your design */
+  background-color: transparent;
+  /* Optional: set a background color if desired */
 }
+
 #colours-link a:hover {
   font-weight: bold;
-  color: var( --color-active);
-  background-color: transparent; /* Change to the color you want on hover */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  color: var(--color-active);
+  background-color: transparent;
+  /* Change to the color you want on hover */
+  transition: color 0.3s ease;
+  /* Smooth transition for color change */
 }
 
 /*swatches */
 .c-swatch__color {
   padding: 10px;
-  color: var(  --color-accent);
+  color: var(--color-accent);
   margin-left: 0px;
   top: 15%;
   left: 25%;
@@ -224,11 +190,16 @@ colours-link {
   margin-left: 15%;
   padding: 10px;
   box-sizing: border-box;
-  background-color: var(  --color-accent);
+  background-color: var(--color-accent);
   margin-bottom: 15%;
-  
 }
 
+/* Main Content Adjustments */
+.main-content {
+  padding: 0;
+  /* Reset padding */
+  /* No changes to the margin-top as it's to accommodate the fixed navbar */
+}
 
 .clearfix::after {
   content: "";
@@ -238,52 +209,50 @@ colours-link {
   clear: both;
 }
 
-.c-bg_primary__text{
+.c-bg_primary__text {
   background-color: var(--color-primary-text);
 }
+
 .bg-primary {
   background-color: var(--color-primary-background);
 }
+
 .c-bg__accent {
-  background-color: var(  --color-accent); color: var(--color-primary-text);
+  background-color: var(--color-accent);
+  color: var(--color-primary-text);
 }
+
 .c-bg__subheading {
-  background-color: var(--color-subheading); color: var(  --color-accent);
+  background-color: var(--color-subheading);
+  color: var(--color-accent);
 }
-.c-bg-secondary__text{
+
+.c-bg-secondary__text {
   background-color: var(--color-secondary-text);
 }
+
 .text-primary {
   color: var(--color-primary-text);
 }
+
 .text-secondary {
   color: var(--color-secondary-text);
 }
-.c-button__colors{
-  background-color: var( --color-button); color: var(--color-button-text-color);
+
+.c-button__colors {
+  background-color: var(--color-button);
+  color: var(--color-button-text-color);
 }
-.c-text__highlight{
-  background-color: var(--color-background); color: var( --color-text-highlight);
+
+.c-text__highlight {
+  background-color: var(--color-background);
+  color: var(--color-text-highlight);
 }
 
 .c-color__info {
   background-color: var(--color-primary-background);
 }
-/* Responsive adjustments for smaller screens */
-@media (max-width: 600px) {
-  .c-swatch__color {
-    width: calc(
-      50% - 20px
-    ); /* Adjust width for 2 swatches per row on smaller screens */
-  }
-}
 
-@media (max-width: 400px) {
-  .c-swatch__color {
-    width: 100%; /* Full width for 1 swatch per row on very small screens */
-    margin: 10px 0; /* Adjust margin for vertical stacking */
-  }
-}
 
 /*Font families */
 
@@ -297,11 +266,13 @@ header p {
   flex-flow: row;
   text-align: center;
 }
-.c-u-ff-quicksand{
+
+.c-u-ff-quicksand {
   color: var(--color-primary-text);
 }
-.c-ff-Playfair-Display{
- color: var(--color-subheading);
+
+.c-ff-Playfair-Display {
+  color: var(--color-subheading);
 }
 
 .c-ff-PlayfairDisplay {
@@ -319,9 +290,11 @@ header p {
   margin: 10px 0;
   font-size: 25px;
 }
+
 /*Font uses*/
 .table-container {
-  overflow-x: scroll; /* Allows scrolling on small screens */
+  overflow-x: scroll;
+  /* Allows scrolling on small screens */
 }
 
 table {
@@ -329,62 +302,56 @@ table {
   width: 70%;
   border-collapse: collapse;
 }
+
 th,
 td {
-  border: 1px solid var(  --color-accent);
+  border: 1px solid var(--color-accent);
   text-align: center;
   padding: 8px;
 }
 
-/* Ensure table is responsive */
-@media (max-width: 768px) {
-  .table-container {
-    margin: 0 -1rem; /* Allowing table to be scrollable on the x-axis on small screens */
-  }
-  
-  table {
-    width: auto; /* Allows table to be wider than screen and scrollable */
-  }
-}
 th {
-  background-color: var(  --color-accent);
+  background-color: var(--color-accent);
 }
+
 .Playfair Display {
   font-family: "Playfair Display", sans-serif;
   color: var(--color-primary-background);
 }
+
 .quicksand {
   font-family: "Quicksand", sans-serif;
   color: var(--color-primary-background);
 }
+
 .c-body__text {
   float: initial;
 
- 
   position: relative;
 }
+
 /* Visual Examples */
 .c-visual-examples h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .c-visual-examples p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .c-visual-examples h3.quicksand {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .c-visual-examples p.quicksand {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*Containers*/
 
 .utility-main {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.6;
   max-width: 1200px;
   margin: 0 auto;
@@ -410,7 +377,7 @@ th {
 }
 
 .utility-block {
-  background-color: var(  --color-accent);
+  background-color: var(--color-accent);
   padding: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
@@ -428,15 +395,19 @@ th {
   padding: 0.5rem;
   border-radius: 0.25rem;
   margin-bottom: 0.5rem;
-  font-family: 'Exo 2', monospace;
+  font-family: "Exo 2", monospace;
 }
+
 .some-class {
   display: inline-block;
 }
 
 code {
   font-size: 1rem;
-  display: block;} /* or 'inline-block'/
+  display: block;
+}
+
+/* or 'inline-block'/
 
 /* Additional responsive image class */
 .profile-img {
@@ -445,15 +416,15 @@ code {
   height: 500px;
   display: block;
   margin: 20px auto;
-
 }
+
 /*full width and max width example0*/
 .max-width-example {
   max-width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
   background-color: var(--color-primary-background);
-color:var(  --color-accent);
+  color: var(--color-accent);
   transition: max-width 0.5s ease;
 }
 
@@ -461,9 +432,9 @@ color:var(  --color-accent);
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
-  color: var(  --color-accent);
+  color: var(--color-accent);
   background-color: var(--color-primary-background);
-  border: 1px solid var(  --color-accent);
+  border: 1px solid var(--color-accent);
 }
 
 .container-desktop-example {
@@ -474,17 +445,137 @@ color:var(  --color-accent);
   border: 1px solid var(--color-primary-text);
 }
 
-/* Add your media queries to change the max-width for different screen sizes */
+
+
+/*******Media Query*******/
+/*** Adjustments for smaller screen***/
+@media (max-width: 858px) {
+  nav ul {
+    margin-right: 10px;
+    /* Adjust right margin */
+  }
+
+  /*Assuming you have an 'active' class that toggles the sidebar visibility */
+  #c-side__sidebar.active {
+    transform: translateX(0);
+    /* Show sidebar when active */
+  }
+
+  /* Adjust sidebar for mobile view */
+  #c-side__sidebar {
+    width: 100%;
+    /* Full width on mobile */
+    padding: 0;
+    /* Reset padding */
+    transform: translateX(-100%);
+    /* Hide sidebar initially */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Adjust content section on mobile */
+  .main-content {
+    margin-top: 80px;
+    /* Adjust if necessary */
+    margin-left: 0;
+    /* Align content to the left */
+    width: 100%;
+    /* Full width */
+    padding: 1rem;
+    /* Add padding */
+  }
+
+  /* Styles specific for the colour swatches to prevent them from causing horizontal scrolling */
+  .c-swatch__color {
+    position: static;
+    /* Reset to default positioning */
+    float: none;
+    /* Remove float */
+    width: auto;
+    /* Adjust width */
+    padding: 1rem;
+    /* Consistent padding */
+    margin: 1rem 0;
+    /* Spacing around the element */
+  }
+  #c-side__sidebar .c-mobile__only {
+    display: block;
+  }
+  #c-side__sidebar,
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 80px;
+    margin-left: 0;
+    /* Sidebar is not fixed on mobile */
+  }
+
+  /* Assuming you have an 'active' class that toggles the sidebar visibility */
+  #c-side__sidebar.active {
+    transform: translateX(0);
+    /* Adjust as necessary to bring the sidebar into view */
+  }
+
+  /* Translate the sidebar off-screen by default */
+  #c-side__sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* When the checkbox is checked, slide in the sidebar */
+  #check:checked ~ #c-side__sidebar {
+    transform: translateX(0);
+  }
+
+  /* Show the hamburger icon */
+  .c-c-navigation__icon-button {
+    display: block;
+  }
+  /* Ensure table is responsive */
+  .table-container{
+    margin: 0 -1rem;
+  }
+  table {
+    width: auto;
+    /* Allows table to be wider than screen and scrollable */
+  }
+  /* Add your media queries to change the max-width for different screen sizes */
+.max-width-example{
+  max-width: 720px;
+}
+.max-width-example{
+  max-width: 720px;
+}
+}
+
+/*** Adjusts logo font size and padding for screens wider than 952px. ***/
+@media (max-width: 952px) {
+  label.page-logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+
+
+/*** Add your media queries to change the max-width for different screen sizes */
 @media (min-width: 768px) {
   .max-width-example {
-      max-width: 720px; /* Example max-width for tablets */
+    max-width: 720px;
+    /* Example max-width for tablets */
   }
 }
 
 @media (min-width: 1024px) {
   .container-desktop-example {
-      padding: 0 1rem; /* Add padding on larger screens */
-      background-color: var(--color-primary-background); /* Just for visual distinction */
-      /* No change in max-width as it's already set to 1200px */
+    padding: 0 1rem;
+    /* Add padding on larger screens */
+    background-color: var(--color-primary-background);
   }
 }
+/******/
