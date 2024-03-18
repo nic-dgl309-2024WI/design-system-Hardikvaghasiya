@@ -1,42 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair Display:wght@400;700&family=Quicksand:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 :root {
   /* Define grayscale color variables */
-  --color-primary-text: #22225D; /*Primary text color*/
-  --color-primary-background: #837ED3; /*Dark background color is set*/
-  --color-background: #faeee7; /*background color*/
-  --color-text-highlight: #ff8ba7; /*text highlight*/
-  --color-accent: #f0f0f0; /*light accent color*/
-  --color-secondary-text: #e5d283; /*Secondary text color*/
-  --color-hover: #009688; /* Teal color for hover */
-  --color-active: #ff5722; /* Deep orange color for active */
+  --color-primary-text: #22225D;/*Primary text color*/
+  --color-primary-background: #837ED3;/*Dark background color is set*/
+  --color-background: #faeee7;/*background color*/
+  --color-text-highlight: #ff8ba7;/*text highlight*/
+  --color-accent: #f0f0f0;/*light accent color*/
+  --color-secondary-text: #e5d283;/*Secondary text color*/
+  --color-hover: #009688;/* Teal color for hover */
+  --color-active: #ff5722;/* Deep orange color for active */
 }
+
 /* Add Border box fix */
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Ensures that padding and border sizes are included within the total width and height of elements, preventing layout issues */
+  box-sizing: border-box;
 }
 
 /* Reset margins for body, all headings, p, figure, and picture */
 body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-picture {
-  margin: 0; /* Removes default margins from these elements to provide a consistent starting point for styling */
+h1,h2,h3,h4,h5,h6,p,
+figure,picture {
+  margin: 0;
+  /* Removes default margins from these elements to provide a consistent starting point for styling */
 }
-
 /* Remove padding from lists */
 ul,
 ol {
-  padding: 0; /* Eliminates default padding from unordered and ordered lists, allowing for custom list styling */
+  padding: 0;
 }
 
 /* CSS Variables */
@@ -44,241 +38,132 @@ ol {
   /*font families*/
   --font-primary: "Playfair Display", sans-serif;
   --font-secondary: "Quicksand", sans-serif;
-
-  /* Font sizes */
-  --font-size-small: 0.8rem; /* Example: 12px if base is 16px */
-  --font-size-base: 1rem; /* Example: 16px */
-  --font-size-large: 1.5rem; /* Example: 24px */
-
-  /* Font weights */
-  --font-weight-light: 300; /* Light weight for Quicksand */
-  --font-weight-normal: 400; /* Normal weight */
-  --font-weight-bold: 700; /* Bold weight */
+  .c-u-ff-Playfair-Display{font-family: var(--font-primary);}
+  .c-u-ff-quicksand{font-family: var(--font-secondary);}
 }
+
 
 /* Utility Classes for Font Family */
-.c-u-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
-.c-u-ff-quicksand { font-family: 'Quicksand', sans-serif; }
+.c-u-ff-Playfair-Display , .c-u-ff-quicksand {
+  /**font weight**/
+  &.fw-100 { font-weight: 100; }
+  &.fw-200 { font-weight: 200; }
+  &.fw-300 { font-weight: 300; }
+  &.fw-400 { font-weight: 400; }
+  &.fw-500 { font-weight: 500; }
+  &.fw-600 { font-weight: 600; }
+  &.fw-700 { font-weight: 700; }
+  &.fw-800 { font-weight: 800; }
+  &.fw-900 { font-weight: 900; }
+  /** Font Size **/
+  &.fs-12 { font-size: 12px; }
+  &.fs-14 { font-size: 14px; }
+  &.fs-16 { font-size: 16px; }
+  &.fs-18 { font-size: 18px; }
+  &.fs-20 { font-size: 20px; }
+  &.fs-24 { font-size: 24px; }
+  &.fs-22 { font-size: 32px; }
+  &.fs-large {font-size: 2.5rem;}
+  &.fs-medium {font-size: 2rem;}
+  /** Letter Spacing **/
+  &.ls-1 { letter-spacing: 1px; }
+  &.ls-2 { letter-spacing: 2px; }
+  &.ls-3 { letter-spacing: 3px; }
+  /** Line Height **/
+  &.lh-1 { line-height: 1; }
+  &.lh-1-5 { line-height: 1.5; }
+  &.lh-2 { line-height: 2; }
+  /** Font Style **/
+  &.fs-normal { font-style: normal; }
+  &.fs-italic { font-style: italic; }
+  /**Margin top utilities**/
+  &-t-0 { margin-top: 0rem; }
+  &-t-0_25 { margin-top: 0.25rem; }
+  &-t-0_5 { margin-top: 0.5rem; }
+  &-t-0_75 { margin-top: 0.75rem; }
+  &-t-1 { margin-top: 1rem; }
+  &-t-1_25 { margin-top: 1.25rem; } 
+  &-t-1_5 { margin-top: 1.5rem; } 
+  /**Padding Utilities **/
+  &-p-0 { padding: 0rem; }
+  &-p-0_25 { padding: 0.25rem; }
+  &-p-0_5 { padding: 0.5rem; }
+  &-p-0_75 { padding: 0.75rem; }
+  &-p-1 { padding: 1rem; }
+  /**Padding Top, Bottom, Right, Left**/
+  &-pt-0_25 { padding-top: 0.25rem; }
+  &-pb-0_25 { padding-bottom: 0.25rem; }
+  &-pr-0_25 { padding-right: 0.25rem; }
+  &-pl-0_25 { padding-left: 0.25rem; }
+  
+  /**Padding Horizontal and Vertical**/
+  &-px-0_25 { padding-right: 0.25rem; padding-left: 0.25rem; }
+  &-py-0_25 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+  /**Flexbox Utility Classes**/
+  &-flex { display: flex; }
+  &-inline-flex { display: inline-flex; }
+  
+  /**Flex Direction**/
+  &-row { flex-direction: row; }
+  &-row-reverse { flex-direction: row-reverse; }
+  &-column { flex-direction: column; }
+  &-column-reverse { flex-direction: column-reverse; }
+  
+  /**Flex Wrap **/
+  &-wrap { flex-wrap: wrap; }
+  &-nowrap { flex-wrap: nowrap; }
+  &-wrap-reverse { flex-wrap: wrap-reverse; }
+  
+  /**Justify Content**/
+  &-justify-start { justify-content: flex-start; }
+  &-justify-end { justify-content: flex-end; }
+  &-justify-center { justify-content: center; }
+  &-justify-between { justify-content: space-between; }
+  &-justify-around { justify-content: space-around; }
+  &-justify-evenly { justify-content: space-evenly; }
+  
+  /**Align Items**/
+  &-align-items-start { align-items: flex-start; }
+  &-align-items-end { align-items: flex-end; }
+  &-align-items-center { align-items: center; }
+  &-align-items-baseline { align-items: baseline; }
+  &-align-items-stretch { align-items: stretch; }
 
-/* Utility Classes for Font Weight */
-.c-fw-100 { font-weight: 100; }
-.c-fw-200 { font-weight: 200; }
-.c-fw-300 { font-weight: 300; }
-.c-fw-400 { font-weight: 400; }
-.c-fw-500 { font-weight: 500; }
-.c-fw-600 { font-weight: 600; }
-.c-fw-700 { font-weight: 700; }
-.c-fw-800 { font-weight: 800; }
-.c-fw-900 { font-weight: 900; }
+}
+/**Grid Container Utilities**/
+.grid {
+  display: grid;
+  &.inline-grid { display: inline-grid; }
+  /** Grid Template Columns **/
+  &.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  &.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  /** Grid Template Rows **/
+  &.rows-2 { grid-template-rows: repeat(2, 1fr); }
+  &.rows-3 { grid-template-rows: repeat(3, 1fr); }
+  /** Gap **/
+  &.gap-0 { gap: 0rem; }
+  &.gap-1 { gap: 1rem; }
+  &.gap-2 { gap: 2rem; }
+}
 
-/* Utility Classes for Font Size */
-.c-fs-12 { font-size: 12px; }
-.c-fs-14 { font-size: 14px; }
-.c-fs-16 { font-size: 16px; }
-.c-fs-18 { font-size: 18px; }
-.c-fs-20 { font-size: 20px; }
-.c-fs-24 { font-size: 24px; }
-.c-fs-32 { font-size: 32px; }
-
-/* Letter Spacing Utilities */
-.c-ls-1 { letter-spacing: 1px; }
-.c-ls-2 { letter-spacing: 2px; }
-.c-ls-3 { letter-spacing: 3px; }
-
-/* Line Height Utilities */
-.c-lh-1 { line-height: 1; }
-.c-lh-1-5 { line-height: 1.5; }
-.c-lh-2 { line-height: 2; }
-
-/* Font Style Utilities */
-.c-fs-normal { font-style: normal; }
-.c-fs-italic { font-style: italic; }
-/* Font Family Utilities */
-.c-ff-Playfair-Display { font-family: 'Playfair Display', sans-serif; }
-.c-ff-quicksand { font-family: 'Quicksand', sans-serif; }
-
-/* Font Size Utilities */
-.c-fs-large { font-size: 2.5rem; } /* For H1 */
-.c-fs-medium { font-size: 1rem; } /* For paragraph text */
-
-/* Spacing utility classes using 'l-' namespace for layout-related spacing */
-/* Margin Utilities */
-.l-margin-t-0 { margin-top: 0rem; } /* 0px */
-.l-margin-t-0_25 { margin-top: 0.25rem; } /* 4px */
-.l-margin-t-0_5 { margin-top: 0.5rem;  } /* 8px */
-.l-margin-t-0_75 { margin-top: 0.75rem; } /* 12px */
-.l-margin-t-1 { margin-top: 1rem; } /* 16px */
-.l-margin-t-1_25 { margin-top: 1.25rem; } /* 20px */
-.l-margin-t-1_5 { margin-top: 1.5rem; } /* 24px */
-
-/* Apply padding to all four sides */
-.l-p-0 { padding: 0rem; } /* 0px */
-.l-p-0_25 { padding: 0.25rem; } /* 4px */
-.l-p-0_5 { padding: 0.5rem; } /* 8px */
-.l-p-0_75 { padding: 0.75rem; } /* 12px */
-.l-p-1 { padding: 1rem; } /* 16px */
-
-/* Apply padding to top, bottom, right, left */
-.l-pt-0_25 { padding-top: 0.25rem; } /* 4px */
-.l-pb-0_25 { padding-bottom: 0.25rem; } /* 4px */
-.l-pr-0_25 { padding-right: 0.25rem; } /* 4px */
-.l-pl-0_25 { padding-left: 0.25rem; } /* 4px */
-
-
-/* Apply padding horizontally and vertically */
-.l-px-0_25 { padding-right: 0.25rem; padding-left: 0.25rem; } /* Horizontal padding */
-.l-py-0_25 { padding-top: 0.25rem; padding-bottom: 0.25rem; } /* Vertical padding */
-
-/*refrence from chat gpt*/
-/* Flex container */
-.l-flex { display: flex; }
-.l-flex-inline { display: inline-flex; }
-
-/* Flex direction */
-.l-flex-row { flex-direction: row; }
-.l-flex-row-reverse { flex-direction: row-reverse; }
-.l-flex-column { flex-direction: column; }
-.l-flex-column-reverse { flex-direction: column-reverse; }
-
-/* Flex wrap */
-.l-flex-wrap { flex-wrap: wrap; }
-.l-flex-nowrap { flex-wrap: nowrap; }
-.l-flex-wrap-reverse { flex-wrap: wrap-reverse; }
-
-/* Justify Content - Alignment along the main axis */
-.l-justify-start { justify-content: flex-start; }
-.l-justify-end { justify-content: flex-end; }
-.l-justify-center { justify-content: center; }
-.l-justify-between { justify-content: space-between; }
-.l-justify-around { justify-content: space-around; }
-.l-justify-evenly { justify-content: space-evenly; }
-
-/* Align Items - Alignment along the cross axis */
-.l-align-items-start { align-items: flex-start; }
-.l-align-items-end { align-items: flex-end; }
-.l-align-items-center { align-items: center; }
-.l-align-items-baseline { align-items: baseline; }
-.l-align-items-stretch { align-items: stretch; }
-
-/* Align Content - Handling extra space in multi-line flex containers */
-.l-align-content-start { align-content: flex-start; }
-.l-align-content-end { align-content: flex-end; }
-.l-align-content-center { align-content: center; }
-.l-align-content-space-between { align-content: space-between; }
-.l-align-content-space-around { align-content: space-around; }
-.l-align-content-stretch { align-content: stretch; }
-
-/* Grid Container */
-.l-grid { display: grid; }
-.l-inline-grid { display: inline-grid; }
-
-/* Grid Template Columns & Rows - Define as needed */
-.l-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-.l-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
-
-.l-grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
-.l-grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
-
-/* Gap - Control spacing between grid items */
-.l-gap-0 { gap: 0rem; } /* 0px */
-.l-gap-1 { gap: 1rem; } /* 16px */
-.l-gap-2 { gap: 2rem; } /* 32px */
-
-/* Spacing for paragraphs */
+/** Paragraph Spacing **/
 p {
-  margin-top: 0.5rem; /* Optional: adds space above paragraphs if needed */
-  margin-bottom: 1rem; /* Adds space below paragraphs */
+  &.top-0_5 { margin-top: 0.5rem; }
+  &.bottom-1 { margin-bottom: 1rem; }
 }
-
-/* Container classes start */
-/* Mobile-first container: max-width for mobile devices */
-.container-mobile {
-  max-width: 100%; /* Full width on mobile */
-  padding: 16px; /* Adequate padding around the content */
-}
-
-/* Full-width utility class */
-.full-width {
-  width: 100%;
-}
-/* Vertical Spacing for Headings and Paragraphs */
-h1, h2, h3, h4, h5, h6, p {
-  margin-bottom: 1rem; /* Adds vertical space below each heading and paragraph */
-}
-
-/* Adjust vertical spacing based on element-specific needs */
-h1 {
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  margin-bottom: 1.25rem;
-}
-
-/* Additional utility classes for vertical spacing */
-.vertical-spacing-small {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.vertical-spacing-medium {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.vertical-spacing-large {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Media query for desktop devices */
-@media (min-width: 1024x) {
-  .container-desktop {
-    max-width: 1200px; /* Constrained max-width for desktop */
-    margin: 20px auto; /* Centering the container */
-    padding: 0 32px;
-     /* Adjusted padding for desktop */
+/** Container Classes **/
+.container {
+  &.mobile {
+    max-width: 100%;
+    padding: 16px;
   }
+  &.full-width { width: 100%; }
 }
-
-/* Additional classes for spacing, can be adjusted as needed */
-.margin-top {
-  margin-top: 20px;
+/** Vertical Spacing for Headings and Paragraphs**/
+.vertical-spacing {
+  &.h1 { margin-bottom: 1.5rem; }
+  &.h2 { margin-bottom: 1.25rem; }
+  &.small { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+  &.medium { margin-top: 1rem; margin-bottom: 1rem; }
+  &.large { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 }
-
-.margin-bottom {
-  margin-bottom: 20px;
-}
-
-.padding-horizontal {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.example {
-            border: 2px solid #4f709c; /* Using your primary text color for the border */
-            margin: 16px;
-            padding: 16px;
-            transition: max-width 0.5s ease; /* Smooth transition for demonstration */
-        }
-
-        .max-width-example {
-            background-color: #faeee7; /* Using your background color variable */
-            padding: 16px;
-            margin-bottom: 16px; /* Space between the elements */
-        }
-
-        .full-width-example {
-            background-color: #ff8ba7; /* Using your button color variable */
-            padding: 16px;
-            width: 100%;
-        }
-
-        @media (min-width: 1024px) {
-            .container-desktop {
-                max-width: 1200px;
-                margin: auto;
-                padding: 0 32px;
-                background-color: transparent; /* Using your secondary text color variable for background */
-            }
-        }
