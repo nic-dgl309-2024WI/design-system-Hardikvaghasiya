@@ -38,12 +38,13 @@ ol {
   /*font families*/
   --font-primary: "Playfair Display", sans-serif;
   --font-secondary: "Quicksand", sans-serif;
-  .c-u-ff-Playfair-Display{font-family: var(--font-primary);}
-  .c-u-ff-quicksand{font-family: var(--font-secondary);}
+
 }
 
 
 /* Utility Classes for Font Family */
+.c-u-ff-Playfair-Display{font-family: var(--font-primary);}
+.c-u-ff-quicksand{font-family: var(--font-secondary);}
 .c-u-ff-Playfair-Display , .c-u-ff-quicksand {
   /**font weight**/
   &.fw-100 { font-weight: 100; }
