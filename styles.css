@@ -168,3 +168,126 @@ p {
   &.medium { margin-top: 1rem; margin-bottom: 1rem; }
   &.large { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 }
+
+/*******************************Outback Nursery CSS****************************************/
+
+/* Reset and Global Styles */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* BEM and namespaced styles for navbar */
+.c-navbar {
+    background: var(--color-primary-background);
+    height: 80px;
+    width: 100%;
+}
+
+.c-navbar__logo {
+    color: var(--color-accent);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.c-navbar__items {
+    float: right;
+    margin-right: 20px;
+}
+
+.c-navbar__item {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.c-navbar__link {
+    color: var(--color-accent);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: color 0.5s ease, text-decoration 0.5s ease; /* Smooth transition for color and text-decoration */
+}
+
+.c-navbar__link--active,
+.c-navbar__link:hover {
+    color: var(--color-active);
+text-decoration:solid;
+}
+
+.c-navbar__toggle {
+    font-size: 30px;
+    color: var(--color-accent);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.c-navbar__checkbox {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 952px) {
+    .c-navbar__logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .c-navbar__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .c-navbar__toggle {
+        display: block;
+    }
+    .c-navbar__items {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-primary-background);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .c-navbar__item {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .c-navbar__link {
+        font-size: 20px;
+    }
+    .c-navbar__link:hover,
+    .c-navbar__link--active {
+        background: none;
+        color: var(--color-active);
+    }
+    #c-check:checked ~ .c-navbar__items {
+        left: 0;
+    }
+}
+
+/* Optional: Section styles if needed */
+section {
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
