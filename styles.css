@@ -291,3 +291,24 @@ section {
     background-size: cover;
     height: calc(100vh - 80px);
 }
+
+
+/* styles for the "Coming Soon" section */
+.c-coming-soon {
+  color: var(--color-primary-text);
+  text-align: center;
+  padding: 50px 0;
+}
+
+.c-coming-soon__container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.c-coming-soon__title {
+  margin-bottom: 20px;
+}
+
+.c-coming-soon__description {
+  color: var(--color-secondary-text);
+}
