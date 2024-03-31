@@ -385,7 +385,7 @@ section {
 /* Product List Styles */
 .c-product-list {
   text-align: center;
-  padding: 60px 0;
+
 }
 
 .c-product-list__title {
@@ -519,6 +519,55 @@ section {
   background-color: var(--color-primary-background); /* Darken button on hover */
 }
 
+/* Container for announcements */
+.announcements-container {
+  max-width: 75%; /* Set a max-width for the container */
+  margin: 2rem auto; /* Center the container with auto margins */
+  padding: 1rem;
+  background-color: var(--color-accent); /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px var(--color-background); /* A subtle shadow for depth */
+}
+
+/* Title for the announcements */
+.announcements-title {
+  text-align: center;
+  color: var(--color-primary-text); /* Primary text color */
+  margin-bottom: 1rem; /* Space below the title */
+  font-family: "Playfair Display", sans-serif; /* Font family from your variables */
+}
+
+/* Scrolling Announcement List */
+.announcements-scroll {
+  overflow: hidden;
+  position: relative;
+}
+
+.announcements-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  position: relative;
+  /* Animation properties here */
+}
+
+.announcement-item {
+  background-color: var(--color-background); /* Accent color */
+  padding: 0.5rem; /* Padding within each item */
+  margin: 0.5rem 0; /* Space between items */
+  text-align: center; /* Center text */
+}
+
+.announcements-title{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+/* Apply the scrolling animation to the announcement list */
+.announcements-list {
+  animation: scroll-announcements 10s linear infinite;
+}
 
 
 /******************************* Media Queries ****************************************/
@@ -565,6 +614,11 @@ section {
 
   .form-section__form {
     max-width: 1000px; /* Maximum width of the form */
+  }
+  .announcements-container {
+    position: relative;
+    /* Adjustments for larger screens */
+    max-width: 92%; /* Or as per your design requirements */
   }
 } 
 @media (max-width: 858px) {
@@ -637,4 +691,13 @@ section {
     font-size: 20px;
   }
   
+}
+/* Keyframes for automatic scrolling */
+@keyframes scroll-announcements {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
 }

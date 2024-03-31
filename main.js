@@ -7,3 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const announcementsList = document.getElementById('announcements-list');
+  
+    // Pause the scrolling when hovering over the list
+    announcementsList.addEventListener('mouseover', () => {
+      announcementsList.style.animationPlayState = 'paused';
+    });
+  
+    // Resume the scrolling when not hovering over the list
+    announcementsList.addEventListener('mouseout', () => {
+      announcementsList.style.animationPlayState = 'running';
+    });
+  });
+  
