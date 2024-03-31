@@ -20,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
       announcementsList.style.animationPlayState = 'running';
     });
   });
+
   
