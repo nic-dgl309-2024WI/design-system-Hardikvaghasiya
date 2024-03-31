@@ -493,7 +493,9 @@ section {
 .form-section__label,
 .form-section__input,
 .form-section__select,
+.contact-form textarea,
 .form-section__button {
+  text-align: start;
   display: block; /* Block-level elements */
   width: 100%; /* Full width */
   margin-bottom: 10px; /* Spacing between elements */
