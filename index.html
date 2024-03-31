@@ -60,46 +60,71 @@
     <img src="images/hero image.jpg" alt="Outback Nursery" class="c-hero__image">
   </section>
 
-<!-- Product List Section -->
-<section class="c-product-list">
-  <h1 class="c-product-list__title">PRODUCT LIST</h1>
-  <div class="c-product-list__wrapper">
-    <!-- Example Product Item -->
+  <!-- Product List Section -->
+  <section class="c-product-list">
+    <h1 class="c-product-list__title">PRODUCT LIST</h1>
+    <div class="c-product-list__wrapper">
+      <!-- Example Product Item -->
+      <div class="c-product">
+        <img src="images/Fruit tree.jpg" alt="Fruit Tree" class="c-product__image">
+        <span class="c-product__name">Fruit Tree</span>
+      </div>
+      <div class="c-product">
+        <img src="images/hedging.jpg" alt="Hedging" class="c-product__image">
+        <span class="c-product__name">Hedging</span>
+      </div>
+      <div class="c-product">
+        <img src="images/japanese maple.jpg" alt="Product 1" class="c-product__image">
+        <span class="c-product__name">Japanese Maple</span>
+      </div>
+      <div class="c-product">
+        <img src="images/Decidous shrubs.jpg" alt="Product 1" class="c-product__image">
+        <span class="c-product__name">Decedious Shrubs</span>
+      </div>
+      <div class="c-product">
+        <img src="images/ornamental plant.jpg" alt="Product 1" class="c-product__image">
+        <span class="c-product__name">Ornamental Tree</span>
+      </div>
 
-    <div class="c-product">
-      <img src="images/Fruit tree.jpg" alt="Fruit Tree" class="c-product__image">
-      <span class="c-product__name">Fruit Tree</span>
     </div>
-    
+    <!-- CTA Button -->
+    <div class="c-product-list__cta">
+      <a href="coming-soon.html" class="c-button">Explore More</a>
+    </div>
+    <!-- Main container for the form section -->
+    <section class="c-product-list">
+      <h1 class="c-product-list__title">Gifts & Certificate</h1>
+      <div class="form-section">
+        <!-- Image container -->
+        <div class="form-section__image-container">
+          <img src="images/erol-ahmed-aIYFR0vbADk-unsplash.jpg" alt="Ornamental Tree" class="form-section__image">
+        </div>
+        <!-- Form container -->
+        <form class="form-section__form">
+          <!-- First Name Field -->
+          <label for="firstName" class="form-section__label">First Name</label>
+          <input type="text" id="firstName" name="firstName" class="form-section__input">
+          <!-- Last Name Field -->
+          <label for="lastName" class="form-section__label">Last Name</label>
+          <input type="text" id="lastName" name="lastName" class="form-section__input">
+          <!-- Email Field -->
+          <label for="email" class="form-section__label">Email ID</label>
+          <input type="email" id="email" name="email" class="form-section__input">
 
-    <div class="c-product">
-      <img src="images/hedging.jpg" alt="Hedging" class="c-product__image">
-      <span class="c-product__name">Hedging</span>
-    </div>
-    <div class="c-product">
-      <img src="images/japanese maple.jpg" alt="Product 1" class="c-product__image">
-      <span class="c-product__name">Japanese Maple</span>
-    </div>
-    <div class="c-product">
-      <img src="images/Decidous shrubs.jpg" alt="Product 1" class="c-product__image">
-      <span class="c-product__name">Decedious Shrubs</span>
-    </div>
-    <div class="c-product">
-      <img src="images/ornamental plant.jpg" alt="Product 1" class="c-product__image">
-      <span class="c-product__name">Ornamental Tree</span>
-    </div>
-
-  </div>
-   <!-- CTA Button -->
-  <div class="c-product-list__cta">
-    <a href="coming-soon.html" class="c-button">Explore More</a>
-  </div>
-</section>
-
-<!-- ... rest of your HTML ... -->
-
-  <!-- Javascript -->
-  <script src="main.js"></script>
+          <!-- Select Amount Dropdown -->
+          <label for="amount" class="form-section__label">Select Amount</label>
+          <select id="amount" name="amount" class="form-section__select">
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="100">$100</option>
+          </select>
+          <!-- Submit Button -->
+          <button type="submit" class="form-section__button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Javascript -->
+    <script src="main.js"></script>
 </body>
 
 </html>

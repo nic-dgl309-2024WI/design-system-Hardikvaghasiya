@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', function() {
         heroContent.style.opacity = 1;
     }, 500);
 });
+

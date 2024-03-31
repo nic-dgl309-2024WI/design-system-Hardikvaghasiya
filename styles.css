@@ -191,6 +191,7 @@ body {
     background: var(--color-primary-background);
     height: 80px;
     width: 100%;
+    
 }
 
 .c-navbar__logo {
@@ -413,11 +414,12 @@ section {
 /* Product List Styles */
 .c-product-list {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .c-product-list__title {
-  margin-bottom: 20px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-size: 35px;
   color: var(--color-primary-text);
 }
@@ -518,3 +520,79 @@ section {
     text-overflow: ellipsis; /* Add ellipsis when text is too long */
   }
 }
+
+/*for gifts and certificate*/
+/* Form section styling */
+.form-section {
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column; /* Stack elements on mobile */
+  align-items: center; /* Center elements */
+  margin: 80px; /* Add some margin around the section */
+  padding: 20px; /* Add padding for spacing */
+  background-color: var(--color-accent); /* Light background color */
+}
+
+/* Image styling */
+.form-section__image-container {
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.form-section__image {
+  width: 100%; /* Full width on mobile */
+  max-width: 600px; /* Maximum width of the image */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Form styling */
+.form-section__form {
+  width: 100%; /* Full width on mobile */
+}
+
+.form-section__label,
+.form-section__input,
+.form-section__select,
+.form-section__button {
+  display: block; /* Block-level elements */
+  width: 100%; /* Full width */
+  margin-bottom: 10px; /* Spacing between elements */
+}
+
+.form-section__input,
+.form-section__select {
+  padding: 10px; /* Padding for inputs */
+  border: 1px solid var(--color-accent); /* Border color */
+  border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.form-section__button {
+  padding: 12px 20px;
+  background-color: var(--color-primary-background); /* Primary button color */
+  color: #fff; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.form-section__button:hover {
+  background-color: var(--color-hover); /* Darken button on hover */
+}
+
+/* Media queries for desktop */
+@media (min-width: 768px) {
+  .form-section {
+    flex-direction: row; /* Side-by-side layout on desktop */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between; /* Space between image and form */
+  }
+
+  .form-section__image-container {
+    margin-bottom: 0; /* Remove margin bottom on desktop */
+  }
+
+  .form-section__form {
+    max-width: 1000px; /* Maximum width of the form */
+  }
+}
+
