@@ -668,7 +668,7 @@ section {
 
 @media (max-width: 952px) {
   .c-navbar__logo {
-      font-size: 30px;
+      font-size: 20px;
       padding-left: 50px;
   }
   .c-navbar__link {
