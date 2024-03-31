@@ -344,8 +344,7 @@ section {
 
 .c-hero__title {
   color: var(--color-primary-text);
-  font-size: 30px; /* Adjust as needed */
-  margin-bottom: 25px;
+
 }
 
 .c-hero__description {
