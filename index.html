@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <!-- Google Fonts Import -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- External CSS File -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav class="c-navbar">
-        <input type="checkbox" id="c-check" class="c-navbar__checkbox">
-        <label for="c-check" class="c-navbar__toggle">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="c-navbar__logo">Outback Nursery</label>
-        <ul class="c-navbar__items">
-            <li class="c-navbar__item"><a class="c-navbar__link c-navbar__link--active" href="#">Home</a></li>
-            <li class="c-navbar__item"><a class="c-navbar__link" href="#">Product List</a></li>
-            <li class="c-navbar__item"><a class="c-navbar__link" href="#">Gift Certificate</a></li>
-            <li class="c-navbar__item"><a class="c-navbar__link" href="#">FAQ</a></li>
-            <li class="c-navbar__item"><a class="c-navbar__link" href="#">Announcement</a></li>
-            <li class="c-navbar__item"><a class="c-navbar__link" href="#">Contact Us</a></li>
-        </ul>
-    </nav>
-    
-    
 
-    <!-- Javascript -->
-    <script src="navbar.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive viewport for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outback Nursery</title>
+  <!-- Google Fonts for typography -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;700&display=swap"
+    rel="stylesheet">
+  <!-- Additional Google Fonts for typography -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation bar section -->
+  <nav class="c-navbar">
+    <!-- Checkbox for toggle menu in mobile view -->
+    <input type="checkbox" id="c-check" class="c-navbar__checkbox">
+    <!-- Hamburger icon for mobile menu toggle -->
+    <label for="c-check" class="c-navbar__toggle">
+      <i class="fas fa-bars"></i>
+    </label>
+    <!-- Logo of the nursery -->
+    <label class="c-navbar__logo">Outback Nursery</label>
+    <!-- Navigation links -->
+    <ul class="c-navbar__items">
+      <!-- List of navigation links -->
+      <li class="c-navbar__item"><a class="c-navbar__link c-navbar__link--active" href="index.html">Home</a></li>
+      <li class="c-navbar__item"><a class="c-navbar__link" href="#">Product List</a></li>
+      <li class="c-navbar__item"><a class="c-navbar__link" href="#">Gift Certificate</a></li>
+      <li class="c-navbar__item"><a class="c-navbar__link" href="#">FAQ</a></li>
+      <li class="c-navbar__item"><a class="c-navbar__link" href="#">Announcement</a></li>
+      <li class="c-navbar__item"><a class="c-navbar__link" href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <!-- Hero Section -->
+  <section class="c-hero">
+    <!-- Content within the hero section -->
+    <div class="c-hero__content">
+      <!-- Title of the hero section -->
+      <h1 class="c-hero__title">Welcome to Outback Nursery & Garden Centre</h1>
+      <!-- Description within the hero section, with utility classes for styling -->
+      <p class="c-hero__description  c-u-ff-quicksand c-u-fw-400 c-fs-small c-u-ls-2 c-u-lh-1-5"> Outback Nursery is one
+        of the largest garden centres on Vancouver Island. Our nursery is situated on a 6 acre property and offers 5
+        overflowing greenhouses (30x170ft); almost 23,000 square feet.</p>
+      <!-- Call to Action buttons -->
+      <a href="coming-soon.html" target="_blank" class="c-hero__cta">Our Collection</a>
+      <a href="coming-soon.html" class="c-hero__cta c-hero__cta--learn-more">Discover Story</a>
+    </div>
+    <!-- Full-screen hero image -->
+    <img src="images/isabella-fischer-nBcOnMoP18g-unsplash.jpg" alt="Outback Nursery" class="c-hero__image">
+  </section>
+  <!-- Javascript -->
+  <script src="main.js"></script>
 </body>
+
 </html>
