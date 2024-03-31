@@ -390,8 +390,6 @@ section {
 }
 
 
-
-
 /*****Media Queries for Desktop*******/
 @media (min-width: 1024px) {
   .c-hero__title {
@@ -466,10 +464,29 @@ section {
   overflow: hidden; /* Hide overflow */
   text-overflow: ellipsis; /* Add ellipsis when text is too long */
 }
+/* Product List CTA Styles */
+.c-product-list__cta {
+  text-align: center; /* Centers the CTA button */
+  margin-top: 30px; /* Space above the CTA button */
+}
 
+.c-button {
+  font-family: var(--font-primary);
+  padding: 20px 40px; /* Increase padding for a larger button */
+  font-size: 20px; /* Increase font size for better readability */
+  border-radius: 10px;
+  height: 40px;
+  background-color: var(--color-primary-background); /* Background color of the button */
+  color: white; /* Text color of the button */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 10px; /* Rounded corners for the button */
+  font-weight: bold; /* Optional: if you want the font to be bold */
+  transition: background-color 0.3s; /* Smooth background color change on hover */
+}
 
-
-
+.c-button:hover {
+  background-color: var(--color-primary-background); /* Darker shade on hover */
+}
 
 /* Adjustments for Desktop */
 @media (min-width: 768px) {
