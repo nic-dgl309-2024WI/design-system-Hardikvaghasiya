@@ -244,15 +244,7 @@ text-decoration:solid;
 }
 
 /* Responsive adjustments */
-@media (max-width: 952px) {
-    .c-navbar__logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    .c-navbar__link {
-        font-size: 16px;
-    }
-}
+
 
 @media (max-width: 858px) {
     .c-navbar__toggle {
@@ -344,7 +336,8 @@ section {
 
 .c-hero__title {
   color: var(--color-primary-text);
-
+  font-size: 30px; /* Adjust as needed */
+  margin-bottom: 25px;
 }
 
 .c-hero__description {
@@ -389,27 +382,6 @@ section {
   object-fit: cover; /* Cover the viewport without losing aspect ratio */
 }
 
-
-/*****Media Queries for Desktop*******/
-@media (min-width: 1024px) {
-  .c-hero__title {
-  color: var(--color-primary-text);
-  font-size: 35px; /* Adjust as needed */
-  margin-bottom: 25px;
-  }
-
-  .c-hero__description {
-    font-size: 20px;
-  }
-
-  .c-hero__cta {
-    padding: 20px 30px;
-    border-radius: 17px;
-    font-size: 20px; /* Larger font size for desktop */
-  }
-
-
-}
 /* Product List Styles */
 .c-product-list {
   text-align: center;
@@ -489,37 +461,6 @@ section {
   background-color: var(--color-primary-background); /* Darker shade on hover */
 }
 
-/* Adjustments for Desktop */
-@media (min-width: 768px) {
-  .c-product-list__wrapper {
-    
-    justify-content:center;
-     /* Center items in a larger viewport */
-    gap: 100px;
-  }
-
-  .c-product {
-    
-    width: 300px; /* Larger size for desktop */
-    height: 300px; /* Larger size for desktop */
-  }
-  .c-product__name {
-    font-family: var(--font-secondary);
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the positioning */
-    width: 90%; /* Width relative to parent */
-    color: white;
-    font-size: 26px; /* Choose a size that fits well */
-    font-weight: bold; /* Optional: if you want the font to be bold */
-    text-align: center;
-    white-space: nowrap; /* Prevents the text from wrapping */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis when text is too long */
-  }
-}
-
 /*for gifts and certificate*/
 /* Form section styling */
 .form-section {
@@ -575,11 +516,43 @@ section {
 }
 
 .form-section__button:hover {
-  background-color: var(--color-hover); /* Darken button on hover */
+  background-color: var(--color-primary-background); /* Darken button on hover */
 }
 
-/* Media queries for desktop */
+
+
+/******************************* Media Queries ****************************************/
+
+/* Media Queries for Tablets and larger devices */
+
 @media (min-width: 768px) {
+  .c-product-list__wrapper {
+    
+    justify-content:center;
+     /* Center items in a larger viewport */
+    gap: 100px;
+  }
+
+  .c-product {
+    
+    width: 300px; /* Larger size for desktop */
+    height: 300px; /* Larger size for desktop */
+  }
+  .c-product__name {
+    font-family: var(--font-secondary);
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the positioning */
+    width: 90%; /* Width relative to parent */
+    color: white;
+    font-size: 26px; /* Choose a size that fits well */
+    font-weight: bold; /* Optional: if you want the font to be bold */
+    text-align: center;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis when text is too long */
+  }
   .form-section {
     flex-direction: row; /* Side-by-side layout on desktop */
     align-items: flex-start; /* Align items to the start */
@@ -593,5 +566,75 @@ section {
   .form-section__form {
     max-width: 1000px; /* Maximum width of the form */
   }
+} 
+@media (max-width: 858px) {
+  /* Navbar styles */
+  .c-navbar__toggle {
+    display: block;
+  }
+  .c-navbar__items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary-background);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .c-navbar__item {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .c-navbar__link {
+    font-size: 20px;
+  }
+  #c-check:checked ~ .c-navbar__items {
+    left: 0;
+  }
+
+  /* Product list adjustments */
+  .c-product-list__wrapper {
+    justify-content: center;
+    gap: 100px;
+  }
+  .c-product {
+    width: 300px;
+    height: 300px;
+  }
+  .c-product__name {
+    font-family: var(--font-secondary);
+    font-size: 26px;
+  }
+
 }
 
+@media (max-width: 952px) {
+  .c-navbar__logo {
+      font-size: 30px;
+      padding-left: 50px;
+  }
+  .c-navbar__link {
+      font-size: 16px;
+  }
+}
+
+/* Media Queries for Desktops and larger devices */
+@media (min-width: 1024px) {
+  /* Hero section adjustments */
+  .c-hero__title {
+    color: var(--color-primary-text);
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .c-hero__description {
+    font-size: 20px;
+  }
+  .c-hero__cta {
+    padding: 20px 30px;
+    border-radius: 17px;
+    font-size: 20px;
+  }
+  
+}
