@@ -40,6 +40,9 @@ ol {
   --font-secondary: "Quicksand", sans-serif;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 
 
 /* Utility Classes for Font Family */
@@ -570,6 +573,7 @@ section {
 .announcements-list {
   animation: scroll-announcements 10s linear infinite;
 }
+
 
 
 
