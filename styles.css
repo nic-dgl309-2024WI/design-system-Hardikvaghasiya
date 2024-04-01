@@ -580,7 +580,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
-  background-color: #333;
+  background-color: var(--color-primary-background);
   color: #fff;
   gap: 1rem;
 }
@@ -655,6 +655,8 @@ section {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+
 
 
 
