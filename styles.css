@@ -574,6 +574,73 @@ section {
   animation: scroll-announcements 10s linear infinite;
 }
 
+/* FAQ Accordion Styles */
+.faq-section {
+  padding: 20px;
+}
+
+.faq-section__title {
+  text-align: center;
+  margin-bottom: 20px; /* Increase margin */
+  font-size: 24px; /* Larger font size for the title */
+}
+
+.faq-section__item:not(:last-child) {
+  margin-bottom: 15px; /* Increase space between items */
+}
+.faq-section__question::before {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 12px;
+}
+
+.faq-section__question[aria-expanded="true"]::before {
+  content: '-';
+}
+.faq-section__question {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  background-color: var(--color-accent);
+  padding-right: 20px;
+  border-radius: 10px;
+  padding: 20px; /* Increase padding for larger touch target */
+  cursor: pointer;
+  font-size: 18px; /* Larger font size for the question text */
+  border: 1px solid var(--color-accent); /* Add border for definition */
+}
+
+.faq-section__answer {
+  text-align: center;
+  border-radius: 10px;
+  display: none; /* Hidden by default */
+  padding: 15px; /* Increase padding for the answer */
+  background-color: var(--color-background);
+  font-size: 16px; /* Set font size for the answer text */
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+  .faq-section {
+    max-width: 94%;
+    margin: auto;
+  }
+
+  .faq-section__question {
+    font-size: 20px; /* Even larger font size for desktop */
+  }
+
+  .faq-section__answer {
+    text-align: start;
+    display: none;
+    font-size: 18px; /* Adjust font size for desktop if necessary */
+  }
+}
+
+
 /* Footer Styles */
 .footer {
   display: flex;

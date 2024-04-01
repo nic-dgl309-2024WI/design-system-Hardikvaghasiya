@@ -7,17 +7,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const announcementsList = document.getElementById('announcements-list');
-  
-    // Pause the scrolling when hovering over the list
-    announcementsList.addEventListener('mouseover', () => {
-      announcementsList.style.animationPlayState = 'paused';
-    });
-  
-    // Resume the scrolling when not hovering over the list
-    announcementsList.addEventListener('mouseout', () => {
-      announcementsList.style.animationPlayState = 'running';
-    });
+
+// Function to toggle the accordion
+function toggleAccordion() {
+  const accordions = document.querySelectorAll('.faq-section__question');
+
+  accordions.forEach(acc => {
+    acc.onclick = function() {
+      this.classList.toggle('active');
+      this.setAttribute('aria-expanded', this.classList.contains('active'));
+
+      let panel = this.nextElementSibling;
+      if (panel.style.display === 'block') {
+        panel.style.display = 'none';
+      } else {
+        panel.style.display = 'block';
+      }
+    }
   });
+}
+
+// Call the function when the DOM is fully loaded
+window.onload = function() {
+  toggleAccordion();
+}
+
   
