@@ -1,32 +1,12 @@
-// script for navbar
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-});
 
 
-
-
-// Add JavaScript to handle toggling for browsers that don't support CSS-only toggling
-document.addEventListener('DOMContentLoaded', () => {
-  const checkbox = document.getElementById('c-check');
-  const toggle = document.querySelector('.c-navbar__toggle');
-
-  toggle.addEventListener('click', () => {
-    checkbox.checked = !checkbox.checked;
-  });
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const heroContent = document.querySelector('.hero__content');
-    heroContent.style.opacity = 0;
-    window.setTimeout(function() {
-        heroContent.style.transition = 'opacity 2s';
-        heroContent.style.opacity = 1;
-    }, 500);
+document.addEventListener('DOMContentLoaded', function () {
+  const heroContent = document.querySelector('.hero__content');
+  heroContent.style.opacity = 0;
+  window.setTimeout(function () {
+    heroContent.style.transition = 'opacity 2s';
+    heroContent.style.opacity = 1;
+  }, 500);
 });
 
 
@@ -54,14 +34,21 @@ window.onload = function() {
   toggleAccordion();
 }
 
+// script for navbar
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+});
 
 
-// JavaScript to toggle the accordion
-document.querySelectorAll('.faq-section__question').forEach(button => {
-  button.addEventListener('click', () => {
-    const expanded = button.getAttribute('aria-expanded') === 'true' || false;
-    button.setAttribute('aria-expanded', !expanded);
-    const answer = button.nextElementSibling;
-    answer.hidden = !answer.hidden;
+// Add JavaScript to handle toggling for browsers that don't support CSS-only toggling
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox = document.getElementById('c-check');
+  const toggle = document.querySelector('.c-navbar__toggle');
+
+  toggle.addEventListener('click', () => {
+    checkbox.checked = !checkbox.checked;
   });
 });
