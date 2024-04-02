@@ -246,40 +246,6 @@ text-decoration:solid;
     display: none;
 }
 
-/* Responsive adjustments */
-
-
-@media (max-width: 858px) {
-    .c-navbar__toggle {
-        display: block;
-    }
-    .c-navbar__items {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: var(--color-primary-background);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    .c-navbar__item {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    .c-navbar__link {
-        font-size: 20px;
-    }
-    .c-navbar__link:hover,
-    .c-navbar__link--active {
-        background: none;
-        color: var(--color-active);
-    }
-    #c-check:checked ~ .c-navbar__items {
-        left: 0;
-    }
-}
 
 /* Optional: Section styles if needed */
 section {
@@ -638,24 +604,6 @@ section {
   font-size: 16px; /* Set font size for the answer text */
 }
 
-/* Media Queries for Desktop */
-@media (min-width: 768px) {
-  .faq-section {
-    max-width: 94%;
-    margin: auto;
-  }
-
-  .faq-section__question {
-    font-size: 20px; /* Even larger font size for desktop */
-  }
-
-  .faq-section__answer {
-    text-align: start;
-    display: none;
-    font-size: 18px; /* Adjust font size for desktop if necessary */
-  }
-}
-
 
 /* Footer Styles */
 .footer {
@@ -797,6 +745,20 @@ section {
     /* Adjustments for larger screens */
     max-width: 92%; /* Or as per your design requirements */
   }
+  .faq-section {
+    max-width: 94%;
+    margin: auto;
+  }
+
+  .faq-section__question {
+    font-size: 20px; /* Even larger font size for desktop */
+  }
+
+  .faq-section__answer {
+    text-align: start;
+    display: none;
+    font-size: 18px; /* Adjust font size for desktop if necessary */
+  }
   /**footer**/
   .footer {
     flex-wrap: nowrap;
@@ -830,6 +792,35 @@ section {
   }
 } 
 @media (max-width: 858px) {
+   .c-navbar__toggle {
+        display: block;
+    }
+    .c-navbar__items {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--color-primary-background);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .c-navbar__item {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .c-navbar__link {
+        font-size: 20px;
+    }
+    .c-navbar__link:hover,
+    .c-navbar__link--active {
+        background: none;
+        color: var(--color-active);
+    }
+    #c-check:checked ~ .c-navbar__items {
+        left: 0;
+    }
   /* Navbar styles */
   .c-navbar__toggle {
     display: block;
@@ -869,7 +860,35 @@ section {
     font-family: var(--font-secondary);
     font-size: 26px;
   }
-
+  .c-navbar__toggle {
+    display: block;
+}
+.c-navbar__items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-primary-background);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+.c-navbar__item {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+.c-navbar__link {
+    font-size: 20px;
+}
+.c-navbar__link:hover,
+.c-navbar__link--active {
+    background: none;
+    color: var(--color-active);
+}
+#c-check:checked ~ .c-navbar__items {
+    left: 0;
+}
 }
 
 @media (max-width: 952px) {
