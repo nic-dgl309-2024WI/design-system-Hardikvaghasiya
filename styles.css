@@ -330,7 +330,7 @@ section {
 
 .c-hero__content {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2; /* Ensures content is above the image */
