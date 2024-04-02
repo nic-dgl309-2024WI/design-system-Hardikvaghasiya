@@ -423,12 +423,7 @@ section {
   object-fit: cover;
 }
 
-.c-product__description {
-  color: var(--color-secondary-text); /* Choose a color that fits the design */
-  padding: 5px 10px; /* Add some padding */
-  text-align: center; /* Center the text */
-  font-size: 14px; /* Adjust the font size as needed */
-}
+
 .c-product__name {
   position: absolute;
   top: 50%; /* Center vertically */
@@ -443,6 +438,24 @@ section {
   overflow: hidden; /* Hide overflow */
   text-overflow: ellipsis; /* Add ellipsis when text is too long */
 }
+.c-product__description {
+  color: #fff; /* Make the text color white for better visibility */
+  position: absolute; /* Position it absolutely within the relative parent */
+  bottom: 0; /* Align to the bottom of the image */
+  left: 0;
+  width: 100%; /* Full width */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Padding for spacing */
+  font-size: 14px; /* Adjust the font size as needed */
+  text-align: center; /* Center the text */
+  border-bottom-left-radius: 50%; /* Optional: Match the parent's border-radius if needed */
+  border-bottom-right-radius: 50%; /* Optional: Match the parent's border-radius if needed */
+}
+
+.c-product:hover .c-product__description {
+  display: block; /* Show description on hover */
+}
+
 /* Product List CTA Styles */
 .c-product-list__cta {
   text-align: center; /* Centers the CTA button */
@@ -751,7 +764,7 @@ section {
   .c-product__name {
     font-family: var(--font-secondary);
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 30%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Offset the positioning */
     width: 90%; /* Width relative to parent */
