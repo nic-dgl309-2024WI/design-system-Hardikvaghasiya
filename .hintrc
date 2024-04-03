@@ -13,7 +13,8 @@
     "axe/structure": [
       "default",
       {
-        "listitem": "off"
+        "listitem": "off",
+        "list": "off"
       }
     ],
     "no-inline-styles": "off",
@@ -29,6 +30,23 @@
       {
         "frame-title": "off"
       }
+    ],
+    "compat-api/html": [
+      "off",
+      {
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 116",
+    "not firefox <= 117",
+    "not ios_saf <= 16.6",
+    "not safari <= 16.6",
+    "not ios_saf <= 16.6"
+  ]
 }
