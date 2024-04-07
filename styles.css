@@ -312,6 +312,7 @@ section {
 .c-hero__description {
   font-family: var(--font-secondary);
   font-size: 20px; /* Adjust as needed */
+  font-weight: 600;
   margin-bottom: 30px;
   color: var(--color-text-highlight);
 }
@@ -511,7 +512,8 @@ section {
   max-width: 75%; /* Set a max-width for the container */
   margin: 2rem auto; /* Center the container with auto margins */
   padding: 1rem;
-  background-color: var(--color-accent); /* Background color */
+  height: 300px;
+  background-color: var(--color-background); /* Background color */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px var(--color-background); /* A subtle shadow for depth */
 }
@@ -527,6 +529,7 @@ section {
 /* Scrolling Announcement List */
 .announcements-scroll {
   overflow: hidden;
+  height: 150px;
   position: relative;
 }
 
@@ -743,7 +746,7 @@ section {
   .announcements-container {
     position: relative;
     /* Adjustments for larger screens */
-    max-width: 92%; /* Or as per your design requirements */
+    max-width: 100%; /* Or as per your design requirements */
   }
   .faq-section {
     max-width: 94%;
