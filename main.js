@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const heroContent = document.querySelector('.hero__content');
   heroContent.style.opacity = 0;
@@ -52,3 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
     checkbox.checked = !checkbox.checked;
   });
 });
+
+
