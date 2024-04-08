@@ -6,6 +6,7 @@
   --color-primary-text: #19193E;/*Primary text color*/
   --color-primary-background: #ADA8E1;/*Dark background color is set*/
   --color-background: #faeee7;/*background color*/
+  --color-containers: rgb(46, 139, 87);
   --color-text-highlight: #ff8ba7;/*text highlight*/
   --color-accent: #f0f0f0;/*light accent color*/
   --color-secondary-text: #e5d283;/*Secondary text color*/
@@ -359,7 +360,7 @@ section {
 }
 
 .c-product-list__title {
-  margin-top: 35px;
+  margin-top: 50px;
   margin-bottom: 35px;
   font-size: 35px;
   color: var(--color-primary-text);
@@ -448,64 +449,105 @@ section {
 }
 
 /*for gifts and certificate*/
-/* Form section styling */
-.form-section {
+/* New form styling */
+.split-layout {
+  background-color: var(--color-containers);
   display: flex;
-  border-radius: 20px;
-  flex-direction: column; /* Stack elements on mobile */
-  align-items: center; /* Center elements */
-  margin: 20px; /* Add some margin around the section */
-  padding: 20px; /* Add padding for spacing */
-  background-color: var(--color-accent); /* Light background color */
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 20px;
+  margin: 40px 0;
 }
 
-/* Image styling */
 .form-section__image-container {
-  margin-bottom: 20px; /* Space below the image */
+  flex: 1;
+  text-align: center;
+  position: relative;
 }
 
 .form-section__image {
-  width: 100%; /* Full width on mobile */
-  max-width: 600px; /* Maximum width of the image */
-  height: auto; /* Keep aspect ratio */
-  border-radius: 10px; /* Rounded corners */
+
+  max-width: 100%;
+  height: 550px;
+  border-radius: 10px;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-primary-text); /* Choose a color that stands out on your image */
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold;
+  /* Additional styles to make it look nice */
 }
 
-/* Form styling */
+.form-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 3.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section__title {
+  text-align: left;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
 .form-section__form {
-  width: 100%; /* Full width on mobile */
-}
-
-.form-section__label,
-.form-section__input,
-.form-section__select,
-.contact-form textarea,
-.form-section__button {
-  text-align: start;
-  display: block; /* Block-level elements */
-  width: 100%; /* Full width */
-  margin-bottom: 10px; /* Spacing between elements */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .form-section__input,
 .form-section__select {
-  padding: 10px; /* Padding for inputs */
-  border: 1px solid var(--color-accent); /* Border color */
-  border-radius: 5px; /* Rounded corners for inputs */
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .form-section__button {
-  padding: 12px 20px;
-  background-color: var(--color-primary-background); /* Primary button color */
-  color: #fff; /* Text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  padding: 1rem;
+  background-color: var(--color-primary-background);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .form-section__button:hover {
-  background-color: var(--color-primary-background); /* Darken button on hover */
+  background-color: #4cae4c;
 }
+
+@media (max-width: 768px) {
+  .split-layout {
+      flex-direction: column;
+  }
+
+  .form-section__image-container {
+      order: -1; /* Ensure image is above the form on mobile */
+  }
+
+  .form-section,
+  .form-section__image-container {
+      width: 100%;
+  }
+
+  .form-section__form {
+      width: auto;
+  }
+}
+
+
 
 /* Container for announcements */
 .announcements-container {
