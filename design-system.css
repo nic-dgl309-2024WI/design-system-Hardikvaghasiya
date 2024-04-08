@@ -515,6 +515,32 @@ code {
   pointer-events: none;
 }
 
+/*lists css*/
+/* Base styles */
+.simple-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.simple-list-item {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+/* Applying the utility class properties */
+.c-u-ff-quicksand { font-family: 'Quicksand', sans-serif; }
+
+.fw-400 { font-weight: 400; }
+
+.fs-16 { font-size: 16px; }
+
+.px-0_25 { padding-right: 0.25rem; padding-left: 0.25rem; }
+
+.py-0_25 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+
 
 /*******Media Query*******/
 /*** Adjustments for smaller screen***/
