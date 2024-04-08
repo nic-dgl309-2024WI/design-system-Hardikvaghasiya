@@ -479,6 +479,40 @@ code {
     background: transparent;
 }
 
+/*Breadcrumbs*/
+.breadcrumbs {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  align-items:center;
+  margin-top: 20px; /* Or any value that fits your design */
+}
+
+.breadcrumb-item {
+  font-size: 30px; /* Mobile-friendly font size */
+}
+
+.breadcrumb-item a {
+  color: var(--color-background-color); /* Link color */
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  margin: 0 5px; /* Spacing around the separator */
+  color: var(--color-background-color); /* Separator color */
+}
+
+.breadcrumb-item.active {
+  color: var(--color-active); /* Active or current page color */
+  pointer-events: none;
+}
 
 
 /*******Media Query*******/
