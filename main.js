@@ -52,3 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+/*code box js*/
+function copyCode() {
+  const code = document.querySelector('.codebox code').innerText;
+  navigator.clipboard.writeText(code)
+      .then(() => alert('Code copied to clipboard!'))
+      .catch(err => console.error('Error copying text: ', err));
+}
