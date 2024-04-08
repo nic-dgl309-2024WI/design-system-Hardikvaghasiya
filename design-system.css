@@ -520,7 +520,7 @@ code {
 .simple-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 70px;
 }
 
 .simple-list-item {
