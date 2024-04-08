@@ -731,7 +731,7 @@ footer{
 .left .content .social a span{
   height: 40px;
   width: 40px;
-  background: #1a1a1a;
+  background: var(--color-background);
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -739,7 +739,7 @@ footer{
   transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background: #f12020;
+  background: var(--color-hover);
 }
 .center .content .fas{
   font-size: 1.4375rem;
@@ -753,7 +753,7 @@ footer{
   cursor: pointer;
 }
 .center .content .fas:hover{
-  background: #f12020;
+  background: var(--color-active);
 }
 .center .content .text{
   font-size: 1.0625rem;
