@@ -465,6 +465,14 @@ section {
   text-align: center;
   position: relative;
 }
+/* Styling the iframe containing the Google Map */
+.form-section__image-container iframe {
+  align-items:center;
+  width: 510px; /* Full width to match the container */
+  height: 500px; /* Set a fixed height, or use a percentage value if you prefer */
+  border: 0; /* Remove default border */
+  border-radius: 20px; /* Apply border-radius here as well for older browsers */
+}
 
 .form-section__image {
 
@@ -904,6 +912,10 @@ footer{
     display: none;
     font-size: 18px; /* Adjust font size for desktop if necessary */
   }
+  .form-section__image-container iframe {
+    height: 400px; /* Taller map for larger screens */
+    border-radius: 10px;
+  }
   /**footer**/
   .footer {
     flex-wrap: nowrap;
@@ -1061,6 +1073,10 @@ footer{
     padding: 20px 30px;
     border-radius: 17px;
     font-size: 20px;
+  }
+  .form-section__image-container iframe {
+    border-radius: 10px;
+    height: 500px; /* Even taller map for the largest screens */
   }
   
 }
