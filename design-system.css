@@ -491,6 +491,7 @@ code {
 }
 
 .breadcrumb-item {
+  padding-left: 60px;
   font-size: 30px; /* Mobile-friendly font size */
 }
 
