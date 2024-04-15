@@ -559,7 +559,7 @@ max-height: 467px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--color-primary-text); /* Choose a color that stands out on your image */
-  font-size: 3rem; /* Adjust the size as needed */
+  font-size: 35px; /* Adjust the size as needed */
   font-weight: bold;
   /* Additional styles to make it look nice */
 }
@@ -695,7 +695,7 @@ max-height: 467px;
 .c-resources__title {
   margin-bottom: 2rem;
   color: var(--color-accent);
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .c-resources__list {
@@ -1249,7 +1249,7 @@ footer{
   
   /* Comment: Services title size adjustment */
   .c-services__title {
-    font-size: 2.5rem;
+    font-size: 35px;
   }
 
   /**footer**/
