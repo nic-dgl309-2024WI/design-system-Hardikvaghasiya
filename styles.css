@@ -542,7 +542,7 @@ section {
 .form-section__image-container iframe {
   align-items:center;
   width: 510px; /* Full width to match the container */
-  height: 500px; /* Set a fixed height, or use a percentage value if you prefer */
+  height: 570px; /* Set a fixed height, or use a percentage value if you prefer */
   border: 0; /* Remove default border */
   border-radius: 20px; /* Apply border-radius here as well for older browsers */
 }
