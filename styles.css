@@ -507,10 +507,10 @@ section {
 }
 
 .c-button {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   padding: 20px 40px;
   font-size: 20px;
-  background-color: var(--color-primary-background);
+  background-color: var(--first-color);
   color: white;
   text-decoration: none;
   border-radius: 10px;
@@ -975,7 +975,7 @@ footer{
     max-width: 100%; /* Or as per your design requirements */
   }
   .faq-section {
-    max-width: 94%;
+    max-width: 50%;
     margin: auto;
   }
 
