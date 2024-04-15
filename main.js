@@ -59,3 +59,5 @@ function copyCode() {
       .then(() => alert('Code copied to clipboard!'))
       .catch(err => console.error('Error copying text: ', err));
 }
+
+
