@@ -411,10 +411,9 @@ section {
   transform: translateX(.25rem);
 }
 
-/* Product List Styles */
+/* General product list styling */
 .c-product-list {
   text-align: center;
-
 }
 
 .c-product-list__title {
@@ -428,83 +427,99 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  
-  justify-content: space-around; /* Distribute space evenly around items */
- 
+  justify-content: space-around; /* Evenly distribute space around items */
 }
 
+/* Circular product card design */
 .c-product {
   position: relative;
-  width: 200px; /* Control circle size here */
-  height: 200px; /* Control circle size here */
+  width: 300px; /* Diameter of circle */
+  height: 300px; /* Diameter of circle */
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 10px; /* Space between rows if wrap occurs */
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .c-product__image {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
 }
 
+.c-product__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
+}
 
 .c-product__name {
-  position: absolute;
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Offset the positioning */
-  width: 90%; /* Width relative to parent */
-  color: var(--color-accent);
-  font-size: 16px; /* Choose a size that fits well */
-  font-weight: bold; /* Optional: if you want the font to be bold */
-  text-align: center;
-  white-space: nowrap; /* Prevents the text from wrapping */
-  overflow: hidden; /* Hide overflow */
-  text-overflow: ellipsis; /* Add ellipsis when text is too long */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 10; /* Ensure name is always visible */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity change */
+  opacity: 1; /* Fully visible initially */
 }
+
 .c-product__description {
-  color: #fff; /* Make the text color white for better visibility */
-  position: absolute; /* Position it absolutely within the relative parent */
-  bottom: 0; /* Align to the bottom of the image */
-  left: 0;
-  width: 100%; /* Full width */
+  display: none; /* Hidden by default */
+  color: white;
+  font-size: 14px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 10px; /* Padding for spacing */
-  font-size: 14px; /* Adjust the font size as needed */
-  text-align: center; /* Center the text */
-  border-bottom-left-radius: 50%; /* Optional: Match the parent's border-radius if needed */
-  border-bottom-right-radius: 50%; /* Optional: Match the parent's border-radius if needed */
+  border-radius: 50%;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out, display 0.3s ease-in-out;
+}
+
+.c-product:hover .c-product__image {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.c-product:hover .c-product__info {
+  background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+.c-product:hover .c-product__name {
+  opacity: 0; /* Hide title on hover */
 }
 
 .c-product:hover .c-product__description {
   display: block; /* Show description on hover */
+  opacity: 1; /* Fully visible on hover */
 }
 
-/* Product List CTA Styles */
+/* CTA Button Styling */
 .c-product-list__cta {
+  margin-top: 30px;
   margin-bottom: 50px;
-  text-align: center; /* Centers the CTA button */
-  margin-top: 30px; /* Space above the CTA button */
 }
 
 .c-button {
   font-family: var(--font-primary);
-  padding: 20px 40px; /* Increase padding for a larger button */
-  font-size: 20px; /* Increase font size for better readability */
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: var(--color-primary-background);
+  color: white;
+  text-decoration: none;
   border-radius: 10px;
-  height: 40px;
-  background-color: var(--color-primary-background); /* Background color of the button */
-  color: white; /* Text color of the button */
-  text-decoration: none; /* Remove underline from links */
-  border-radius: 10px; /* Rounded corners for the button */
-  font-weight: bold; /* Optional: if you want the font to be bold */
-  transition: background-color 0.3s; /* Smooth background color change on hover */
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .c-button:hover {
-  background-color: var(--color-primary-background); /* Darker shade on hover */
+  background-color: #1a1a1a; /* Darker shade on hover */
 }
 
 /*for gifts and certificate*/
@@ -926,7 +941,7 @@ footer{
   .c-product__name {
     font-family: var(--font-secondary);
     position: absolute;
-    top: 30%; /* Center vertically */
+    
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Offset the positioning */
     width: 90%; /* Width relative to parent */
