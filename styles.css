@@ -683,6 +683,84 @@ max-height: 467px;
   background-color: var(--first-color); /* Lightens the background color on hover */
 }
 
+/* Base styles for Resources Section */
+.c-resources {
+  padding: 2rem;
+  background-color: var(--first-color); /* Neutral background for the section */
+  text-align: center;
+}
+
+.c-resources__title {
+  margin-bottom: 2rem;
+  color: var(--color-accent);
+  font-size: 40px;
+}
+
+.c-resources__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.c-resources__item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
+}
+
+.c-resources__image {
+  width: 100%;
+  height: 234px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.c-resources__item-title {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.c-resources__item-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.c-resources__button {
+  background-color: var(--first-color);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.c-resources__button:hover {
+  background-color: var(--first-color);
+}
+
+.c-resources__item:hover {
+  transform: translateY(-5px); /* Lifts the card slightly */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15); /* Enhances the shadow */
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+  .c-resources__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .c-resources__item {
+    flex: 1;
+
+    margin: 0 53px;
+  }
+}
+
 
 
 
