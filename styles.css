@@ -862,6 +862,80 @@ max-height: 467px;
   background-color: var(--first-color-light);
   font-size: 16px; /* Set font size for the answer text */
 }
+/* About Us Section Base Styles */
+.about {
+    padding: 1rem; /* Responsive padding */
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center;
+}
+
+.about__img {
+    width: 100%; /* Full width on mobile */
+    max-width: 450px; /* Maximum size */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.about__title {
+    font-size: 1.5rem; /* Larger font size for the title */
+    color: #333; /* Dark grey color for text */
+    margin-bottom: 1rem; /* Spacing below the title */
+}
+
+.about__description {
+    text-align: center; /* Centered text on mobile */
+    margin-bottom: 1rem; /* Spacing below the description */
+    color: #555; /* Slightly lighter grey color for the description */
+}
+
+.about__list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.about__item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center align items */
+    gap: 0.5rem; /* Space between icon and text */
+    margin-bottom: 0.5rem; /* Spacing between list items */
+}
+
+.about__icon {
+    /* Add styles for your icons here */
+}
+
+
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+    .about__container {
+        flex-direction: row; /* Side by side on desktop */
+        justify-content:center; /* Evenly space out the elements */
+    }
+
+    .about__img {
+        width: 332px; /* Auto width on desktop */
+        margin-right: 3rem; /* Spacing to the right of the image */
+    }
+
+    .about__data {
+        max-width: 600px; /* Maximum width for the text container */
+        text-align: left; /* Align text to the left on desktop */
+    }
+
+    .about__title {
+        font-size: 2rem; /* Larger font size for the title */
+    }
+
+    .about__description {
+        text-align: start; /* Align text to the start */
+    }
+
+    /* Larger font sizes and other adjustments for desktop can go here */
+}
 
 
 
