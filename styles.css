@@ -844,21 +844,21 @@ max-height: 467px;
   position: relative;
   width: 100%;
   text-align: left;
-  background-color: var(--color-accent);
+  background-color: var(--first-color-lighten);
   padding-right: 20px;
   border-radius: 10px;
   padding: 20px; /* Increase padding for larger touch target */
   cursor: pointer;
   font-size: 18px; /* Larger font size for the question text */
-  border: 1px solid var(--color-accent); /* Add border for definition */
+  border: 1px solid var(--first-color-lighten); /* Add border for definition */
 }
 
 .faq-section__answer {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
   display: none; /* Hidden by default */
   padding: 15px; /* Increase padding for the answer */
-  background-color: var(--color-background);
+  background-color: var(--first-color-light);
   font-size: 16px; /* Set font size for the answer text */
 }
 
