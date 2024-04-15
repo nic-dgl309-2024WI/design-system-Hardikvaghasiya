@@ -800,6 +800,7 @@ max-height: 467px;
   animation: scroll-announcements 10s linear infinite; /* Smooth continuous scroll */
 }
 
+
 /* Individual announcement item */
 .c-news-announcements__item {
   padding: 10px;
@@ -861,6 +862,7 @@ max-height: 467px;
   background-color: var(--first-color-light);
   font-size: 16px; /* Set font size for the answer text */
 }
+
 
 
 /* Footer Styles */
@@ -1027,6 +1029,8 @@ footer{
 .bottom center a:hover{
   text-decoration: underline;
 }
+
+
 @media screen and (max-width: 900px) {
   footer{
     position: relative;
