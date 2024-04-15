@@ -1074,7 +1074,10 @@ footer{
   }
 
   .c-product {
-    
+    .c-product[data-product="1"],
+    .c-product[data-product="2"] {
+        display: block;
+    }
     width: 300px; /* Larger size for desktop */
     height: 300px; /* Larger size for desktop */
   }
@@ -1267,8 +1270,13 @@ footer{
     gap: 100px;
   }
   .c-product {
+    .c-product[data-product="1"],
+    .c-product[data-product="2"] {
+        display: block;
+    
     width: 300px;
     height: 300px;
+    }
   }
   .c-product__name {
     font-family: var(--font-secondary);
