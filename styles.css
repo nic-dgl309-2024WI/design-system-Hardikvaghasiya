@@ -274,7 +274,7 @@ section {
 .c-coming-soon {
   color: var(--color-primary-text);
   text-align: center;
-  padding: 50px 0;
+  padding: 10rem 0;
 }
 
 .c-coming-soon__container {
