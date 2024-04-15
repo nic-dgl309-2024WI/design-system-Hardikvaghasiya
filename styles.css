@@ -629,33 +629,34 @@ max-height: 467px;
 }
 
 /* Services Section Styles */
-/* Comment: Main services section styling */
 .c-services {
   padding: 2rem 1rem;
   text-align: center;
 }
 
-/* Comment: Services title styling */
+/* Services title styling */
 .c-services__title {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 
-/* Comment: List of services */
+/* List of services */
 .c-services__list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 15px;
 }
-
-/* Comment: Individual service item */
+/* Individual service item styling with transition for animation */
 .c-services__item {
   background-color: var(--first-color);
   border-radius: 8px;
   padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background-color to the transition */
+  cursor: pointer; /* Makes it clear that the items are interactive */
 }
+
+/* Service icon styling */
 .c-services__icon {
   color: var(--color-accent); /* Green color for icons */
   font-size: 2rem; /* Larger size for visibility */
@@ -674,6 +675,12 @@ max-height: 467px;
 .c-services__item-description {
   font-size: 1rem;
   color: var(--color-accent);
+}
+/* Hover effects for service items */
+.c-services__item:hover {
+  transform: scale(1.05); /* Scales up the card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+  background-color: var(--first-color); /* Lightens the background color on hover */
 }
 
 
