@@ -143,36 +143,40 @@
     class="c-hero__cta c-u-ff-quicksand c-u-fw-500 c-u-fs-16 c-u-ls-1 c-u-lh-1 c-u-p-0_5">Explore More</a>
 </div>
 </div>
+
     <!-- Main container for the form section -->
     <div id="giftcertificate" class="split-layout">
       <div class="form-section__image-container">
-        <img src="images/gifts.jpg" alt="Ornamental Tree" class="form-section__image">
+        <!-- Image not visible on mobile screens, controlled by CSS -->
+        <img src="images/gifts.jpg" alt="Gifts and Certificate" class="form-section__image">
         <div class="overlay-text">Gifts & Certificate</div>
       </div>
       <div class="form-section">
-        <!-- Form container -->
-        <form class="form-section__form">
-          <!-- First Name Field -->
-          <label for="firstName" class="form-section__label">First Name</label>
-          <input type="text" id="firstName" name="firstName" class="form-section__input">
-          <!-- Last Name Field -->
-          <label for="lastName" class="form-section__label">Last Name</label>
-          <input type="text" id="lastName" name="lastName" class="form-section__input">
-          <!-- Email Field -->
-          <label for="email" class="form-section__label">Email ID</label>
-          <input type="email" id="email" name="email" class="form-section__input">
-          <!-- Select Amount Dropdown -->
-          <label for="amount" class="form-section__label">Select Amount</label>
-          <select id="amount" name="amount" class="form-section__select">
+        <!-- Form container with validation -->
+        <form class="form-section__form" novalidate>
+          <!-- First Name Field with required attribute -->
+          <input type="text" id="firstName" name="firstName" class="form-section__input" placeholder="Enter your first name" required>
+    
+          <!-- Last Name Field with required attribute -->
+          <input type="text" id="lastName" name="lastName" class="form-section__input" placeholder="Enter your last name" required>
+    
+          <!-- Email Field with type and required attribute for validation -->
+          <input type="email" id="email" name="email" class="form-section__input" placeholder="Enter your email" required>
+    
+          <!-- Select Amount Dropdown with required attribute -->
+          <select id="amount" name="amount" class="form-section__select" required>
+            <option value="" selected disabled>Select an amount</option>
             <option value="25">$25</option>
             <option value="50">$50</option>
             <option value="100">$100</option>
           </select>
+    
           <!-- Submit Button -->
           <button type="submit" class="form-section__button">Submit</button>
         </form>
       </div>
     </div>
+    
     <!-- Announcements Container -->
     <div id="announcement" class="c-product-list">
       <h2 class="announcements-title">News & Announcements</h2>
