@@ -525,7 +525,7 @@ section {
 /*for gifts and certificate*/
 /* New form styling */
 .split-layout {
-  background-color: var(--color-containers);
+  background-color: var(--first-color-lighten);
   display: flex;
   align-items: center;
   justify-content: center;
