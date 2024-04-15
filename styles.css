@@ -630,12 +630,14 @@ max-height: 467px;
 
 /* Services Section Styles */
 .c-services {
+  background-color: var(--first-color);
   padding: 2rem 1rem;
   text-align: center;
 }
 
 /* Services title styling */
 .c-services__title {
+  color: var(--color-accent);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -649,7 +651,7 @@ max-height: 467px;
 }
 /* Individual service item styling with transition for animation */
 .c-services__item {
-  background-color: var(--first-color);
+  background-color: var(--color-accent);
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Added background-color to the transition */
@@ -658,7 +660,7 @@ max-height: 467px;
 
 /* Service icon styling */
 .c-services__icon {
-  color: var(--color-accent); /* Green color for icons */
+  color: var(--first-color-alt); /* Green color for icons */
   font-size: 2rem; /* Larger size for visibility */
   margin-bottom: 0.5rem; /* Space between icon and title */
 }
@@ -668,19 +670,19 @@ max-height: 467px;
 .c-services__item-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: var(--color-accent);
+  color: var(--first-color-alt);
 }
 
 /* Comment: Description for each service item */
 .c-services__item-description {
   font-size: 1rem;
-  color: var(--color-accent);
+  color: var(--first-color-alt);
 }
 /* Hover effects for service items */
 .c-services__item:hover {
   transform: scale(1.05); /* Scales up the card */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
-  background-color: var(--first-color); /* Lightens the background color on hover */
+  background-color: var(--color-accent); /* Lightens the background color on hover */
 }
 
 /* Base styles for Resources Section */
