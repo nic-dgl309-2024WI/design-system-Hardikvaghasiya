@@ -549,7 +549,7 @@ section {
 
 .form-section__image {
 
-  max-width: 100%;
+max-width: 100%;
   height: 550px;
   border-radius: 10px;
 }
@@ -964,19 +964,7 @@ footer{
   .c-product__description{
     font-size: 16px;
   }
-  .form-section {
-    flex-direction: row; /* Side-by-side layout on desktop */
-    align-items: flex-start; /* Align items to the start */
-    justify-content: space-between; /* Space between image and form */
-  }
 
-  .form-section__image-container {
-    margin-bottom: 0; /* Remove margin bottom on desktop */
-  }
-
-  .form-section__form {
-    max-width: 1000px; /* Maximum width of the form */
-  }
   .announcements-container {
     position: relative;
     /* Adjustments for larger screens */
@@ -996,10 +984,7 @@ footer{
     display: none;
     font-size: 18px; /* Adjust font size for desktop if necessary */
   }
-  .form-section__image-container iframe {
-    height: 400px; /* Taller map for larger screens */
-    border-radius: 10px;
-  }
+
   /**footer**/
   .footer {
     flex-wrap: nowrap;
