@@ -460,7 +460,7 @@ code {
 .codebox code {
     color: #f8f8f2;
     font-family: 'Source Code Pro', monospace;
-    overflow:visible;
+    overflow:auto;
 }
 
 .copy-button {
