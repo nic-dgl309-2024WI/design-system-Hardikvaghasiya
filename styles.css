@@ -1370,12 +1370,13 @@ footer{
   }
   .c-navbar__toggle {
     display: block;
+    color: var(--first-color);
 }
 .c-navbar__items {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: var(--color-primary-background);
+    background: var(--body-color);
     top: 80px;
     left: -100%;
     text-align: center;
