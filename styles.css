@@ -433,6 +433,7 @@ section {
 
 /* Circular product card design */
 .c-product {
+  display: none; /* Hide all products by default in all views */
   position: relative;
   width: 300px; /* Diameter of circle */
   height: 300px; /* Diameter of circle */
@@ -506,6 +507,10 @@ section {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
+
+
+/* Continue with your other CSS for animations and layout adjustments */
 
 .c-button {
   font-family: var(--font-secondary);
@@ -914,34 +919,6 @@ max-height: 467px;
 }
 
 
-/* Media Queries for Desktop */
-@media (min-width: 768px) {
-    .about__container {
-        flex-direction: row; /* Side by side on desktop */
-        justify-content:center; /* Evenly space out the elements */
-    }
-
-    .about__img {
-        width: 332px; /* Auto width on desktop */
-        margin-right: 3rem; /* Spacing to the right of the image */
-    }
-
-    .about__data {
-        max-width: 600px; /* Maximum width for the text container */
-        text-align: left; /* Align text to the left on desktop */
-    }
-
-    .about__title {
-        font-size: 2rem; /* Larger font size for the title */
-    }
-
-    .about__description {
-        text-align: start; /* Align text to the start */
-    }
-
-    /* Larger font sizes and other adjustments for desktop can go here */
-}
-
 
 
 /* Footer Styles */
@@ -1259,6 +1236,28 @@ footer{
   .c-services__title {
     font-size: 35px;
   }
+  .about__container {
+    flex-direction: row; /* Side by side on desktop */
+    justify-content:center; /* Evenly space out the elements */
+}
+
+.about__img {
+    width: 332px; /* Auto width on desktop */
+    margin-right: 3rem; /* Spacing to the right of the image */
+}
+
+.about__data {
+    max-width: 600px; /* Maximum width for the text container */
+    text-align: left; /* Align text to the left on desktop */
+}
+
+.about__title {
+    font-size: 2rem; /* Larger font size for the title */
+}
+
+.about__description {
+    text-align: start; /* Align text to the start */
+}
 
   /**footer**/
   .footer {
@@ -1463,5 +1462,40 @@ footer{
   }
   100% {
     top: -100%;
+  }
+}
+ /*product list visible 2 in mobile view */
+ /* Display only the second product on mobile devices */
+@media (max-width: 767px) {
+  .c-product[data-product="1"],
+  .c-product[data-product="2"],
+  .c-product[data-product="3"]
+   {
+      display: block; /* Only display the second product */
+  }
+}
+
+/* Show all products on desktop and larger devices */
+@media (min-width: 768px) {
+  .c-product {
+      display: block; /* Show all products */
+      width: 300px; /* Adjustments for desktop */
+      height: 300px;
+  }
+  .c-product-list__wrapper {
+      margin-top: 50px;
+      justify-content: center; /* Center items in a larger viewport */
+      gap: 100px;
+  }
+}
+
+/* Additional Desktop Styles */
+@media (min-width: 1024px) {
+  /* Additional adjustments for larger screens */
+  .c-product__name {
+      font-size: 26px; /* Larger text on desktop */
+  }
+  .c-product__description {
+      font-size: 16px; /* Readable description size on desktop */
   }
 }
