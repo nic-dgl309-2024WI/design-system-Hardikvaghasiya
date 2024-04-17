@@ -194,12 +194,14 @@ p {
     margin: 0;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--font-secondary);
     background-color: var(--body-color);
 }
+
 
 /* BEM and namespaced styles for navbar */
 .c-navbar {
@@ -232,7 +234,7 @@ body {
 }
 
 .c-navbar__link {
-    color: var(--title-color);
+    color: var(--first-color);
     font-size: 17px;
     text-decoration: none;
     padding: 7px 13px;
@@ -243,7 +245,7 @@ body {
 
 .c-navbar__link--active,
 .c-navbar__link:hover {
-    color: var(--color-active);
+    color: var(--first-color-light);
 text-decoration:solid;
 }
 
@@ -311,7 +313,7 @@ section {
 
 .c-hero__content {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2; /* Ensures content is above the image */
@@ -348,7 +350,17 @@ section {
 .c-hero__cta--shop {
   background-color: var(--color-hover); /* Specific background color for 'Shop Now' button */
 }
+/* Hover effect for Call-to-Action buttons */
+.c-hero__cta:hover {
+  background-color: var(--first-color-alt); /* Change background to green on hover */
+  color: white; /* Change text color to white on hover */
+}
 
+/* Specific hover effect for the 'Learn More' button, if you want it different */
+.c-hero__cta--learn-more:hover{
+  background-color: var(--color-primary-background); /* Darker background for contrast */
+  color: black; /* White text for readability */
+}
 
 .c-hero__cta--learn-more {
   background-color: var(--color-active); /* Specific background color for 'Learn More' button */
@@ -1317,7 +1329,8 @@ footer{
     .c-navbar__link:hover,
     .c-navbar__link--active {
         background: none;
-        color: var(--color-active);
+        text-decoration: dashed;
+        color: var(--first-color);
     }
     #c-check:checked ~ .c-navbar__items {
         left: 0;
@@ -1392,7 +1405,8 @@ footer{
 .c-navbar__link:hover,
 .c-navbar__link--active {
     background: none;
-    color: var(--color-active);
+    text-decoration: dashed;
+    color: var(--first-color);
 }
 #c-check:checked ~ .c-navbar__items {
     left: 0;
@@ -1427,6 +1441,7 @@ footer{
     border-radius: 17px;
     font-size: 20px;
   }
+  
   .home__social{
     right: -0rem;
     row-gap: 4.5rem;

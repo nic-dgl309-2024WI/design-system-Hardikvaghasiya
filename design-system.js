@@ -14,3 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
   var iconButton = document.querySelector('.c-c-navigation__icon-button'); // Corrected class name to match HTML
   iconButton.addEventListener('click', toggleSidebar);
 });
+
+
