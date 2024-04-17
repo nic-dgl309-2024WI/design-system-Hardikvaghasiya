@@ -601,7 +601,7 @@ max-height: 467px;
 
 .form-section__button {
   padding: 1rem;
-  background-color: var(--color-primary-background);
+  background-color: var(--color-active);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -613,7 +613,7 @@ max-height: 467px;
 }
 
 .form-section__button:hover {
-  background-color: #4cae4c;
+  background-color: var(--color-hover);
 }
 
 @media (max-width: 768px) {
