@@ -211,11 +211,12 @@ colours-link {
 }
 
 .c-bg_primary__text {
-  background-color: var(--color-primary-text);
+  background-color: var(--first-color);
 }
 
 .bg-primary {
-  background-color: var(--color-primary-background);
+  background-color: var(--body-color);
+  color: var(--first-color);
 }
 
 .c-bg__accent {
@@ -229,7 +230,14 @@ colours-link {
 }
 
 .c-bg-secondary__text {
-  background-color: var(--color-secondary-text);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+.c-cta{
+  background-color: var(--color-active);
+}
+.c-cta_2{
+  background-color: var(--color-primary-background);
 }
 
 .text-primary {
@@ -246,12 +254,13 @@ colours-link {
 }
 
 .c-text__highlight {
-  background-color: var(--color-background);
-  color: var(--color-text-highlight);
+  background-color: var(--first-color-light);
+  color: var0(--color-accent);
 }
 
 .c-color__info {
-  background-color: var(--color-primary-background);
+  background-color: var(--body-color);
+  color: var(--first-color);
 }
 
 

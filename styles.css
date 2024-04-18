@@ -2,17 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  /* Define grayscale color variables */
-  --color-primary-text: #19193E;/*Primary text color*/
+
   --color-primary-background: #ADA8E1;/*Dark background color is set*/
   --color-background: #faeee7;/*background color*/
-  --color-containers: rgb(46, 139, 87);
-  --color-text-highlight: #ff8ba7;/*text highlight*/
   --color-accent: #f0f0f0;/*light accent color*/
-  --color-secondary-text: #e5d283;/*Secondary text color*/
   --color-hover: #009688;/* Teal color for hover */
   --color-active: #ff5722;/* Deep orange color for active */
-
   --hue: 152;
   --first-color: hsl(var(--hue), 24%, 32%);
   --first-color-alt: hsl(var(--hue), 24%, 28%);
