@@ -548,6 +548,56 @@ code {
 }
 
 
+/* Carousel container styles */
+.carousel {
+  position: relative;
+  max-width: 100%; /* Responsive width */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Carousel slides container */
+.carousel__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%; /* 100% * number of images */
+}
+
+/* Individual slide image styles */
+.carousel__image {
+  width: 33.3333%; /* Each image takes up one-third of the container width */
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+/* Navigation buttons */
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  z-index: 10; /* Ensures buttons are above the images */
+}
+
+.carousel__button--prev {
+  left: 10px;
+}
+
+.carousel__button--next {
+  right: 10px;
+}
+
+@media (min-width: 768px) {
+  .carousel__button {
+      padding: 20px;
+      font-size: 18px;
+  }
+}
+
+
 /*lists css*/
 /* Base styles */
 .simple-list {

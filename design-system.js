@@ -19,4 +19,14 @@ function changeImage(imageSrc) {
   document.getElementById('galleryImage').src = imageSrc;
 }
 
+//Carousel function script
+let currentSlide = 0; // Initialize currentSlide index
+
+function changeSlide(direction) {
+    const slides = document.getElementById('carouselSlides');
+    const totalSlides = slides.children.length;
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(${-100 * currentSlide / totalSlides}%)`;
+}
+
 
