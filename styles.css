@@ -1146,8 +1146,8 @@ footer{
   }
 
   .c-product {
-    .c-product[data-product="1"],
-    .c-product[data-product="2"] {
+    .c-product[c-data__product="1"],
+    .c-product[c-data__product="2"] {
         display: block;
     }
     width: 300px; /* Larger size for desktop */
@@ -1368,8 +1368,8 @@ footer{
     margin-top: 50px;
   }
   .c-product {
-    .c-product[data-product="1"],
-    .c-product[data-product="2"] {
+    .c-product[c-data__product="1"],
+    .c-product[c-data__product="2"] {
         display: block;
     
     width: 300px;
@@ -1482,9 +1482,9 @@ footer{
  /*product list visible 2 in mobile view */
  /* Display only the second product on mobile devices */
 @media (max-width: 767px) {
-  .c-product[data-product="1"],
-  .c-product[data-product="2"],
-  .c-product[data-product="3"]
+  .c-product[c-data__product="1"],
+  .c-product[c-data__product="2"],
+  .c-product[c-data__product="3"]
    {
       display: block; /* Only display the second product */
   }
