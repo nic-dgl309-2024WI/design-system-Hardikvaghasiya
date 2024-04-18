@@ -424,6 +424,7 @@ section {
 }
 
 .c-product-list__title {
+  text-align: center;
   margin-top: 200px;
   margin-bottom: 35px;
   font-size: 35px;

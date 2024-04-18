@@ -122,6 +122,10 @@ body {
   background-color: var(--color-accent);
   z-index: 99;
 }
+#c-side__sidebar a.active {
+  color: #ffffff; 
+  background-color: #4CAF50;
+}
 
 /* Initially Hidden Mobile-only Links in Sidebar */
 #c-side__sidebar .c-mobile__only {
@@ -699,17 +703,18 @@ code {
     /* Sidebar is not fixed on mobile */
   }
 
-  /* Assuming you have an 'active' class that toggles the sidebar visibility */
-  #c-side__sidebar.active {
-    transform: translateX(0);
-    /* Adjust as necessary to bring the sidebar into view */
-  }
+
 
   /* Translate the sidebar off-screen by default */
   #c-side__sidebar {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
+  #c-side__sidebar a.active {
+    color: var(--color-active); /* White color for active link text */
+    font-weight: bold;
+}
+
 
   /* When the checkbox is checked, slide in the sidebar */
   #c-nav__check:checked ~ #c-side__sidebar {
