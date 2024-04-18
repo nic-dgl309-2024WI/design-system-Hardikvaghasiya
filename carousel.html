@@ -53,44 +53,60 @@
         <h4>Utilities</h4>
         <li><a href="spacing.html">03 Spacing</a></li>
         <li><a href="containers.html">04 Containers</a></li>
-        <li><a href="images.html" >05 Images</a></li>
-        <li><a href="interactive.html" >06 Interactive</a></li>
+        <li><a href="images.html">05 Images</a></li>
+        <li><a href="interactive.html">06 Interactive</a></li>
 
 
         <!-- Navigation Enhancements -->
         <h4>Navigation</h4>
-        <li><a href="navbars.html" >07 Navbars</a></li>
-        <li><a href="breadcrumbs.html" >08 Breadcrumbs</a></li>
+        <li><a href="navbars.html">07 Navbars</a></li>
+        <li><a href="breadcrumbs.html">08 Breadcrumbs</a></li>
         <li><a href="pagination.html">09 Pagination</a></li>
 
         <!-- Content Blocks -->
         <h4>Blocks</h4>
         <li><a href="hero.html"></a>10 Hero</li>
         <li><a href="carousel.html">11 Carousel</a></li>
-        <li><a href="footer.html"9 >12 Footer</a></li>
+        <li><a href="footer.html" 9>12 Footer</a></li>
 
         <!-- Reusable Components -->
         <h4>Components</h4>
-        <li><a href="cards.html"9 >13 Cards</a></li>
-        <li><a href="forms.html"9 >14 Forms</a></li>
-        <li><a href="accordian.html" >15 accordian</a></li>
-        <li><a href="lists.html" >16 Lists</a></li>
+        <li><a href="cards.html" 9>13 Cards</a></li>
+        <li><a href="forms.html" 9>14 Forms</a></li>
+        <li><a href="accordian.html">15 accordian</a></li>
+        <li><a href="lists.html">16 Lists</a></li>
     </div>
     </nav>
     <main>
         <!-- Carousel Container -->
-<div class="carousel">
-        <!-- Carousel Slides -->
-        <h1 class="c-title">Pagination</h1>
-    <div class="carousel__slides" id="carouselSlides">
-        <img src="images/ornamental-plant.jpg" alt="Slide 1" class="carousel__image">
-        <img src="images/japanese-maple.jpg" alt="Slide 2" class="carousel__image">
-        <img src="images/Decidous-shrubs.jpg" alt="Slide 3" class="carousel__image">
-    </div>
-    <!-- Carousel Navigation -->
-    <button class="carousel__button carousel__button--prev" onclick="changeSlide(-1)">Prev</button>
-    <button class="carousel__button carousel__button--next" onclick="changeSlide(1)">Next</button>
-</div>
+        <div class="carousel">
+            <!-- Carousel Slides -->
+            <h1 class="c-title">Pagination</h1>
+            <div class="carousel__slides" id="carouselSlides">
+                <img src="images/ornamental-plant.jpg" alt="Slide 1" class="carousel__image">
+                <img src="images/japanese-maple.jpg" alt="Slide 2" class="carousel__image">
+                <img src="images/Decidous-shrubs.jpg" alt="Slide 3" class="carousel__image">
+            </div>
+            <!-- Carousel Navigation -->
+            <button class="carousel__button carousel__button--prev" onclick="changeSlide(-1)">Prev</button>
+            <button class="carousel__button carousel__button--next" onclick="changeSlide(1)">Next</button>
+        </div>
+        <div class="codebox">
+            <pre><code>&lt;div class="carousel"&gt;
+            &lt;!-- Carousel Slides --&gt;
+            &lt;h1 class="c-title"&gt;Pagination&lt;/h1&gt;
+            &lt;div class="carousel__slides" id="carouselSlides"&gt;
+                &lt;img src="images/ornamental-plant.jpg" alt="Slide 1" class="carousel__image"&gt;
+                &lt;img src="images/japanese-maple.jpg" alt="Slide 2" class="carousel__image"&gt;
+                &lt;img src="images/Decidous-shrubs.jpg" alt="Slide 3" class="carousel__image"&gt;
+            &lt;/div&gt;
+            &lt;!-- Carousel Navigation --&gt;
+            &lt;button class="carousel__button carousel__button--prev" onclick="changeSlide(-1)"&gt;Prev&lt;/button&gt;
+            &lt;button class="carousel__button carousel__button--next" onclick="changeSlide(1)"&gt;Next&lt;/button&gt;
+        &lt;/div&gt;</code></pre>
+            <button class="copy-button" onclick="copyCode()"><i class="fa fas fa-copy"></i></button>
+        </div>
+        
 
     </main>
     <!-- Scripts -->
