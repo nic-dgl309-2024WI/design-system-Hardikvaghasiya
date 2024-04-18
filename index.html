@@ -35,7 +35,7 @@
     </label>
     <!-- Brand logo or name -->
     <a href="/" class="c-navbar__logo-link">
-      <label class="c-navbar__logo">Outback Nursery</label>
+      <span class="c-navbar__logo">Outback Nursery</span>
     </a>
     <!-- Navigation links -->
     <ul class="c-navbar__items">
@@ -91,6 +91,8 @@
         </a>
       </div>
     </div>
+    </section>
+    
 
     <!--================ Product List Section ====================== -->
 
@@ -160,7 +162,7 @@
       </div>
     </div>
 
-    <!--================ Gifts & Certificate Section ====================== -->
+    <!-- ================ Gifts & Certificate Section ====================== -->
 
     <div id="giftcertificate" class="split-layout">
       <div class="form-section__image-container">
@@ -172,15 +174,15 @@
         <!-- Form container with validation -->
         <form class="form-section__form" novalidate>
           <!-- First Name Field with required attribute -->
-          <input type="text" id="firstName" name="firstName" class="form-section__input"
+          <input type="text" id="contact-firstName" name="firstName" class="form-section__input"
             placeholder="Enter your first name" required>
 
           <!-- Last Name Field with required attribute -->
-          <input type="text" id="lastName" name="lastName" class="form-section__input"
+          <input type="text" id="contact-lastName" name="lastName" class="form-section__input"
             placeholder="Enter your last name" required>
 
           <!-- Email Field with type and required attribute for validation -->
-          <input type="email" id="email" name="email" class="form-section__input" placeholder="Enter your email"
+          <input type="email" id="contact-email" name="email" class="form-section__input" placeholder="Enter your email"
             required>
 
           <!-- Select Amount Dropdown with required attribute -->
@@ -347,7 +349,7 @@
         </div>
       </div>
     </div>
-    </div>
+
 
     <!--================ About Us Section ====================== -->
 
@@ -388,7 +390,7 @@
 
     <!--================ Contact Us Section ====================== -->
 
-    <div id="productlist" class="c-product-list">
+    <div id="productlist2" class="c-product-list">
       <h1 class="c-product-list__title">Contact Us</h1>
       <div class="split-layout">
         <!-- Image container - set to not display on mobile via CSS -->
@@ -404,14 +406,14 @@
         <div class="form-section">
           <form class="form-section__form">
             <!-- First Name Field -->
-            <input type="text" id="firstName" name="firstName" class="form-section__input"
+            <input type="text" id="signup-firstName" name="firstName" class="form-section__input"
               placeholder="Your first name">
 
             <!-- Last Name Field -->
-            <input type="text" id="lastName" name="lastName" class="form-section__input" placeholder="Your last name">
+            <input type="text" id="signup-lastName" name="lastName" class="form-section__input" placeholder="Your last name">
 
             <!-- Email Field -->
-            <input type="email" id="email" name="email" class="form-section__input" placeholder="Your email address">
+            <input type="email" id="newsletter-email" name="email" class="form-section__input" placeholder="Your email address">
 
             <!-- Message Textarea -->
             <textarea id="message" name="message" class="form-section__input" placeholder="Your message here"
@@ -475,19 +477,17 @@
       </div>
       <!-- Bottom section of the footer typically containing copyright and other legal information -->
       <div class="c-footer__bottom">
-        <center>
-          <!-- Copyright and usage information text -->
+        <div class="center-content">
           <span class="c-footer__credit"> <a href="#"></a> 2024 Outback Nursery. All rights reserved. This website is
-            created for educational purposes only and is not intended for commercial use. </span>
-          <!-- Copyright symbol -->
+          created for educational purposes only and is not intended for commercial use. </span>
           <span class="far fa-copyright"></span><span> </span>
-        </center>
+      </div>
+      
       </div>
     </footer>
     <!-- Javascript -->
 
     <script src="main.js"></script>
     <script src="navbar.js"></script>
-</body>
-
+  </body>
 </html>

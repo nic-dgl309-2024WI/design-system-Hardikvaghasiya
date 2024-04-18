@@ -424,7 +424,7 @@ section {
 }
 
 .c-product-list__title {
-  margin-top: 50px;
+  margin-top: 200px;
   margin-bottom: 35px;
   font-size: 35px;
   color: var(--first-color);
@@ -953,12 +953,20 @@ footer{
 }
 .c-footer{
   color: white;
+
   display: flex;
 }
 .c-footer .box{
   flex-basis: 50%;
   padding: 10px 20px;
 }
+.center-content {
+  color: white;
+  text-align: center; /* Center the text inside the div */
+  margin: auto; /* Center the div itself if necessary */
+  width: 100%; /* Optional: ensure the div takes the full width if it's not by default */
+}
+
 .box h2 {
   font-size: 1.125rem;
   font-weight: 600;
