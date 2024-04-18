@@ -15,4 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
   iconButton.addEventListener('click', toggleSidebar);
 });
 
+function changeImage(imageSrc) {
+  document.getElementById('galleryImage').src = imageSrc;
+}
+
 

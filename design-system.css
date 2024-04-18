@@ -518,6 +518,35 @@ code {
   text-align: center;
   padding-bottom: 40px;
 }
+/* Styling for the gallery container */
+.image-gallery {
+  text-align: center; /* Centering the content */
+  padding: 20px;
+}
+
+/* Styling for the gallery image */
+.gallery__image {
+  width: 100%; /* Full width to make it responsive */
+  max-width: 600px; /* Maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and buttons */
+}
+
+/* Styling for pagination buttons */
+.gallery__button {
+  padding: 8px 16px; /* Padding for touch friendliness */
+  margin: 0 5px; /* Margin between buttons */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.gallery__button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
 
 /*lists css*/
 /* Base styles */
