@@ -24,7 +24,8 @@
 </head>
 
 <body>
-  <!-- Navigation bar -->
+  <!--================ Navigation bar ====================== -->
+
   <nav class="c-navbar">
     <!-- Checkbox for mobile menu toggle -->
     <input type="checkbox" id="c-check" class="c-navbar__checkbox">
@@ -46,10 +47,12 @@
       <li class="c-navbar__item"><a class="c-navbar__link" href="#">FAQ</a></li>
       <li class="c-navbar__item"><a class="c-navbar__link" href="#">About Us</a></li>
       <li class="c-navbar__item"><a class="c-navbar__link" href="#">Contact Us</a></li>
-      <!-- Additional navigation items -->
     </ul>
   </nav>
-  <!-- Hero Section -->
+
+
+  <!--================ Hero Section ====================== -->
+
   <section class="c-hero c-u-ff-Playfair-Display c-fw-400 c-fs-20 c-ls-2 c-lh-1-5 c-p-1">
     <!-- Content within the hero section -->
     <div id="home" class="c-hero__content c-flex c-justify-center c-align-items-center">
@@ -88,7 +91,9 @@
         </a>
       </div>
     </div>
-    <!-- Product List Section -->
+
+    <!--================ Product List Section ====================== -->
+
     <div id="productlist" class="c-product-list">
       <h1 class="c-product-list__title">PRODUCT LIST</h1>
       <div class="c-product-list__wrapper">
@@ -155,7 +160,8 @@
       </div>
     </div>
 
-    <!-- Main container for the form section -->
+    <!--================ Gifts & Certificate Section ====================== -->
+
     <div id="giftcertificate" class="split-layout">
       <div class="form-section__image-container">
         <!-- Image not visible on mobile screens, controlled by CSS -->
@@ -223,20 +229,26 @@
       </div>
     </div>
 
-    <!-- Resources Section -->
+    <!--================ Resources Section ====================== -->
+
     <div id="resources" class="c-resources">
+      <!-- Section Title -->
       <h1 class="c-resources__title">Our Resources</h1>
+      <!-- Container for the list of resources -->
       <div class="c-resources__list">
-        <!-- Single Resource Item -->
+        <!-- Single Resource Item: Gardening Basics -->
         <div class="c-resources__item">
+          <!-- Resource Image -->
           <img src="images/planting-tips.jpg" alt="Gardening Basics" class="c-resources__image">
+          <!-- Resource Title -->
           <h3 class="c-resources__item-title">Gardening Basics</h3>
+          <!-- Short description about the resource -->
           <p class="c-resources__item-description">Discover the essentials of effective gardening with our comprehensive
             guide.</p>
+          <!-- Link to learn more about the resource -->
           <a href="coming-soon.html" class="c-resources__button">Learn More</a>
         </div>
-
-        <!-- Additional Resource Items -->
+        <!-- Additional Resource Items: Similar structure for other items -->
         <div class="c-resources__item">
           <img src="images/planting-tips2.jpg" alt="Sustainable Practices" class="c-resources__image">
           <h3 class="c-resources__item-title">Sustainable Practices</h3>
@@ -262,33 +274,46 @@
         </div>
       </div>
     </div>
-    <!-- Announcements Container -->
+
+    <!--================ Announcement Section ====================== -->
+
     <div class="c-news-announcements">
+      <!-- Title for the announcements section -->
       <h2 class="c-news-announcements__title">Announcements</h2>
+      <!-- Scrollable container for listing announcements -->
       <div class="c-news-announcements__scroll">
-        <!-- Scrolling Announcement List -->
+        <!-- Unordered list for announcements -->
         <ul class="c-news-announcements__list">
+          <!-- Single announcement item -->
           <li class="c-news-announcements__item">Happy Easter and Happy Spring! We are open every day including
             statutory holidays from 9-5.</li>
+          <!-- Another announcement item -->
           <li class="c-news-announcements__item">Check out some of our favourite websites for gardening inspiration and
             tips: rhs.org.uk, gardenia.net, finegardening.com, pinterest.com.</li>
         </ul>
       </div>
     </div>
-    <!----------FAQ----------->
+
+    <!--================ FAQ Section ====================== -->
+
     <div id="faq" class="c-product-list">
+      <!-- Title for the FAQ section -->
       <h1 class="c-product-list__title">Frequently Asked Questions</h1>
-      <!-- FAQ Accordion Section -->
+      <!-- Container for all FAQ items, styled as an accordion for expand/collapse functionality -->
       <div class="faq-section">
+        <!-- Single FAQ Item -->
         <div class="faq-section__item">
+          <!-- Button used to toggle the visibility of the answer, aria-controls links to the answer's ID -->
           <button class="faq-section__question" aria-expanded="false" aria-controls="faq1-desc">
             What are your business hours?
           </button>
+          <!-- The answer part of the FAQ, hidden or shown when the button is pressed -->
           <div class="faq-section__answer" id="faq1-desc">
             <p>Outback Nursery is open every day, including statutory holidays, from 9:00 AM to 5:00 PM.
             </p>
           </div>
         </div>
+        <!-- Another FAQ Item -->
         <div class="faq-section__item">
           <button class="faq-section__question" aria-expanded="false" aria-controls="faq2-desc">
             Where are you located?
@@ -298,6 +323,7 @@
             </p>
           </div>
         </div>
+        <!-- Another FAQ Item -->
         <div class="faq-section__item">
           <button class="faq-section__question" aria-expanded="false" aria-controls="faq3-desc">
             Do you offer delivery services?
@@ -308,7 +334,7 @@
             </p>
           </div>
         </div>
-
+        <!-- Another FAQ Item -->
         <div class="faq-section__item">
           <button class="faq-section__question" aria-expanded="false" aria-controls="faq4-desc">
             What payment methods do you accept?
@@ -323,22 +349,29 @@
     </div>
     </div>
 
-    <!-------- ABOUT US ----------->
-    <h1 class="c-product-list__title">About Us</h1>
-    <div class="about section container" id="about">
-      <div class="about__container grid">
-        <img src="images/about.png" alt="About Us Image" class="about__img">
+    <!--================ About Us Section ====================== -->
 
+    <!-- Title for the About Us section -->
+    <h1 class="c-product-list__title">About Us</h1>
+    <!-- Main container for the About Us section -->
+    <div class="about section container" id="about">
+      <!-- Inner container for layout and styling, using grid layout -->
+      <div class="about__container grid">
+        <!-- Image related to the About Us content -->
+        <img src="images/about.png" alt="About Us Image" class="about__img">
+        <!-- Container for textual data about the nursery -->
         <div class="about__data">
+          <!-- Subtitle emphasizing the identity and value proposition of the nursery -->
           <h2 class="section__title about__title">
             Who we really are & why choose us
           </h2>
+          <!-- Description providing detailed information about the nursey -->
           <p class="about__description">
             Outback Nursery, nestled on a 6-acre plot in Courtenay, BC, is a family-owned garden center renowned for its
             extensive selection of Japanese Maples, Conifers, and ornamental trees. Established in 1998, the nursery has
             grown into a vital resource for both local garden enthusiasts and professional landscapers.
           </p>
-          <!-- List of points about the company -->
+          <!-- List highlighting key attributes or services of the nursery -->
           <ul class="about__list">
             <li class="about__item"><i class="about__icon icon-check"></i> We always deliver on time.</li>
             <li class="about__item"><i class="about__icon icon-check"></i> We give you guides to protect and care for
@@ -346,15 +379,15 @@
             <li class="about__item"><i class="about__icon icon-check"></i> We always come over for a check-up after
               sale.</li>
           </ul>
+          <!-- Call to action button for users to read more about the nursery -->
           <a href="coming-soon.html" target="_blank"
             class="c-hero__cta c-u-ff-quicksand c-u-fw-500 c-u-fs-16 c-u-ls-1 c-u-lh-1 c-u-p-0_5">Read More</a>
         </div>
       </div>
     </div>
 
+    <!--================ Contact Us Section ====================== -->
 
-
-    <!-----------Contact Us------------->
     <div id="productlist" class="c-product-list">
       <h1 class="c-product-list__title">Contact Us</h1>
       <div class="split-layout">
@@ -391,34 +424,48 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!--================ Footer  ====================== -->
     <footer>
       <div class="c-footer">
         <div class="c-left box">
+          <!-- Title for the about us section -->
           <h2>About us</h2>
+          <!-- Container for the text and social links related to about us -->
           <div class="c-footer__content">
+            <!-- Descriptive paragraph about Outback Nursery -->
             <p>Outback Nursery, nestled on a 6-acre plot in Courtenay, BC, is a family-owned garden center renowned for
               its extensive selection of Japanese Maples, Conifers, and ornamental trees. Established in 1998, the
               nursery has grown into a vital resource for both local garden enthusiasts and professional landscapers.
             </p>
+            <!-- Social media links -->
             <div class="c-social__links">
-              <a href="https://www.facebook.com/profile.php?id=100045470087619"><span class="fab fa-facebook-f"></span></a>
+              <!-- Link to Facebook profile -->
+              <a href="https://www.facebook.com/profile.php?id=100045470087619"><span
+                  class="fab fa-facebook-f"></span></a>
+              <!-- Link to Twitter -->
               <a href="#"><span class="fab fa-twitter"></span></a>
+              <!-- Link to Instagram -->
               <a href="#"><span class="fab fa-instagram"></span></a>
             </div>
           </div>
         </div>
+        <!-- Center section of the footer typically containing contact information -->
         <div class="center box">
+          <!-- Title for the address section -->
           <h2>Address</h2>
+          <!-- Container for address and contact details -->
           <div class="c-footer__content">
+            <!-- Physical address information -->
             <div class="c-place__adress">
               <span class="fas fa-map-marker-alt"></span>
               <span class="text">6016 Headquarters Rd, Courtenay, BC V9J 1M7</span>
             </div>
+            <!-- Phone contact information -->
             <div class="c-phone__number">
               <span class="fas fa-phone-alt"></span>
               <span class="text">+1(250)-703-0723</span>
             </div>
+            <!-- Email contact information -->
             <div class="c-email__address">
               <span class="fas fa-envelope"></span>
               <span class="text">xyz@example.com</span>
@@ -426,9 +473,13 @@
           </div>
         </div>
       </div>
+      <!-- Bottom section of the footer typically containing copyright and other legal information -->
       <div class="c-footer__bottom">
         <center>
-          <span class="c-footer__credit"> <a href="#"></a> 2024 Outback Nursery. All rights reserved. This website is created for educational purposes only and is not intended for commercial use. </span>
+          <!-- Copyright and usage information text -->
+          <span class="c-footer__credit"> <a href="#"></a> 2024 Outback Nursery. All rights reserved. This website is
+            created for educational purposes only and is not intended for commercial use. </span>
+          <!-- Copyright symbol -->
           <span class="far fa-copyright"></span><span> </span>
         </center>
       </div>
