@@ -931,23 +931,21 @@ max-height: 467px;
 }
 
 
-
-
 /* Footer Styles */
 
-.content1{
+.c-footer__content1{
   color: var(--color-accent);
   position: relative;
   margin: 130px auto;
   text-align: center;
   padding: 0 20px;
 }
-.content1 .text{
+.c-footer__content1 .text{
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--color-accent);
 }
-.content1 .p{
+.c-footer__content1 .p{
   font-size: 2.1875rem;
   font-weight: 600;
   color: #202020;
@@ -958,11 +956,11 @@ footer{
   width: 100%;
   background: #111;
 }
-.c-main__content{
+.c-footer{
   color: white;
   display: flex;
 }
-.c-main__content .box{
+.c-footer .box{
   flex-basis: 50%;
   padding: 10px 20px;
 }
@@ -986,11 +984,11 @@ footer{
   left: 0; 
   right: 0; 
 }
-.box .content{
+.box .c-footer__content{
   margin: 20px 0 0 0;
   position: relative;
 }
-.box .content:before{
+.box .c-footer__content:before{
   position: relative;
   content: '';
   top: -10px;
@@ -999,16 +997,16 @@ footer{
   background: #1a1a1a;
 }
 
-.left .content p{
+.c-left .c-footer__content p{
   text-align: justify;
 }
-.left .content .social{
+.c-left .c-footer__content .c-social__links{
   margin: 20px 0 0 0;
 }
-.left .content .social a{
+.c-left .c-footer__content .c-social__links a{
   padding: 0 2px;
 }
-.left .content .social a span{
+.c-left .c-footer__content .c-social__links a span{
   height: 40px;
   width: 40px;
   background: var(--color-background);
@@ -1018,10 +1016,10 @@ footer{
   border-radius: 5px;
   transition: 0.3s;
 }
-.left .content .social a span:hover{
+.c-left .c-footer__content .c-social__links a span:hover{
   background: var(--color-hover);
 }
-.center .content .fas{
+.center .c-footer__content .fas{
   font-size: 1.4375rem;
   background: #1a1a1a;
   height: 45px;
@@ -1032,15 +1030,15 @@ footer{
   transition: 0.3s;
   cursor: pointer;
 }
-.center .content .fas:hover{
+.center .c-footer__content .fas:hover{
   background: var(--color-active);
 }
-.center .content .text{
+.center .c-footer__content .text{
   font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
 }
-.center .content .phone{
+.center .c-footer__content .phone{
   margin: 15px 0;
 }
 .right form .text{
@@ -1082,19 +1080,19 @@ footer{
 .right form .btn button:hover{
   background: #000;
 }
-.bottom center{
+.c-footer__bottom center{
   padding: 5px;
   font-size: 0.9375rem;
   background: #151515;
 }
-.bottom center span{
+.c-footer__bottom center span{
   color: #656565;
 }
-.bottom center a{
+.c-footer__bottom center a{
   color: #f12020;
   text-decoration: none;
 }
-.bottom center a:hover{
+.c-footer__bottom center a:hover{
   text-decoration: underline;
 }
 
@@ -1104,11 +1102,11 @@ footer{
     position: relative;
     bottom: 0px;
   }
-  .c-main__content{
+  .c-footer{
     flex-wrap: wrap;
     flex-direction: column;
   }
-  .c-main__content .box{
+  .c-footer .box{
     margin: 5px 0;
   }
 }
