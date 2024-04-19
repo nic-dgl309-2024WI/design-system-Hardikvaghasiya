@@ -12,7 +12,10 @@
   background: transparent;
   /* make scrollbar transparent */
 }
+.intro-container{
+  padding: 30px;
 
+}
 /* Full Height Layout for HTML and Body */
 html,
 body {
